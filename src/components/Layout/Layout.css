@@ -1,0 +1,17 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--font-headline-italic);
+    font-size: 70px;
+    margin: 0;
+}
+h2 {
+    font-family: var(--font-headline);
+    font-size: 40px;
+    color: var(--color-primary);
+    margin: 0;
+}
