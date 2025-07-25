@@ -3,7 +3,7 @@ import { ChatType } from './ChatType';
 import type { Chat } from './ChatType';
 import { ChatMessageComponent, MessageAuthor } from './ChatMessage';
 import type { ChatMessage } from './ChatMessage';
-import { createRef } from 'react';
+import { createRef, useEffect } from 'react';
 
 export default function ChatPreview({
     messages,
@@ -15,7 +15,17 @@ export default function ChatPreview({
     const chatType: Chat = 'match';
     const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
 
+    const chatBottomRef = createRef<HTMLDivElement>();
+    const chatBoxRef = createRef<HTMLDivElement>();
     const messageInputRef = createRef<HTMLInputElement>();
+
+    useEffect(() => {
+        setTimeout(() => {
+            chatBottomRef.current?.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }, 0);
+    });
 
     function checkToSend(event: React.KeyboardEvent) {
         if (messageInputRef.current) {
@@ -34,7 +44,7 @@ export default function ChatPreview({
     return (
         <>
             <div className='chat'>
-                <div className='chatbox'>
+                <div className='chatbox' ref={chatBoxRef}>
                     {messages.map((message, index) => {
                         return (
                             <ChatMessageComponent
@@ -43,6 +53,7 @@ export default function ChatPreview({
                             />
                         );
                     })}
+                    <div className='chat_bottom' ref={chatBottomRef} />
                 </div>
                 <div className='chatinput'>
                     <div className='left chat-match'>

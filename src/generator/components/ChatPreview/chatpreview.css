@@ -31,19 +31,25 @@
 }
 
 .chatbox {
+    overflow: scroll;
     height: 290px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     justify-content: end;
-    align-items: stretch;
+    align-items: stretch; */
+    align-content: end;
+
+    padding: 5px 0;
 }
 .chatmessage {
     display: flex;
     justify-content: baseline;
     gap: 10px;
     padding: 2px 15px;
+    text-wrap: wrap;
+    text-align: start;
+    text-indent: -83px hanging;
 }
-
 .chatinput {
     height: 40px;
 
