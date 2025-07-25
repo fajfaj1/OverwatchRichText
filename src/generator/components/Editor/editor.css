@@ -1,14 +1,14 @@
 .editor {
-    font-family: var(--font-chat);
-    background-color: var(--color-light-gray);
-    color: var(--color-background);
-    padding: 10px;
+    /* font-family: var(--font-chat); */
+    /* background-color: var(--color-light-gray); */
+    /* color: var(--color-background); */
+    /* padding: 10px; */
     max-width: 100vw;
     width: 450px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
-.editor textarea {
+/* .editor textarea {
     max-width: 100%;
     min-width: 100%;
     background-color: transparent;
@@ -20,4 +20,4 @@
 
 .editor textarea:actve {
     background-color: rgba(0, 0, 0, 0.2);
-}
+} */

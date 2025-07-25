@@ -1,3 +1,41 @@
-export default function ChatPreview() {
-    // return <>Chat Preview</>;
+import './chatpreview.css';
+import { ChatType } from './ChatType';
+import type { Chat } from './ChatType';
+import { ChatMessageComponent, MessageAuthor } from './ChatMessage';
+import type { ChatMessage } from './ChatMessage';
+
+export default function ChatPreview({ messages }: { messages: ChatMessage[] }) {
+    const chatType: Chat = 'match';
+    const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
+    return (
+        <>
+            <div className='chat'>
+                <div className='chatbox'>
+                    {messages.map((message, index) => {
+                        return (
+                            <ChatMessageComponent
+                                key={index}
+                                message={message}
+                            />
+                        );
+                    })}
+                </div>
+                <div className='chatinput'>
+                    <div className='left chat-match'>
+                        <div className='vertical-stripe'></div>
+                        <ChatType type={chatType} />
+                        <MessageAuthor name={chatName} />
+                        <input
+                            type='text'
+                            className='chatinputfield'
+                            placeholder='PRESS TAB TO CYCLE CHANNELS'
+                        />
+                    </div>
+                    <div className='locale-badge-space'>
+                        <div className='locale-badge'>PL</div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
