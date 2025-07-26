@@ -50,7 +50,9 @@ async function downscaleAndDownload(url, filepath) {
             fit: `inside`,
             withoutEnlargement: true,
         }),
-        fs.createWriteStream(filepath)
+        fs.createWriteStream(filepath, {
+            flags: 'a',
+        })
     );
 
     successes++;

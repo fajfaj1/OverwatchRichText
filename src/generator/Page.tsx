@@ -1,6 +1,6 @@
 import Layout from '../components/Layout/Layout.tsx';
 import ChatPreview from './components/ChatPreview/ChatPreview.tsx';
-import Editor from './components/Editor/Editor.tsx';
+import Toolbox from './components/Toolbox/Toolbox.tsx';
 import type { ChatMessage } from './components/ChatPreview/ChatMessage.tsx';
 import './page.css';
 import { useState } from 'react';
@@ -13,7 +13,7 @@ export default function Page() {
         <>
             <Layout>
                 <div className='generator-wrapper'>
-                    <Editor />
+                    <Toolbox />
                     <ChatPreview
                         messages={messages}
                         setMessages={setMessages}
