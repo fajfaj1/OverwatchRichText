@@ -9,7 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
-    root: resolve(__dirname, 'src'),
+    root: resolve(__dirname, './src/frontend'),
     plugins: [react(), tailwindcss()],
     build: {
         rollupOptions: {
@@ -17,6 +17,7 @@ export default defineConfig({
                 generator: resolve(
                     __dirname,
                     'src',
+                    'frontend',
                     'generator',
                     'generator.html'
                 ),
@@ -26,7 +27,7 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
+            '@': path.resolve(__dirname, './src/frontend'),
         },
     },
 });
