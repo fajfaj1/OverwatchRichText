@@ -7,10 +7,15 @@ import fs from 'fs';
 const startTimestamp = Date.now();
 
 const START = 0;
-const END = 11160;
+const END = 3000;
 
-const BATCH_SIZE = 10;
+const BATCH_SIZE = 4;
 const slicedIDList = ids.slice(START, END);
+
+// for (let i = 4; i < preSlicedIDList.length; i += 9) {
+//     for (let j = 0; i + j < preSlicedIDList.length && j < 5; j++)
+//         slicedIDList.push(preSlicedIDList[i + j]);
+// }
 
 let confirmed_ids = [];
 
@@ -19,23 +24,11 @@ console.log(`Running emoji check on emojis from ${START} to ${END - 1}`);
 let totalIdCount = slicedIDList.length;
 
 function humanizeMS(ms) {
-    // const timeInSeconds = ms / 1000;
-    const seconds = Math.round((ms / 1000) % 60);
-    // const timeInMinutes = (timeInSeconds - seconds) / 60;
-    const minutes = Math.round((ms / (60 * 1000)) % 60);
-    // const timeInHours = (timeInMinutes - seconds) / 60;
-    const hours = Math.round((ms / (60 * 60 * 1000)) % 24);
-    let time = '';
-    if (hours > 0) {
-        time += `${hours}h`;
-    }
-    if (minutes > 0) {
-        time += ` ${hours}m`;
-    }
-    if (seconds > 0 || hours === 0) {
-        time += ` ${seconds}s`;
-    }
-    return time;
+    const seconds = Math.floor((ms / 1000) % 60);
+    const minutes = Math.floor((ms / (1000 * 60)) % 60);
+    const hours = Math.floor(ms / (1000 * 60 * 60));
+
+    return `${hours}h ${minutes}m ${seconds}s`;
 }
 
 function saveToClipboard(text) {
@@ -102,11 +95,9 @@ async function askForIdsFrom(startPosition) {
         const completion =
             Math.round((checkedIds / totalIdCount) * 10000) / 100;
 
-        const timeRemainingMS =
-            ((Date.now() - startTimestamp) / completion) * 100;
         rl.question(
-            `[${completion}%] (ETA: ${humanizeMS(
-                timeRemainingMS
+            `[${completion}%] (${humanizeMS(
+                Date.now() - startTimestamp
             )}) Which ids are correct? `,
             async (answer) => {
                 let abort = false;
@@ -125,22 +116,22 @@ async function askForIdsFrom(startPosition) {
 
                 if (!abort) {
                     confirmed_ids.push(...validIds);
-                    if (validIds.length >= 4) {
-                        // Leaves only ids after last valid id
-                        const startPositionOffset = Math.max(...indices) + 1;
-                        console.log(
-                            `Four or more elements matched, offsetting the start position by ${startPositionOffset} instead of ${BATCH_SIZE} ${startPositionOffset}`
-                        );
-                        rl.close();
-                        checkedIds += startPositionOffset;
-                        await askForIdsFrom(
-                            startPosition + startPositionOffset
-                        );
-                    } else {
-                        rl.close();
-                        checkedIds += 10;
-                        await askForIdsFrom(startPosition + BATCH_SIZE);
-                    }
+                    // if (validIds.length >= 4) {
+                    //     // Leaves only ids after last valid id
+                    //     const startPositionOffset = Math.max(...indices) + 1;
+                    //     console.log(
+                    //         `Four or more elements matched, offsetting the start position by ${startPositionOffset} instead of ${BATCH_SIZE} ${startPositionOffset}`
+                    //     );
+                    //     rl.close();
+                    //     checkedIds += startPositionOffset;
+                    //     await askForIdsFrom(
+                    //         startPosition + startPositionOffset
+                    //     );
+                    // } else {
+                    rl.close();
+                    checkedIds += BATCH_SIZE;
+                    await askForIdsFrom(startPosition + BATCH_SIZE);
+                    // }
                 }
                 rl.close();
                 resolve();
