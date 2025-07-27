@@ -6,8 +6,8 @@ import fs from 'fs';
 
 const startTimestamp = Date.now();
 
-const START = 0;
-const END = 3000;
+const START = 3000;
+const END = 11160;
 
 const BATCH_SIZE = 4;
 const slicedIDList = ids.slice(START, END);
