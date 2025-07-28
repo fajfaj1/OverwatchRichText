@@ -1,6 +1,10 @@
 .chat {
+    /* width: 600px; */
+    height: 500px;
+    flex-grow: 2;
+
     font-family: var(--font-chat);
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -23,22 +27,15 @@
 .chatbox,
 .chatinput {
     background-color: var(--color-chat-background);
-    /* padding: 10px; */
-    max-width: 100vw;
-    width: 480px;
     --border-radius: 4px;
     border-radius: var(--border-radius);
 }
 
 .chatbox {
-    overflow: scroll;
-    height: 290px;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: end;
-    align-items: stretch; */
+    overflow-y: auto;
     align-content: end;
-
+    /* width: 100%; */
+    height: 100%;
     padding: 5px 0;
 }
 .chatmessage {
@@ -48,13 +45,12 @@
     padding: 2px 15px;
     text-wrap: wrap;
     text-align: start;
-    text-indent: -83px hanging;
+    /* text-indent: -83px hanging; */
 }
 .chatinput {
-    height: 40px;
+    height: 50px;
 
     display: flex;
-    /* justify-content: space-between; */
 }
 .chatinput .left {
     width: 100%;
@@ -71,7 +67,7 @@
     border-bottom-left-radius: var(--border-radius);
 }
 .chatinput .locale-badge-space {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
 
     display: flex;
@@ -95,5 +91,5 @@
     /* height: fit-content; */
     border: 2px solid var(--color-light-gray);
     border-radius: 4px;
-    padding: 0px 7px;
+    padding: 0px 6px;
 }

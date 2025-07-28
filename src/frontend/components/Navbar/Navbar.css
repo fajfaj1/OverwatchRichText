@@ -10,6 +10,8 @@
 }
 .page-subheader {
     margin-top: -30px;
+    line-height: 1em;
+    text-wrap: nowrap;
 }
 .page {
     max-width: 1000px;

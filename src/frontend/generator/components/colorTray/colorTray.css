@@ -1,0 +1,55 @@
+.color-tray {
+    height: 100%;
+    max-height: 100%;
+    width: 50px;
+    /* background-color: var(--color-chat-background); */
+    background-color: var(--color-foreground);
+
+    /* border: 2px solid rgba(0, 0, 0, 0.2); */
+    padding: 10px 5px;
+    /* border-radius: 4px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.color-tray > button {
+    width: 100%;
+}
+
+.used-colors {
+    height: 270px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 10px;
+
+    padding: 5px;
+}
+
+.circle {
+    width: 1.1em;
+    height: 1.1em;
+    background-color: var(--color-success);
+    border-radius: 100%;
+    /* border: 2px solid rgba(255, 255, 255); */
+}
+
+.color-picker-circle {
+    border: 5px solid var(--color-fore);
+}
+
+.tray-button {
+    transition: 0.1s scale, 0.1s rotate;
+}
+.tray-button:hover {
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* position: relative; */
+    scale: 110%;
+    rotate: 15deg;
+}

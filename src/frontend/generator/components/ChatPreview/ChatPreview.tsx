@@ -60,6 +60,7 @@ export default function ChatPreview({
                         <div className='vertical-stripe'></div>
                         <ChatType type={chatType} />
                         <MessageAuthor name={chatName} />
+
                         <input
                             type='text'
                             className='chatinputfield'

@@ -1,30 +1,23 @@
 import './toolbox.css';
-import {
-    Card,
-    CardFooter,
-    CardHeader,
-    CardDescription,
-    CardAction,
-    CardContent,
-    CardTitle,
-} from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-export default function Editor() {
+import { Button } from '@/components/Button/Button';
+import Brush from '@/components/icons/Brush';
+import Copy from '@/components/icons/Copy';
+import Droplet from '@/components/icons/Droplet';
+export function Toolbox() {
     return (
         <>
-            <Card className='editor text-left'>
-                <CardHeader>
-                    <CardTitle>Toolbox</CardTitle>
-                    <CardDescription>
-                        Here you can find tools to personalise your message
-                    </CardDescription>
-                    <CardAction>
-                        <Button variant='link'>How does it work?</Button>
-                    </CardAction>
-                </CardHeader>
-                <CardContent>Content</CardContent>
-                <CardFooter>Toolbox</CardFooter>
-            </Card>
+            <div className='toolbox'>
+                <Button variant='normal'>
+                    <Droplet />
+                    FONT COLOR
+                </Button>
+                <Button variant='normal'>
+                    <Brush /> GRADIENT
+                </Button>
+                <Button variant='highlight'>
+                    <Copy /> COPY MESSAGE
+                </Button>
+            </div>
         </>
     );
 }
