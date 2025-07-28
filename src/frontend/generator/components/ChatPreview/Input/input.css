@@ -1,0 +1,47 @@
+.chatinput {
+    height: 50px;
+
+    display: flex;
+}
+.chatinput .left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--chat-color);
+}
+
+.chatinput .vertical-stripe {
+    height: 100%;
+    width: 5px;
+    background-color: var(--chat-color);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+.chatinput .locale-badge-space {
+    font-size: 1em;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.chatinputfield {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--color-foreground);
+}
+
+.chatinputfield::placeholder {
+    font-weight: 700;
+    /* letter-spacing: -0.7px; */
+    color: var(--color-chat-placeholder);
+}
+
+.locale-badge {
+    /* height: fit-content; */
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0px 6px;
+}

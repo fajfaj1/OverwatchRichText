@@ -10,18 +10,18 @@
     gap: 5px;
 
     --color-chat-match: var(--color-warnning);
-    --color-chat-team: var(--color-info);
+    --color-chat-team: var(--color-blue);
     --color-chat-group: var(--color-success);
 }
 
 .chat-match {
-    color: var(--color-chat-match);
+    --chat-color: var(--color-chat-match);
 }
 .chat-team {
-    color: var(--color-chat-team);
+    --chat-color: var(--color-chat-team);
 }
 .chat-group {
-    color: var(--color-chat-group);
+    --chat-color: var(--color-chat-group);
 }
 
 .chatbox,
@@ -37,59 +37,4 @@
     /* width: 100%; */
     height: 100%;
     padding: 5px 0;
-}
-.chatmessage {
-    display: flex;
-    justify-content: baseline;
-    gap: 10px;
-    padding: 2px 15px;
-    text-wrap: wrap;
-    text-align: start;
-    /* text-indent: -83px hanging; */
-}
-.chatinput {
-    height: 50px;
-
-    display: flex;
-}
-.chatinput .left {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.chatinput .vertical-stripe {
-    height: 100%;
-    width: 4px;
-    background-color: var(--color-warnning);
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-}
-.chatinput .locale-badge-space {
-    font-size: 1em;
-    font-weight: 500;
-
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-.chatinputfield {
-    width: 100%;
-    border: none;
-    outline: none;
-    color: var(--color-foreground);
-}
-
-.chatinputfield::placeholder {
-    font-weight: 700;
-    /* letter-spacing: -0.7px; */
-    color: var(--color-chat-placeholder);
-}
-
-.locale-badge {
-    /* height: fit-content; */
-    border: 2px solid var(--color-light-gray);
-    border-radius: 4px;
-    padding: 0px 6px;
 }

@@ -1,0 +1,12 @@
+.chatmessage {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 15px;
+    text-wrap: wrap;
+    text-align: start;
+
+    color: var(--chat-color);
+    /* text-indent: -83px hanging; */
+}

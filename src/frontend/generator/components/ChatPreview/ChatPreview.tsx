@@ -1,9 +1,10 @@
 import './chatpreview.css';
-import { ChatType } from './ChatType';
-import type { Chat } from './ChatType';
-import { ChatMessageComponent, MessageAuthor } from './ChatMessage';
-import type { ChatMessage } from './ChatMessage';
-import { createRef, useEffect } from 'react';
+import { ChatType } from './Message/ChatType';
+import type { Chat } from './Message/ChatType';
+import { ChatMessageComponent, MessageAuthor } from './Message/Message';
+import { ChatInput } from './Input/Input';
+import type { ChatMessage } from './Message/Message';
+import { createRef, useEffect, useState } from 'react';
 
 export default function ChatPreview({
     messages,
@@ -12,12 +13,11 @@ export default function ChatPreview({
     messages: ChatMessage[];
     setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
 }) {
-    const chatType: Chat = 'match';
+    const [chatType, setChatType] = useState<Chat>('match');
     const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
 
     const chatBottomRef = createRef<HTMLDivElement>();
     const chatBoxRef = createRef<HTMLDivElement>();
-    const messageInputRef = createRef<HTMLInputElement>();
 
     useEffect(() => {
         setTimeout(() => {
@@ -26,20 +26,6 @@ export default function ChatPreview({
             });
         }, 0);
     });
-
-    function checkToSend(event: React.KeyboardEvent) {
-        if (messageInputRef.current) {
-            if (event.code === 'Enter') {
-                const content = messageInputRef.current.value || '';
-                // console.log(event);
-                setMessages([
-                    ...messages,
-                    { content, author: 'fajfaj', chat: chatType },
-                ]);
-                messageInputRef.current.value = '';
-            }
-        }
-    }
 
     return (
         <>
@@ -56,17 +42,15 @@ export default function ChatPreview({
                     <div className='chat_bottom' ref={chatBottomRef} />
                 </div>
                 <div className='chatinput'>
-                    <div className='left chat-match'>
+                    <div className={`left chat-${chatType}`}>
                         <div className='vertical-stripe'></div>
                         <ChatType type={chatType} />
                         <MessageAuthor name={chatName} />
-
-                        <input
-                            type='text'
-                            className='chatinputfield'
-                            placeholder='PRESS TAB TO CYCLE CHANNELS'
-                            onKeyDown={checkToSend}
-                            ref={messageInputRef}
+                        <ChatInput
+                            messages={messages}
+                            setMessages={setMessages}
+                            chatType={chatType}
+                            setChatType={setChatType}
                         />
                     </div>
                     <div className='locale-badge-space'>
