@@ -9,6 +9,11 @@ import { useState } from 'react';
 export default function Page() {
     const [messages, setMessages] = useState<ChatMessage[]>([
         { content: 'Hello There!', author: 'General Kenobi', chat: 'match' },
+        {
+            content: '<FG000000FF> <TX0C00000000A2FA>',
+            author: 'Lucio',
+            chat: 'match',
+        },
     ]);
     return (
         <>
