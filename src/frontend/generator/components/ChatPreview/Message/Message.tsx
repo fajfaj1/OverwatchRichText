@@ -1,7 +1,7 @@
 import './message.css';
-import { ChannelComponent } from './channel';
-import type { ChannelType } from './channel';
-import { ChatMessageContent } from './MessageContent';
+import { Channel } from './Channel/Channel';
+import type { ChannelType } from './Channel/Channel';
+import { Content } from './Content/Content';
 
 export type ChatMessage = {
     content: string;
@@ -9,18 +9,20 @@ export type ChatMessage = {
     chat: ChannelType;
 };
 
-export function MessageAuthor({ name }: { name: string }) {
+function Author({ name }: { name: string }) {
     return <>[{name}]</>;
 }
 
-export function ChatMessageComponent({ message }: { message: ChatMessage }) {
+function Message({ message }: { message: ChatMessage }) {
     return (
         <>
             <div className={`chatmessage chat-${message.chat}`}>
-                <ChannelComponent type={message.chat} />
-                <MessageAuthor name={message.author} />
-                <ChatMessageContent content={message.content} />
+                <Channel type={message.chat} />
+                <Author name={message.author} />
+                <Content editable={false} content={message.content} />
             </div>
         </>
     );
 }
+
+export { Channel, Author, Content, Message };

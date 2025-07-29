@@ -1,8 +1,7 @@
 import './chatpreview.css';
-import { ChannelComponent } from './Message/channel';
-import type { ChannelType } from './Message/channel';
-import { ChatMessageComponent, MessageAuthor } from './Message/Message';
-import { ChatInput } from './Input/Input';
+import type { ChannelType } from './Message/Channel/Channel';
+import { Message, Author, Channel, Content } from './Message/Message';
+
 import type { ChatMessage } from './Message/Message';
 import { createRef, useEffect, useState } from 'react';
 
@@ -13,6 +12,7 @@ export default function ChatPreview({
     messages: ChatMessage[];
     setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
 }) {
+    const [content, setContent] = useState('');
     const [chatType, setChatType] = useState<ChannelType>('match');
     const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
 
@@ -27,30 +27,55 @@ export default function ChatPreview({
         }, 0);
     });
 
+    function checkToSend(event: React.KeyboardEvent<HTMLDivElement>) {
+        if (event?.currentTarget) {
+            if (event.code === 'Enter') {
+                // console.log(event);
+                setMessages([
+                    ...messages,
+                    { content, author: 'fajfaj', chat: chatType },
+                ]);
+                event.currentTarget.innerText = '';
+            } else if (event.code === 'Tab') {
+                switch (chatType) {
+                    case 'match':
+                        setChatType('team');
+                        break;
+                    case 'team':
+                        setChatType('group');
+                        break;
+                    case 'group':
+                        setChatType('match');
+                        break;
+                    default:
+                        setChatType('match');
+                        break;
+                }
+
+                event.preventDefault();
+            }
+        }
+    }
+
     return (
         <>
             <div className='chat'>
                 <div className='chatbox' ref={chatBoxRef}>
                     {messages.map((message, index) => {
-                        return (
-                            <ChatMessageComponent
-                                key={index}
-                                message={message}
-                            />
-                        );
+                        return <Message key={index} message={message} />;
                     })}
                     <div className='chat_bottom' ref={chatBottomRef} />
                 </div>
                 <div className='chatinput'>
                     <div className={`left chat-${chatType}`}>
                         <div className='vertical-stripe'></div>
-                        <ChannelComponent type={chatType} />
-                        <MessageAuthor name={chatName} />
-                        <ChatInput
-                            messages={messages}
-                            setMessages={setMessages}
-                            chatType={chatType}
-                            setChatType={setChatType}
+                        <Channel type={chatType} />
+                        <Author name={chatName} />
+                        <Content
+                            editable={true}
+                            content={content}
+                            setContent={setContent}
+                            onKeyDown={checkToSend}
                         />
                     </div>
                     <div className='locale-badge-space'>
