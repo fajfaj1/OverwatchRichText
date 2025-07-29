@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3';
-import { ids } from '../frontend/assets/emojis/emoji_ids';
+import { ids } from '../frontend/generator/glyphs';
 
 try {
     const setupDB = new Database('database.db');
