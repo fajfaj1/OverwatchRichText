@@ -1,5 +1,5 @@
 import './content.css';
-import { createRef, useEffect } from 'react';
+import { createRef } from 'react';
 
 export function Content({
     editable,
