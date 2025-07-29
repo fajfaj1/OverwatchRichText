@@ -18,7 +18,11 @@ export function Toolbox() {
                     <Droplet />
                     FONT COLOR
                 </Button>
-                <Popover id='color-picker-popover' title='pick font color'>
+                <Popover
+                    buttonLabels={{ cancel: 'cancel', confirm: 'insert' }}
+                    id='color-picker-popover'
+                    title='pick font color'
+                >
                     <></>
                 </Popover>
                 <Button size='full' variant='normal'>

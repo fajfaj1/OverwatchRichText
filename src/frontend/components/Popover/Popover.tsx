@@ -4,10 +4,15 @@ export function Popover({
     id,
     title,
     children,
+    buttonLabels,
 }: {
     id: string;
     title: string;
     children: React.ReactNode;
+    buttonLabels: {
+        cancel: string;
+        confirm: string;
+    };
 }) {
     return (
         <>
@@ -16,10 +21,10 @@ export function Popover({
                 <div className='popover-body'>{children}</div>
                 <div className='popover-footer'>
                     <Button size='min' variant='normal'>
-                        CANCEL
+                        {buttonLabels.cancel.toUpperCase()}
                     </Button>
-                    <Button size='min' variant='outline' disabled={true}>
-                        INSERT
+                    <Button size='min' variant='highlight'>
+                        {buttonLabels.confirm.toUpperCase()}
                     </Button>
                 </div>
             </div>
