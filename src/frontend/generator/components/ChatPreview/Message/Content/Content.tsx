@@ -1,5 +1,5 @@
 import './content.css';
-import { createRef } from 'react';
+import { createRef, useEffect } from 'react';
 
 export function Content({
     editable,
@@ -12,7 +12,11 @@ export function Content({
     setContent?: React.Dispatch<React.SetStateAction<string>>;
     onKeyDown?: React.KeyboardEventHandler<HTMLDivElement>;
 }) {
-    const inputRef = createRef<HTMLInputElement>();
+    const textboxRef = createRef<HTMLInputElement>();
+
+    useEffect(() => {
+        console.log(`Message updated: ${content}`);
+    }, [content]);
 
     if (editable) {
         if (setContent === undefined || onKeyDown === undefined) {
@@ -34,24 +38,18 @@ export function Content({
                         onKeyDown(event);
                     }}
                     onInput={(event: React.FormEvent<HTMLDivElement>) => {
-                        const text = event.currentTarget.innerText.replace(
-                            /\n/g,
-                            ''
-                        ); // Remove line breaks
-                        setContent(text);
-                        console.log(`"${text}"`);
-                        // console.log(`" ${event.currentTarget.innerText} "`);
-
-                        // setContent(event.currentTarget.innerText);
+                        setContent(event.currentTarget.innerText);
                     }}
-                    ref={inputRef}
+                    ref={textboxRef}
                 ></div>
             </>
         );
     } else {
         return (
             <>
-                <div className='chat-message'>{content}</div>
+                <div className='chat-message' ref={textboxRef}>
+                    {content}
+                </div>
             </>
         );
     }

@@ -31,11 +31,12 @@ export default function ChatPreview({
         if (event?.currentTarget) {
             if (event.code === 'Enter') {
                 // console.log(event);
-                setMessages([
-                    ...messages,
+                setMessages((prev) => [
+                    ...prev,
                     { content, author: 'fajfaj', chat: chatType },
                 ]);
                 event.currentTarget.innerText = '';
+                setContent('');
             } else if (event.code === 'Tab') {
                 switch (chatType) {
                     case 'match':

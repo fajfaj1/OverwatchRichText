@@ -14,12 +14,10 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
+                home: resolve(__dirname, 'src/frontend/index.html'),
                 generator: resolve(
                     __dirname,
-                    'src',
-                    'frontend',
-                    'generator',
-                    'generator.html'
+                    'src/frontend/generator/index.html'
                 ),
                 // about: resolve(__dirname, './src/routes/about/about.html'),
             },

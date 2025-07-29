@@ -1,5 +1,5 @@
 import { db } from './database';
-import express from 'express';
+// import express from 'express';
 
 console.log(void db);
-const app = express();
+// const app = express();
