@@ -144,10 +144,6 @@ await askForIdsFrom(0);
 
 console.log(`Writing ${confirmed_ids.length} IDs to disk.`);
 
-fs.writeFileSync(
-    './src/assets/emojis/scripts/valid_ids.txt',
-    confirmed_ids.join('\n'),
-    {
-        flag: 'a',
-    }
-);
+fs.writeFileSync('./scripts/valid_ids.txt', confirmed_ids.join('\n'), {
+    flag: 'a',
+});

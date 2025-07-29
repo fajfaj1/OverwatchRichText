@@ -10,7 +10,12 @@ export default function Page() {
     const [messages, setMessages] = useState<ChatMessage[]>([
         { content: 'Hello There!', author: 'General Kenobi', chat: 'match' },
         {
-            content: '<FG000000FF> <TX0C00000000A2FA>',
+            content: '<FG000000FF> test',
+            author: 'Lucio',
+            chat: 'match',
+        },
+        {
+            content: '<TXC0000000003849A>',
             author: 'Lucio',
             chat: 'match',
         },
