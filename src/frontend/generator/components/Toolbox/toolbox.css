@@ -2,6 +2,11 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     padding: 0 5px;
+}
+.popover:popover-open {
+    position: grid;
+    top: 0;
+    right: 0;
 }

@@ -1,0 +1,26 @@
+.popover {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    background-color: var(--color-navy);
+}
+.popover::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(10px);
+}
+
+.popover-title {
+    font-size: 3rem;
+    color: var(--color-foreground);
+    padding: 10px 0;
+}
+.popover-body {
+    color: var;
+}
+.popover-footer {
+    background-color: var(--color-navy-dark);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+}

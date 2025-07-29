@@ -1,5 +1,6 @@
 import './toolbox.css';
 import { Button } from '@/components/Button/Button';
+import { Popover } from '@/components/Popover/Popover';
 import Brush from '@/components/icons/Brush';
 import SmileyFace from '@/components/icons/SmileyFace';
 import Copy from '@/components/icons/Copy';
@@ -9,20 +10,27 @@ export function Toolbox() {
     return (
         <>
             <div className='toolbox'>
-                <Button variant='normal'>
+                <Button
+                    size='full'
+                    variant='normal'
+                    popoverTarget='color-picker-popover'
+                >
                     <Droplet />
                     FONT COLOR
                 </Button>
-                <Button variant='normal'>
+                <Popover id='color-picker-popover' title='pick font color'>
+                    <></>
+                </Popover>
+                <Button size='full' variant='normal'>
                     <SmileyFace /> INSERT EMOJI
                 </Button>
-                <Button variant='normal'>
+                <Button size='full' variant='normal'>
                     <Brush /> GRADIENT
                 </Button>
-                <Button variant='normal'>
+                <Button size='full' variant='normal'>
                     <Settings /> SETTINGS
                 </Button>
-                <Button variant='highlight'>
+                <Button size='full' variant='highlight'>
                     <Copy /> COPY MESSAGE
                 </Button>
             </div>
