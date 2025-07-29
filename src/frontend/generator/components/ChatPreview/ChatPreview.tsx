@@ -1,6 +1,6 @@
 import './chatpreview.css';
-import { ChatType } from './Message/ChatType';
-import type { Chat } from './Message/ChatType';
+import { ChannelComponent } from './Message/channel';
+import type { ChannelType } from './Message/channel';
 import { ChatMessageComponent, MessageAuthor } from './Message/Message';
 import { ChatInput } from './Input/Input';
 import type { ChatMessage } from './Message/Message';
@@ -13,7 +13,7 @@ export default function ChatPreview({
     messages: ChatMessage[];
     setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
 }) {
-    const [chatType, setChatType] = useState<Chat>('match');
+    const [chatType, setChatType] = useState<ChannelType>('match');
     const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
 
     const chatBottomRef = createRef<HTMLDivElement>();
@@ -44,7 +44,7 @@ export default function ChatPreview({
                 <div className='chatinput'>
                     <div className={`left chat-${chatType}`}>
                         <div className='vertical-stripe'></div>
-                        <ChatType type={chatType} />
+                        <ChannelComponent type={chatType} />
                         <MessageAuthor name={chatName} />
                         <ChatInput
                             messages={messages}

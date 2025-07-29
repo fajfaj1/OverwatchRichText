@@ -1,6 +1,6 @@
 import './input.css';
 import type { ChatMessage } from '../Message/Message';
-import type { Chat } from '../Message/ChatType';
+import type { ChannelType } from '../Message/channel';
 import { createRef } from 'react';
 export function ChatInput({
     messages,
@@ -10,8 +10,8 @@ export function ChatInput({
 }: {
     messages: ChatMessage[];
     setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
-    chatType: Chat;
-    setChatType: React.Dispatch<React.SetStateAction<Chat>>;
+    chatType: ChannelType;
+    setChatType: React.Dispatch<React.SetStateAction<ChannelType>>;
 }) {
     const inputRef = createRef<HTMLInputElement>();
     function checkToSend(event: React.KeyboardEvent) {
@@ -25,7 +25,6 @@ export function ChatInput({
                 ]);
                 inputRef.current.value = '';
             } else if (event.code === 'Tab') {
-                console.log(event.code);
                 switch (chatType) {
                     case 'match':
                         setChatType('team');

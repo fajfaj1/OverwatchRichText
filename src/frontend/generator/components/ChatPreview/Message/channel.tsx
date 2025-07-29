@@ -1,11 +1,11 @@
-import './chatType.css';
+import './channel.css';
 import Diamond from '@/components/icons/Diamond';
 import ThreeSilhouettes from '@/components/icons/ThreeSilhouettes';
 import TwoSilhouettes from '@/components/icons/TwoSilhouettes';
 
-export type Chat = 'match' | 'team' | 'group';
+export type ChannelType = 'match' | 'team' | 'group';
 
-export function ChatType({ type }: { type: Chat }) {
+export function ChannelComponent({ type }: { type: ChannelType }) {
     if (type === 'match') {
         return (
             <>
