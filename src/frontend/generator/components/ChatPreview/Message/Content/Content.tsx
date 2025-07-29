@@ -1,5 +1,5 @@
 import './content.css';
-import { createRef } from 'react';
+import { createRef, useEffect } from 'react';
 import parse from 'html-react-parser';
 
 export function Content({
@@ -57,6 +57,9 @@ export function Content({
     //             );
     //         });
     // }, [content, textboxRef]);
+    useEffect(() => {
+        console.log(content === '', `"${content}"`);
+    });
 
     function replaceTagsWithHTML(content: string) {
         const colorTags = content.matchAll(/<FG(?<hex>[0-9A-F]{8})>/gi);
@@ -72,12 +75,11 @@ export function Content({
             console.log(match);
             content =
                 content.slice(0, match.index) +
-                `<img src="/assets/emoji/images/${
+                `<img src="/public/glyphs/${
                     match.groups?.id || 'unknown'
-                }.png" />` +
+                }.png" class="overwatch-icon" />` +
                 content.slice(match.index + match[0].length, content.length);
         });
-        console.log(content);
         return parse(content);
     }
 
@@ -91,7 +93,9 @@ export function Content({
             <>
                 <div
                     className={`chat-input-field ${
-                        content === '' ? 'empty' : 'populated'
+                        content === '' || content === '\n'
+                            ? 'empty'
+                            : 'populated'
                     }`}
                     contentEditable
                     onKeyDown={(event) => {
