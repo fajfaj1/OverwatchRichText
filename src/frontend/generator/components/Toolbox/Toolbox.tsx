@@ -1,11 +1,14 @@
 import './toolbox.css';
 import { Button } from '@/components/Button/Button';
 import { Popover } from '@/components/Popover/Popover';
+import { ColorPicker } from './ColorPicker/ColorPicker';
+
 import Brush from '@/components/icons/Brush';
 import SmileyFace from '@/components/icons/SmileyFace';
 import Copy from '@/components/icons/Copy';
 import Droplet from '@/components/icons/Droplet';
 import Settings from '@/components/icons/Settings';
+
 export function Toolbox() {
     return (
         <>
@@ -19,12 +22,14 @@ export function Toolbox() {
                     FONT COLOR
                 </Button>
                 <Popover
-                    buttonLabels={{ cancel: 'cancel', confirm: 'insert' }}
                     id='color-picker-popover'
-                    title='pick font color'
+                    title='choose color'
+                    subTitle='for your selection'
+                    buttonLabels={{ cancel: 'cancel', confirm: 'apply' }}
                 >
-                    <></>
+                    <ColorPicker />
                 </Popover>
+
                 <Button size='full' variant='normal'>
                     <SmileyFace /> INSERT EMOJI
                 </Button>

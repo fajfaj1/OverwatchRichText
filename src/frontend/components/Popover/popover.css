@@ -9,13 +9,40 @@
     filter: blur(10px);
 }
 
+.popover-header {
+    padding: 1.5em 0;
+}
 .popover-title {
     font-size: 3rem;
+    line-height: 3rem;
     color: var(--color-foreground);
-    padding: 10px 0;
 }
+.popover-sub-title {
+    font-size: 1rem;
+    color: #b9babc;
+    /* padding: 10px 0; */
+}
+
 .popover-body {
+    color: #b9babc;
+    font-weight: 600;
     color: var;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 30px;
+
+    height: fit-content;
+}
+.popover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: 600px;
+    text-align: start;
+    /* just: center; */
 }
 .popover-footer {
     background-color: var(--color-navy-dark);

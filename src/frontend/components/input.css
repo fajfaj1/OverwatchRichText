@@ -14,9 +14,9 @@
 }
 
 .input {
-    background-color: var(--button-background);
-    border: 2px solid var(--button-border);
-    color: var(--button-foreground);
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border);
+    color: var(--input-foreground);
     font-family: var(--font-chat);
     font-size: 20px;
     font-weight: 600;
@@ -35,22 +35,22 @@
 }
 
 .input-normal {
-    --button-hover-border: var(--color-light-blue);
-    --button-border: transparent;
-    --button-background: var(--color-foreground);
-    --button-foreground: var(--color-background);
+    --input-hover-border: var(--color-light-blue);
+    --input-border: transparent;
+    --input-background: var(--color-foreground);
+    --input-foreground: var(--color-background);
 }
 .input-highlight {
-    --button-hover-border: var(--color-light-blue);
-    --button-border: transparent;
-    --button-background: var(--color-primary);
-    --button-foreground: var(--color-foreground);
+    --input-hover-border: var(--color-light-blue);
+    --input-border: transparent;
+    --input-background: var(--color-primary);
+    --input-foreground: var(--color-foreground);
 }
 .input-outline {
-    --button-hover-border: #9e9e9e;
-    --button-border: var(--color-light-gray);
-    --button-background: transparent;
-    --button-foreground: var(--color-foreground);
+    --input-hover-border: #9e9e9e;
+    --input-border: var(--color-light-gray);
+    --input-background: transparent;
+    --input-foreground: var(--color-foreground);
     border-width: 3px;
     color: var(--color-foreground);
     border-radius: 5px;
@@ -62,7 +62,7 @@
     left: 0;
     transform: scale(105%);
     z-index: 1;
-    border-color: var(--button-hover-border);
+    border-color: var(--input-hover-border);
 }
 
 .input:disabled {

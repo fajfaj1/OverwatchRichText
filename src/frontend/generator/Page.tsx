@@ -11,12 +11,12 @@ export default function Page() {
         { content: 'Hello There!', author: 'General Kenobi', chat: 'match' },
         {
             content: '<FG000000FF> test',
-            author: 'Lucio',
+            author: 'Test',
             chat: 'match',
         },
         {
             content: '<TXC0000000003849A>',
-            author: 'Lucio',
+            author: 'Test',
             chat: 'match',
         },
     ]);
