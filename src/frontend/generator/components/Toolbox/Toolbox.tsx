@@ -19,6 +19,37 @@ export function Toolbox() {
         b: 255,
         a: 1,
     });
+
+    // Handled by @/generator/components/ChatPreview/Message/Content
+    function sendColorApplyEvent() {
+        function numberToHex(number: number) {
+            if (number === 0) return '00';
+            let hex = '';
+            const digits = '0123456789ABCDEF'.split('');
+            while (number > 0) {
+                // console.log(number, hex);
+                hex = digits[number % 16] + hex;
+                number = Math.floor(number / 16);
+            }
+            return hex.padStart(2, '0');
+        }
+        function rgbToHex(color: RGBColor) {
+            return (
+                '#' +
+                numberToHex(color.r) +
+                numberToHex(color.g) +
+                numberToHex(color.b)
+            );
+        }
+
+        const event = new CustomEvent('apply-color', {
+            detail: {
+                hex: rgbToHex(color),
+            },
+        });
+        window.dispatchEvent(event);
+    }
+
     return (
         <>
             <div className='toolbox'>
@@ -35,6 +66,7 @@ export function Toolbox() {
                     title='choose color'
                     subTitle='for your selection'
                     buttonLabels={{ cancel: 'cancel', confirm: 'apply' }}
+                    onConfirm={sendColorApplyEvent}
                 >
                     <ColorPicker color={color} setColor={setColor} />
                 </Popover>

@@ -1,6 +1,7 @@
 import './content.css';
 import { createRef, useEffect } from 'react';
-import parse from 'html-react-parser';
+import { replaceTagsWithHTML } from './utils/replaceTagsWithHTML';
+import { applyColor } from './utils/applyColor';
 
 export function Content({
     editable,
@@ -13,33 +14,20 @@ export function Content({
     setContent?: React.Dispatch<React.SetStateAction<string>>;
     onKeyDown?: React.KeyboardEventHandler<HTMLDivElement>;
 }) {
-    const textboxRef = createRef<HTMLInputElement>();
+    const inputRef = createRef<HTMLInputElement>();
 
-    useEffect(() => {
-        console.log(content === '', `"${content}"`);
-    });
+    // useEffect(() => {
+    //     // Fired by @/generator/components/Toolbox/Toolbox.tsx
+    //     function applyColorHandler(e: CustomEventInit<{ hex: string }>) {
+    //         applyColor(e, inputRef);
+    //     }
 
-    function replaceTagsWithHTML(content: string) {
-        const colorTags = content.matchAll(/<FG(?<hex>[0-9A-F]{8})>/gi);
-        [...colorTags].forEach((match) => {
-            content =
-                content.slice(0, match.index) +
-                `<span style="color: #${match.groups?.hex || 'inherit'}">` +
-                content.slice(match.index + match[0].length, content.length) +
-                '</span>';
-        });
-        const glyphTags = content.matchAll(/<TX0?C00(?<id>[0-9A-F]{12})>/gi);
-        [...glyphTags].forEach((match) => {
-            console.log(match);
-            content =
-                content.slice(0, match.index) +
-                `<img src="/glyphs/${
-                    match.groups?.id || 'unknown'
-                }.png" class="overwatch-icon" />` +
-                content.slice(match.index + match[0].length, content.length);
-        });
-        return parse(content);
-    }
+    //     if (editable) window.addEventListener('apply-color', applyColorHandler);
+
+    //     return () => {
+    //         window.removeEventListener('apply-color', applyColorHandler);
+    //     };
+    // }, [editable, inputRef]);
 
     if (editable) {
         if (setContent === undefined || onKeyDown === undefined) {
@@ -50,6 +38,7 @@ export function Content({
         return (
             <>
                 <div
+                    id='chat-input-field'
                     className={`chat-input-field ${
                         content === '' || content === '\n'
                             ? 'empty'
@@ -65,14 +54,14 @@ export function Content({
                     onInput={(event: React.FormEvent<HTMLDivElement>) => {
                         setContent(event.currentTarget.innerText);
                     }}
-                    ref={textboxRef}
+                    ref={inputRef}
                 ></div>
             </>
         );
     } else {
         return (
             <>
-                <div className='chat-message' ref={textboxRef}>
+                <div className='chat-message'>
                     {replaceTagsWithHTML(content)}
                 </div>
             </>

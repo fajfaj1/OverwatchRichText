@@ -6,6 +6,7 @@ export function Popover({
     subTitle,
     children,
     buttonLabels,
+    onConfirm,
 }: {
     id: string;
     title: string;
@@ -15,10 +16,11 @@ export function Popover({
         cancel: string;
         confirm: string;
     };
+    onConfirm: () => void;
 }) {
     return (
         <>
-            <div className='popover' popover='auto' id={id}>
+            <div className='popover' popover='manual' id={id}>
                 <div className='popover-header'>
                     <h1 className='popover-title'>{title.toUpperCase()}</h1>
                     <h3 className='popover-sub-title'>
@@ -38,7 +40,15 @@ export function Popover({
                     >
                         {buttonLabels.cancel.toUpperCase()}
                     </Button>
-                    <Button size='min' variant='highlight'>
+                    <Button
+                        size='min'
+                        variant='highlight'
+                        popoverTarget={id}
+                        popoverTargetAction='hide'
+                        onClick={() => {
+                            onConfirm();
+                        }}
+                    >
                         {buttonLabels.confirm.toUpperCase()}
                     </Button>
                 </div>
