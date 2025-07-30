@@ -30,7 +30,12 @@ export function Popover({
                     <div className='popover-content'>{children}</div>
                 </div>
                 <div className='popover-footer'>
-                    <Button size='min' variant='normal'>
+                    <Button
+                        size='min'
+                        variant='normal'
+                        popoverTarget={id}
+                        popoverTargetAction='hide'
+                    >
                         {buttonLabels.cancel.toUpperCase()}
                     </Button>
                     <Button size='min' variant='highlight'>

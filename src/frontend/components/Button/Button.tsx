@@ -9,6 +9,7 @@ export function Button({
     disabled,
     children,
     popoverTarget,
+    popoverTargetAction,
     onClick,
 }: {
     variant: ButtonVariant;
@@ -16,6 +17,7 @@ export function Button({
     disabled?: boolean;
     children: React.ReactNode;
     popoverTarget?: string;
+    popoverTargetAction?: 'hide' | 'show' | 'toggle';
     onClick?: () => void;
 }) {
     return (
@@ -26,6 +28,9 @@ export function Button({
                 {...{ onClick }}
                 className={`input input-${variant} input-${size} button button-${variant}`}
                 {...(popoverTarget !== undefined ? { popoverTarget } : {})}
+                {...(popoverTargetAction !== undefined
+                    ? { popoverTargetAction }
+                    : {})}
                 {...(disabled !== undefined ? { disabled } : {})}
             >
                 {children}

@@ -9,7 +9,16 @@ import Copy from '@/components/icons/Copy';
 import Droplet from '@/components/icons/Droplet';
 import Settings from '@/components/icons/Settings';
 
+import { useState } from 'react';
+import type { RGBColor } from 'react-color';
+
 export function Toolbox() {
+    const [color, setColor] = useState<RGBColor>({
+        r: 255,
+        g: 255,
+        b: 255,
+        a: 1,
+    });
     return (
         <>
             <div className='toolbox'>
@@ -27,7 +36,7 @@ export function Toolbox() {
                     subTitle='for your selection'
                     buttonLabels={{ cancel: 'cancel', confirm: 'apply' }}
                 >
-                    <ColorPicker />
+                    <ColorPicker color={color} setColor={setColor} />
                 </Popover>
 
                 <Button size='full' variant='normal'>

@@ -1,15 +1,13 @@
 // import './color_picker.css';
 import { SketchPicker, type RGBColor } from 'react-color';
-import { useState } from 'react';
 
-export function ColorPicker() {
-    const [color, setColor] = useState<RGBColor>({
-        r: 255,
-        g: 255,
-        b: 255,
-        a: 1,
-    });
-    console.log(color);
+export function ColorPicker({
+    color,
+    setColor,
+}: {
+    color: RGBColor;
+    setColor: React.Dispatch<React.SetStateAction<RGBColor>>;
+}) {
     return (
         <>
             <SketchPicker
