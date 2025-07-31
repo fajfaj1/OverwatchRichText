@@ -5,7 +5,7 @@ import TwoSilhouettes from '@/components/icons/TwoSilhouettes';
 
 export type ChannelType = 'match' | 'team' | 'group';
 
-export function Channel({ type }: { type: ChannelType }) {
+export function ChannelIcon({ type }: { type: ChannelType }) {
     if (type === 'match') {
         return (
             <>

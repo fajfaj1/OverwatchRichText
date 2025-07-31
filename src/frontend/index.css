@@ -27,6 +27,7 @@
 
     --color-primary: #ef6213;
     --color-foreground: #fbfbfc;
+    --color-foreground-dim: #d8d8d9;
     --color-background: #131414;
 
     --color-info: #0a65ee;
@@ -46,7 +47,7 @@
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
 
-    background-color: var(--color-background) !important;
+    background-color: var(--color-background);
     color: var(--color-foreground);
 }
 

@@ -1,6 +1,6 @@
 .generator-wrapper {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     /* min-width: 800px; */

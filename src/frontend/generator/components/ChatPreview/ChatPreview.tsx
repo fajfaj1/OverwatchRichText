@@ -1,6 +1,6 @@
 import './chatpreview.css';
 import type { ChannelType } from './Message/Channel/Channel';
-import { Message, Author, Channel, Content } from './Message/Message';
+import { Message, Author, ChannelIcon, Content } from './Message/Message';
 
 import type { ChatMessage } from './Message/Message';
 import { createRef, useEffect, useState } from 'react';
@@ -27,58 +27,54 @@ export default function ChatPreview({
         }, 0);
     });
 
-    function checkToSend(event: React.KeyboardEvent<HTMLDivElement>) {
-        if (event?.currentTarget) {
-            if (event.code === 'Enter') {
-                // console.log(event);
-                setMessages((prev) => [
-                    ...prev,
-                    { content, author: 'fajfaj', chat: chatType },
-                ]);
-                event.currentTarget.innerText = '';
-                setContent('');
-            } else if (event.code === 'Tab') {
-                switch (chatType) {
-                    case 'match':
-                        setChatType('team');
-                        break;
-                    case 'team':
-                        setChatType('group');
-                        break;
-                    case 'group':
-                        setChatType('match');
-                        break;
-                    default:
-                        setChatType('match');
-                        break;
-                }
+    // function checkToSend(event: React.KeyboardEvent<HTMLDivElement>) {
+    //     if (event?.currentTarget) {
+    //         else if (event.code === 'Tab') {
+    //             switch (chatType) {
+    //                 case 'match':
+    //                     setChatType('team');
+    //                     break;
+    //                 case 'team':
+    //                     setChatType('group');
+    //                     break;
+    //                 case 'group':
+    //                     setChatType('match');
+    //                     break;
+    //                 default:
+    //                     setChatType('match');
+    //                     break;
+    //             }
 
-                event.preventDefault();
-            }
-        }
-    }
+    //             event.preventDefault();
+    //         }
+    //     }
+    // }
 
     return (
         <>
             <div className='chat'>
-                <div className='chatbox' ref={chatBoxRef}>
+                <div className='chat-body' ref={chatBoxRef}>
                     {messages.map((message, index) => {
                         return <Message key={index} message={message} />;
                     })}
                     <div className='chat_bottom' ref={chatBottomRef} />
                 </div>
-                <div className='chatinput'>
-                    <div className={`left chat-${chatType}`}>
-                        <div className='vertical-stripe'></div>
-                        <Channel type={chatType} />
-                        <Author name={chatName} />
-                        <Content
-                            content={content}
-                            placeholder='PRESS TAB TO CYCLE CHANNELS'
-                        />
-                    </div>
-                    <div className='locale-badge-space'>
-                        <div className='locale-badge'>PL</div>
+                <div className='chat-input-wrapper'>
+                    <div className='chat-input'>
+                        <div className={`left chat-${chatType}`}>
+                            <div className='vertical-stripe'></div>
+                            <ChannelIcon type={chatType} />
+                            <Author name={chatName} />
+                            <Content
+                                content={content}
+                                placeholder='PRESS TAB TO CYCLE CHANNELS'
+                            />
+                        </div>
+                        <div className='right' style={{ visibility: 'hidden' }}>
+                            <div className='locale-badge-space'>
+                                <div className='locale-badge'>PL</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

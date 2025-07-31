@@ -1,0 +1,47 @@
+.editor {
+    width: 600px;
+
+    background-color: var(--color-navy);
+
+    border-radius: 10px;
+
+    color: var(--color-foreground);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+.editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+.editor-toolbar > div {
+    display: flex;
+    gap: 5px;
+}
+
+.editor-body {
+    border: 2px solid #525764;
+    background-color: var(--color-navy-dark);
+    border-radius: 4px;
+
+    padding: 5px 10px;
+
+    resize: none;
+    height: 100%;
+    min-height: 300px;
+}
+.editor-body:hover {
+    border-color: #8e8f94;
+}
+.editor-body:focus {
+    outline: none;
+    border-color: #d8d8d9;
+}
+
+.popover:popover-open {
+    position: grid;
+    top: 0;
+    right: 0;
+}

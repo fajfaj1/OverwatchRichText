@@ -1,4 +1,5 @@
 .chat-type-icon {
     font-size: 10px;
     margin: 0 4px;
+    flex-shrink: 0;
 }

@@ -14,7 +14,7 @@ export function Content({
     return (
         <>
             <div
-                className={`chat-message ${
+                className={`chat-message-content ${
                     content === '' ? 'empty' : 'populated'
                 }`}
             >
