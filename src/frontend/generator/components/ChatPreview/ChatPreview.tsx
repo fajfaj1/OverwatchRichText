@@ -73,10 +73,8 @@ export default function ChatPreview({
                         <Channel type={chatType} />
                         <Author name={chatName} />
                         <Content
-                            editable={true}
                             content={content}
-                            setContent={setContent}
-                            onKeyDown={checkToSend}
+                            placeholder='PRESS TAB TO CYCLE CHANNELS'
                         />
                     </div>
                     <div className='locale-badge-space'>

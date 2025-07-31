@@ -1,3 +1,8 @@
+.chat-message.empty {
+    font-weight: 700;
+    color: var(--color-chat-placeholder);
+}
+
 .chatinput {
     height: 50px;
     display: flex;
@@ -43,15 +48,6 @@
     background-color: #c7c7c7;
 }
 
-.chat-input-field.empty:not(:focus)::before {
-    content: 'PRESS TAB TO CYCLE CHANNELS';
-    position: relative;
-    left: 0;
-    top: 0;
-    font-weight: 700;
-    color: var(--color-chat-placeholder);
-    pointer-events: none;
-}
 /* .chat-input-field.empty:focus::before {
     opacity: 0;
 } */
