@@ -1,7 +1,5 @@
 import './editor.css';
 import { Button } from '@/components/Button/Button';
-import { Popover } from '@/components/Popover/Popover';
-import { ColorPicker } from './ColorPicker/ColorPicker';
 import { Tooltip } from '@/components/Tooltip/Tooltip';
 
 import Brush from '@/components/icons/Brush';
