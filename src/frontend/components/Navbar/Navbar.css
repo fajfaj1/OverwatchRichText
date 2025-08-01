@@ -1,11 +1,4 @@
 .titlebar {
-    /* width: 100%; */
-    /* height: fit-content; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 0; */
-    /* align-items: start; */
-    /* justify-content: start; */
     padding: 10px 0;
 }
 .page-header {
@@ -31,7 +24,7 @@
     font-size: 30px;
     font-weight: 600;
 
-    /* position: relative; */
+    display: block;
 }
 .links {
     width: 100%;
@@ -85,13 +78,13 @@
         justify-content: start;
         width: 100%;
     }
+    .links-wrapper.hidden {
+        display: none;
+    }
     .links {
         display: flex;
         flex-direction: column;
         gap: 0;
         width: fit-content;
-    }
-    .links-wrapper.hidden {
-        display: none;
     }
 }
