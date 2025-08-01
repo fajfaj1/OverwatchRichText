@@ -31,7 +31,7 @@ export function Button({
             className={`input-wrapper input-wrapper-${variant} button-wrapper`}
         >
             <button
-                {...onClick}
+                {...(onClick ? { onClick } : {})}
                 className={`input input-${variant} input-${size} button button-${variant}`}
                 {...(popoverTarget !== undefined ? { popoverTarget } : {})}
                 {...(popoverTargetAction !== undefined

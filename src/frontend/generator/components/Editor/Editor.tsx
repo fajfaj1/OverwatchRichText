@@ -11,18 +11,68 @@ import Droplet from '@/components/icons/Droplet';
 import Settings from '@/components/icons/Settings';
 import Send from '@/components/icons/Send';
 
-import { useState } from 'react';
-import type { RGBColor } from 'react-color';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
-export function Editor({
-    setCurrentMessageContent,
-    sendMessage,
-    changeChannel,
-}: {
-    setCurrentMessageContent: React.Dispatch<React.SetStateAction<string>>;
-    sendMessage: () => void;
-    changeChannel: () => void;
-}) {
+import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
+import { generateID } from '../ChatPreview/Message/generateID';
+import type { ChatMessage } from '../ChatPreview/Message/Message';
+// import type { RGBColor } from 'react-color';
+
+export function Editor() {
+    const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+    const [id, setID] = useState(generateID());
+    const [content, setContent] = useState('');
+    const [channel, setChannel] = useState<ChannelType>('match');
+
+    const message: ChatMessage = useMemo<ChatMessage>(() => {
+        return {
+            content: content,
+            channel: channel,
+            id: id,
+            author: 'user',
+        };
+    }, [content, channel, id]);
+
+    function sendMessage() {
+        const sendMessageEvent = new CustomEvent('send-message', {
+            detail: message,
+        });
+        window.dispatchEvent(sendMessageEvent);
+        if (textareaRef.current) {
+            textareaRef.current.value = '';
+        }
+        setContent('');
+        setID(generateID());
+    }
+
+    function changeChannel() {
+        const channels: ChannelType[] = ['match', 'team', 'group'];
+        setChannel(
+            channels[(channels.findIndex((value) => value === channel) + 1) % 3]
+        );
+    }
+
+    function onKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
+        if (e.code === 'Enter') {
+            e.preventDefault();
+            sendMessage();
+        } else if (e.code === 'Tab') {
+            e.preventDefault();
+            changeChannel();
+        }
+    }
+
+    useEffect(() => {
+        function updatePreview() {
+            const updatePreviewEvent = new CustomEvent('update-preview', {
+                detail: message,
+            });
+            window.dispatchEvent(updatePreviewEvent);
+        }
+        updatePreview();
+    }, [message]);
+
     // const [color, setColor] = useState<RGBColor>({
     //     r: 255,
     //     g: 255,
@@ -76,7 +126,6 @@ export function Editor({
                                     <></>
                                 </Button>
                             </Tooltip>
-
                             <Tooltip text='Insert a glyph'>
                                 <Button
                                     variant='normal'
@@ -86,7 +135,6 @@ export function Editor({
                                     <></>
                                 </Button>
                             </Tooltip>
-
                             <Tooltip text='Insert a gradient'>
                                 <Button
                                     variant='normal'
@@ -107,7 +155,6 @@ export function Editor({
                                     <></>
                                 </Button>
                             </Tooltip>
-
                             <Tooltip text='Copy your message'>
                                 <Button
                                     variant='normal'
@@ -148,14 +195,11 @@ export function Editor({
                             );
                             // .replaceAll(corruptedColorTags, '')
                             // .replaceAll(corruptedGlyphTags, '');
-                            setCurrentMessageContent(e.currentTarget.value);
+                            setContent(e.currentTarget.value);
                             console.log(e.currentTarget.value);
                         }}
-                        onKeyDown={(e) => {
-                            if (e.code === 'Enter') {
-                                e.preventDefault();
-                            }
-                        }}
+                        onKeyDown={onKeyDown}
+                        ref={textareaRef}
                     ></textarea>
                 </div>
             </div>
