@@ -1,18 +1,19 @@
 .titlebar {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: baseline;
-    justify-content: baseline;
+    /* width: 100%; */
+    /* height: fit-content; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 0; */
+    /* align-items: start; */
+    /* justify-content: start; */
     padding: 10px 0;
 }
 .page-header {
     margin: 0;
+    line-height: 1em;
 }
 .page-subheader {
-    margin-top: -30px;
+    margin: -0.2em 0 0 0;
     line-height: 1em;
     text-wrap: nowrap;
 }
@@ -21,7 +22,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 10px 20px;
+}
+.links-wrapper {
+    font-family: var(--font-links);
+    color: var(--color-light-gray);
+
+    font-size: 30px;
+    font-weight: 600;
+
+    /* position: relative; */
 }
 .links {
     width: 100%;
@@ -31,14 +41,57 @@
     gap: 20px;
 }
 .links a {
+    text-decoration: none;
+    transition: color 0.1s ease, transform 0.1s ease;
+}
+.links li:hover {
+    color: var(--color-foreground);
+    transform-origin: center;
+    transform: scale(110%);
+}
+
+.hamburger-button {
+    color: inherit;
+    font-size: 40px;
+    display: none;
+
     font-family: var(--font-links);
     color: var(--color-light-gray);
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
 
     transition: color 0.1s ease-in;
 }
-.links a:hover {
+.hamburger-button:hover {
     color: var(--color-foreground);
+}
+.hamburger-button:active {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 575px) {
+    .hamburger-button {
+        display: block;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mobile-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .links-wrapper {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: fit-content;
+    }
+    .links-wrapper.hidden {
+        display: none;
+    }
 }

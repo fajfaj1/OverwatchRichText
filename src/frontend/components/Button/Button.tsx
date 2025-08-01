@@ -1,9 +1,6 @@
-import './button.css';
 import '../input.css';
 export type ButtonVariant = 'normal' | 'outline' | 'highlight' | 'ghost';
 export type ButtonSize = 'full' | 'min';
-import { useState } from 'react';
-
 export function Button({
     variant,
     size,

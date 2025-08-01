@@ -138,10 +138,10 @@ export function Editor({
                         maxLength={200}
                         onChange={(e) => {
                             const textArea = e.currentTarget;
-                            const corruptedColorTags =
-                                /(<FG[0-9A-F]{8}(?!>))/gi;
-                            const corruptedGlyphTags =
-                                /(<TX0?C00[0-9A-F]{12}(?!>))/gi;
+                            // const corruptedColorTags =
+                            //     /(<FG[0-9A-F]{8}(?!>))/gi;
+                            // const corruptedGlyphTags =
+                            //     /(<TX0?C00[0-9A-F]{12}(?!>))/gi;
                             textArea.value = textArea.value.replaceAll(
                                 '\n',
                                 ''
