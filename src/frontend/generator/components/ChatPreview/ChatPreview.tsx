@@ -1,20 +1,22 @@
 import './chatpreview.css';
 import type { ChannelType } from './Message/Channel/Channel';
-import { Message, Author, ChannelIcon, Content } from './Message/Message';
+import { Author, ChannelIcon, Content } from './Message/Message';
 
 import type { ChatMessage } from './Message/Message';
-import { createRef, useEffect, useState } from 'react';
+import { MessageList } from './MessageList';
+import { createRef, useEffect } from 'react';
 
 export default function ChatPreview({
     messages,
-    setMessages,
+    currentMessage,
+    currentChannel,
 }: {
     messages: ChatMessage[];
-    setMessages: React.Dispatch<React.SetStateAction<ChatMessage[]>>;
+    currentMessage: string;
+    currentChannel: ChannelType;
 }) {
-    const [content, setContent] = useState('');
-    const [chatType, setChatType] = useState<ChannelType>('match');
-    const chatName = chatType.at(0)?.toUpperCase() + chatType.slice(1);
+    const currentChannelName =
+        currentChannel.at(0)?.toUpperCase() + currentChannel.slice(1);
 
     const chatBottomRef = createRef<HTMLDivElement>();
     const chatBoxRef = createRef<HTMLDivElement>();
@@ -27,50 +29,29 @@ export default function ChatPreview({
         }, 0);
     });
 
-    // function checkToSend(event: React.KeyboardEvent<HTMLDivElement>) {
-    //     if (event?.currentTarget) {
-    //         else if (event.code === 'Tab') {
-    //             switch (chatType) {
-    //                 case 'match':
-    //                     setChatType('team');
-    //                     break;
-    //                 case 'team':
-    //                     setChatType('group');
-    //                     break;
-    //                 case 'group':
-    //                     setChatType('match');
-    //                     break;
-    //                 default:
-    //                     setChatType('match');
-    //                     break;
-    //             }
-
-    //             event.preventDefault();
-    //         }
-    //     }
-    // }
-
     return (
         <>
             <div className='chat'>
                 <div className='chat-body' ref={chatBoxRef}>
-                    {messages.map((message, index) => {
-                        return <Message key={index} message={message} />;
-                    })}
+                    <MessageList messages={messages} />
                     <div className='chat_bottom' ref={chatBottomRef} />
                 </div>
                 <div className='chat-input-wrapper'>
                     <div className='chat-input'>
-                        <div className={`left chat-${chatType}`}>
+                        <div className={`left chat-${currentChannel}`}>
                             <div className='vertical-stripe'></div>
-                            <ChannelIcon type={chatType} />
-                            <Author name={chatName} />
-                            <Content
-                                content={content}
-                                placeholder='PRESS TAB TO CYCLE CHANNELS'
-                            />
+                            <ChannelIcon type={currentChannel} />
+                            <Author name={currentChannelName} />
+                            <span style={{ color: 'white' }}>
+                                <Content
+                                    content={currentMessage}
+                                    placeholder='PRESS TAB TO CYCLE CHANNELS'
+                                />
+                            </span>
                         </div>
-                        <div className='right' style={{ visibility: 'hidden' }}>
+                        <div
+                            className='right' /* style={{ visibility: 'hidden' }} */
+                        >
                             <div className='locale-badge-space'>
                                 <div className='locale-badge'>PL</div>
                             </div>

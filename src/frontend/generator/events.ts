@@ -5,9 +5,3 @@ export type SendMessageEventPayload = {
     content: string;
     channel: ChannelType;
 };
-
-export type SendMessageEventPayload = {
-    author: string;
-    content: string;
-    channel: ChannelType;
-};

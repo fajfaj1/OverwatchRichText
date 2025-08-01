@@ -38,6 +38,11 @@
     min-width: 40px;
 }
 
+.input.pressed,
+.input:active {
+    filter: brightness(0.8);
+}
+
 .input-icon {
     line-height: 30px;
     font-size: inherit;

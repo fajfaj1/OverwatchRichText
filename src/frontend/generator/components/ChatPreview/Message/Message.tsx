@@ -4,9 +4,10 @@ import type { ChannelType } from './Channel/Channel';
 import { Content } from './Content/Content';
 
 export type ChatMessage = {
+    id: string;
     content: string;
     author: string;
-    chat: ChannelType;
+    channel: ChannelType;
 };
 
 function Author({ name }: { name: string }) {
@@ -20,8 +21,8 @@ function Author({ name }: { name: string }) {
 function Message({ message }: { message: ChatMessage }) {
     return (
         <>
-            <div className={`chat-message chat-${message.chat}`}>
-                <ChannelIcon type={message.chat} />
+            <div className={`chat-message chat-${message.channel}`}>
+                <ChannelIcon type={message.channel} />
                 <Author name={message.author} />
                 <Content content={message.content} />
             </div>

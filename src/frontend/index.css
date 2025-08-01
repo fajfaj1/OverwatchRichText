@@ -22,7 +22,7 @@
     --font-headline: 'BigNoodleTitling';
     --font-headline-italic: 'BigNoodleTitling Oblique';
     --font-links: 'League Spartan';
-    --font-chat: Helvetica, 'Arial', 'Neue Haas Grotesk', Univers,
+    --font-text: Helvetica, 'Arial', 'Neue Haas Grotesk', Univers,
         'Akzidenz Grotesk';
 
     --color-primary: #ef6213;
@@ -44,7 +44,8 @@
     --color-light-gray: #7c7e80;
     --color-chat-placeholder: #7d7e81;
     --color-chat-background: #373848;
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    font-family: var(--font-text);
     font-weight: 400;
 
     background-color: var(--color-background);

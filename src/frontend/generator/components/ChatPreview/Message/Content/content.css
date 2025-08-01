@@ -5,6 +5,7 @@
     overflow-x: hidden !important;
 }
 
-.overwatch-icon {
+.glyph {
     height: 1em;
+    display: inline;
 }

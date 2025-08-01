@@ -1,6 +1,5 @@
 import './content.css';
-import { createRef } from 'react';
-import { replaceTagsWithHTML } from './utils/replaceTagsWithHTML';
+import { ContentRedactor } from './ContentRedactor';
 
 export function Content({
     content,
@@ -9,8 +8,6 @@ export function Content({
     content: string;
     placeholder?: string;
 }) {
-    const inputRef = createRef<HTMLInputElement>();
-
     return (
         <>
             <div
@@ -18,9 +15,9 @@ export function Content({
                     content === '' ? 'empty' : 'populated'
                 }`}
             >
-                {replaceTagsWithHTML(
-                    (content === '' ? placeholder : content) || ''
-                )}
+                <ContentRedactor
+                    content={(content === '' ? placeholder : content) || ''}
+                />
             </div>
         </>
     );

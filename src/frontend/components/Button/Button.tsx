@@ -2,6 +2,7 @@ import './button.css';
 import '../input.css';
 export type ButtonVariant = 'normal' | 'outline' | 'highlight' | 'ghost';
 export type ButtonSize = 'full' | 'min';
+import { useState } from 'react';
 
 export function Button({
     variant,
@@ -33,7 +34,7 @@ export function Button({
             className={`input-wrapper input-wrapper-${variant} button-wrapper`}
         >
             <button
-                {...{ onClick }}
+                {...onClick}
                 className={`input input-${variant} input-${size} button button-${variant}`}
                 {...(popoverTarget !== undefined ? { popoverTarget } : {})}
                 {...(popoverTargetAction !== undefined
