@@ -1,29 +1,28 @@
 import './color_picker.css';
 import { useState } from 'react';
-import { SketchPicker, type RGBColor } from 'react-color';
+import { SketchPicker } from 'react-color';
 import { Button } from '@/components/Button/Button';
 import Check from '@/components/icons/FontAwesome/Check';
+import Cross from '@/components/icons/FontAwesome/Cross';
 
 export function ColorPicker({
     insertColor,
+    colors,
     popoverId,
 }: {
-    insertColor: (color: RGBColor) => void;
+    insertColor: (color: string) => void;
+    colors: string[];
     popoverId?: string;
 }) {
-    const [color, setColor] = useState<RGBColor>({
-        r: 255,
-        g: 255,
-        b: 255,
-        a: 1,
-    });
+    const [color, setColor] = useState('#FFFFFFFF');
+
     return (
         <>
             <div className='color-picker'>
                 <SketchPicker
                     color={color}
                     onChange={(color) => {
-                        setColor(color.rgb);
+                        setColor(color.hex);
                     }}
                     styles={{
                         default: {
@@ -35,10 +34,34 @@ export function ColorPicker({
                             },
                         },
                     }}
-                    presetColors={['#000000ff', '#ffffffff']}
+                    presetColors={colors}
                 />
                 <div className='color-picker-footer'>
-                    <Button size='min' variant='highlight' icon={<Check />}>
+                    <Button
+                        size='min'
+                        variant='normal'
+                        icon={<Cross />}
+                        {...(popoverId
+                            ? {
+                                  popoverTarget: popoverId,
+                                  popoverTargetAction: 'hide',
+                              }
+                            : {})}
+                    >
+                        <></>
+                    </Button>
+                    <Button
+                        size='min'
+                        variant='highlight'
+                        icon={<Check />}
+                        onClick={() => insertColor(color)}
+                        {...(popoverId
+                            ? {
+                                  popoverTarget: popoverId,
+                                  popoverTargetAction: 'hide',
+                              }
+                            : {})}
+                    >
                         <></>
                     </Button>
                 </div>

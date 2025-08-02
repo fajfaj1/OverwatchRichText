@@ -37,7 +37,9 @@ rl.question(`Paste your FontAwesome SVG:\n`, (answer) => {
             { flag: 'w' }
         );
         console.log(`File has been saved.`);
-
+        console.log(
+            `You can now import it with: \n\nimport ${name} from '@/components/icons/FontAwesome/${name}';`
+        );
         rl.close();
     });
 });

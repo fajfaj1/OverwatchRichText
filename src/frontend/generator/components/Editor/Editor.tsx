@@ -24,6 +24,8 @@ export function Editor() {
     const [id, setID] = useState(generateID());
     const [content, setContent] = useState('');
     const [channel, setChannel] = useState<ChannelType>('match');
+    const [usedColors, setUsedColors] = useState<string[]>([]);
+    // const [selection, setSelection] = useSt;
 
     const message: ChatMessage = useMemo<ChatMessage>(() => {
         return {
@@ -62,6 +64,23 @@ export function Editor() {
             changeChannel();
         }
     }
+    function onChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
+        const textArea = e.currentTarget;
+        // const corruptedColorTags =
+        //     /(<FG[0-9A-F]{8}(?!>))/gi;
+        // const corruptedGlyphTags =
+        //     /(<TX0?C00[0-9A-F]{12}(?!>))/gi;
+        textArea.value = textArea.value.replaceAll('\n', '');
+        // .replaceAll(corruptedColorTags, '')
+        // .replaceAll(corruptedGlyphTags, '');
+        setContent(textArea.value);
+        const colorTags = [
+            ...textArea.value.matchAll(/(?<=<FG)([0-9A-F]{8})(?=>)/gi),
+        ];
+        setUsedColors(colorTags.map((match) => '#' + match[0]));
+    }
+
+    function insertColor(color: string) {}
 
     useEffect(() => {
         function updatePreview() {
@@ -73,43 +92,6 @@ export function Editor() {
         updatePreview();
     }, [message]);
 
-    // const [color, setColor] = useState<RGBColor>({
-    //     r: 255,
-    //     g: 255,
-    //     b: 255,
-    //     a: 1,
-    // });
-
-    // Handled by @/generator/components/ChatPreview/Message/Content
-    // function sendColorApplyEvent() {
-    //     function numberToHex(number: number) {
-    //         if (number === 0) return '00';
-    //         let hex = '';
-    //         const digits = '0123456789ABCDEF'.split('');
-    //         while (number > 0) {
-    //             // console.log(number, hex);
-    //             hex = digits[number % 16] + hex;
-    //             number = Math.floor(number / 16);
-    //         }
-    //         return hex.padStart(2, '0');
-    //     }
-    //     function rgbToHex(color: RGBColor) {
-    //         return (
-    //             '#' +
-    //             numberToHex(color.r) +
-    //             numberToHex(color.g) +
-    //             numberToHex(color.b)
-    //         );
-    //     }
-
-    //     const event = new CustomEvent('apply-color', {
-    //         detail: {
-    //             hex: rgbToHex(color),
-    //         },
-    //     });
-    //     window.dispatchEvent(event);
-    // }
-
     return (
         <>
             <div className='editor'>
@@ -120,7 +102,8 @@ export function Editor() {
                             <Popover
                                 content={
                                     <ColorPicker
-                                        insertColor={() => {}}
+                                        insertColor={insertColor}
+                                        colors={usedColors}
                                         popoverId='color-picker-popover'
                                     />
                                 }
@@ -195,21 +178,7 @@ export function Editor() {
                         className='editor-body'
                         placeholder='Type your message here...'
                         maxLength={200}
-                        onChange={(e) => {
-                            const textArea = e.currentTarget;
-                            // const corruptedColorTags =
-                            //     /(<FG[0-9A-F]{8}(?!>))/gi;
-                            // const corruptedGlyphTags =
-                            //     /(<TX0?C00[0-9A-F]{12}(?!>))/gi;
-                            textArea.value = textArea.value.replaceAll(
-                                '\n',
-                                ''
-                            );
-                            // .replaceAll(corruptedColorTags, '')
-                            // .replaceAll(corruptedGlyphTags, '');
-                            setContent(e.currentTarget.value);
-                            console.log(e.currentTarget.value);
-                        }}
+                        onChange={onChange}
                         onKeyDown={onKeyDown}
                         ref={textareaRef}
                     ></textarea>

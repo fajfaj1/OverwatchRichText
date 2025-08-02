@@ -7,8 +7,14 @@
     user-select: none;
 }
 #root::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     content: '';
-    position: absolute;
+    /* position: absolute; */
     inset: 0;
 
     background-image: url('/glyphs/000000000F22.png');
@@ -22,7 +28,6 @@
 .page {
     padding: 0 10px;
     width: 100%;
-    overflow-x: hidden;
 }
 
 h1,

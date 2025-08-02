@@ -16,7 +16,7 @@
 .input {
     background-color: var(--input-background);
     color: var(--input-foreground);
-    border: 3px solid transparent;
+    border: 3px solid var(--input-border);
     border-radius: 3px;
 
     font-family: var(--font-chat);
@@ -70,14 +70,12 @@
     --input-background: transparent;
     --input-foreground: inherit;
     border-width: 2px;
-    color: var(--color-foreground);
+    color: var(--input-foreground);
 }
 /* .input-ghost {
 } */
 
 .input:not(:disabled):hover {
-    top: 0;
-    left: 0;
     transform: scale(110%);
     z-index: 1;
     border-color: var(--input-hover-border);
