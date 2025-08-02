@@ -19,7 +19,8 @@
     background-color: var(--tooltip-background-color);
     border-radius: 5px;
 
-    transition: opacity 0.3s ease;
+    transition: 0.3 opacity ease;
+    transition-delay: 1s 0s;
 }
 
 .tooltip-wrapper .tooltip::after {
@@ -36,6 +37,4 @@
 
 .tooltip-wrapper:hover .tooltip {
     opacity: 1;
-
-    transition-delay: 1s, 0s;
 }

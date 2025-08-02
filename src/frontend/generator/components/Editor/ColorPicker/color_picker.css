@@ -1,14 +1,10 @@
-/* .sketch-picker {
-    background-color: var(--color-navy-dark) !important;
-    width: 400px !important;
-    padding: 20px !important;
+.color-picker {
+    background-color: var(--color-foreground);
+    padding: 5px 10px;
+    margin-top: 5px;
 }
 
-.sketch-picker label {
-    color: var(--color-foreground) !important;
+.color-picker-footer {
+    display: flex;
+    justify-content: end;
 }
-
-.flexbox-fix {
-    border-top-color: rgba(0, 0, 0.8) !important;
-}
- */

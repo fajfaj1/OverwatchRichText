@@ -24,11 +24,11 @@
 .editor-toolbar {
     display: flex;
     justify-content: start;
-    gap: 10px;
+    gap: 20px;
 }
 .editor-toolbar > div {
     display: flex;
-    gap: 5px;
+    gap: 7px;
 }
 
 .editor-body {

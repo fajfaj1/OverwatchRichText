@@ -1,19 +1,21 @@
 import './editor.css';
 import { Button } from '@/components/Button/Button';
 import { Tooltip } from '@/components/Tooltip/Tooltip';
+import { Popover } from '@/components/Popover/Popover';
 
-import Brush from '@/components/icons/Brush';
-import SmileyFace from '@/components/icons/SmileyFace';
-import Copy from '@/components/icons/Copy';
-import Droplet from '@/components/icons/Droplet';
-import Settings from '@/components/icons/Settings';
-import Send from '@/components/icons/Send';
+import Image from '@/components/icons/FontAwesome/Image';
+import Copy from '@/components/icons/FontAwesome/Copy';
+import Settings from '@/components/icons/FontAwesome/Settings';
+import Send from '@/components/icons/FontAwesome/Send';
+import Brush from '@/components/icons/FontAwesome/Brush';
+import Font from '@/components/icons/FontAwesome/Font';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
 import { generateID } from '../ChatPreview/Message/generateID';
 import type { ChatMessage } from '../ChatPreview/Message/Message';
+import { ColorPicker } from './ColorPicker/ColorPicker';
 // import type { RGBColor } from 'react-color';
 
 export function Editor() {
@@ -115,20 +117,33 @@ export function Editor() {
                 <div>
                     <div className='editor-toolbar'>
                         <div className='left'>
-                            <Tooltip text='Insert color marker'>
-                                <Button
-                                    variant='normal'
-                                    size='min'
-                                    icon={<Droplet />}
-                                >
-                                    <></>
-                                </Button>
-                            </Tooltip>
+                            <Popover
+                                content={
+                                    <ColorPicker
+                                        insertColor={() => {}}
+                                        popoverId='color-picker-popover'
+                                    />
+                                }
+                                id='color-picker-popover'
+                            >
+                                <Tooltip text='Insert color marker'>
+                                    <Button
+                                        variant='normal'
+                                        size='min'
+                                        icon={<Font />}
+                                        popoverTarget='color-picker-popover'
+                                        popoverTargetAction='show'
+                                    >
+                                        <></>
+                                    </Button>
+                                </Tooltip>
+                            </Popover>
+
                             <Tooltip text='Insert a glyph'>
                                 <Button
                                     variant='normal'
                                     size='min'
-                                    icon={<SmileyFace />}
+                                    icon={<Image />}
                                 >
                                     <></>
                                 </Button>
@@ -176,7 +191,6 @@ export function Editor() {
                     </div>
                 </div>
                 <div>
-                    {/* <h4>MESSAGE</h4> */}
                     <textarea
                         className='editor-body'
                         placeholder='Type your message here...'

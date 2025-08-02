@@ -1,32 +1,48 @@
-// import './color_picker.css';
+import './color_picker.css';
+import { useState } from 'react';
 import { SketchPicker, type RGBColor } from 'react-color';
+import { Button } from '@/components/Button/Button';
+import Check from '@/components/icons/FontAwesome/Check';
 
 export function ColorPicker({
-    color,
-    setColor,
+    insertColor,
+    popoverId,
 }: {
-    color: RGBColor;
-    setColor: React.Dispatch<React.SetStateAction<RGBColor>>;
+    insertColor: (color: RGBColor) => void;
+    popoverId?: string;
 }) {
+    const [color, setColor] = useState<RGBColor>({
+        r: 255,
+        g: 255,
+        b: 255,
+        a: 1,
+    });
     return (
         <>
-            <SketchPicker
-                color={color}
-                onChange={(color) => {
-                    setColor(color.rgb);
-                }}
-                styles={{
-                    default: {
-                        picker: {
-                            backgroundColor: 'var(--color-foreground)',
-                            color: 'var(--color-background)',
-                            width: '300px',
-                            borderRadius: '2px',
+            <div className='color-picker'>
+                <SketchPicker
+                    color={color}
+                    onChange={(color) => {
+                        setColor(color.rgb);
+                    }}
+                    styles={{
+                        default: {
+                            picker: {
+                                backgroundColor: 'transparent',
+                                color: 'var(--color-background)',
+                                borderRadius: '2px',
+                                boxShadow: 'none',
+                            },
                         },
-                    },
-                }}
-                presetColors={['#000000ff', '#ffffffff']}
-            />
+                    }}
+                    presetColors={['#000000ff', '#ffffffff']}
+                />
+                <div className='color-picker-footer'>
+                    <Button size='min' variant='highlight' icon={<Check />}>
+                        <></>
+                    </Button>
+                </div>
+            </div>
         </>
     );
 }
