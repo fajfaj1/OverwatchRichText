@@ -1,7 +1,10 @@
 import fs from 'node:fs';
-import { ids } from './ids.js';
 import sharp from 'sharp';
 import { pipeline } from 'stream/promises';
+
+const ids = fs
+    .readFileSync('./scripts/all_ids.txt', { flag: 'r', encoding: 'utf-8' })
+    .split('\r\n');
 
 const assetUrl = (id) =>
     `https://assets.overwatchitemtracker.com/textures/${id}.png`;

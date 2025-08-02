@@ -116,18 +116,6 @@ async function askForIdsFrom(startPosition) {
 
                 if (!abort) {
                     confirmed_ids.push(...validIds);
-                    // if (validIds.length >= 4) {
-                    //     // Leaves only ids after last valid id
-                    //     const startPositionOffset = Math.max(...indices) + 1;
-                    //     console.log(
-                    //         `Four or more elements matched, offsetting the start position by ${startPositionOffset} instead of ${BATCH_SIZE} ${startPositionOffset}`
-                    //     );
-                    //     rl.close();
-                    //     checkedIds += startPositionOffset;
-                    //     await askForIdsFrom(
-                    //         startPosition + startPositionOffset
-                    //     );
-                    // } else {
                     rl.close();
                     checkedIds += BATCH_SIZE;
                     await askForIdsFrom(startPosition + BATCH_SIZE);

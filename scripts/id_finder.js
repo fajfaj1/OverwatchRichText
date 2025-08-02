@@ -16,5 +16,5 @@ document
         removed.push(element.innerText);
     });
 
-console.log(all.filter((id) => !removed.includes(id)));
-// Output has been saved to ./ids.js
+console.log(all.filter((id) => !removed.includes(id)).join('\n'));
+// The output has been saved to ./all_ids.txt
