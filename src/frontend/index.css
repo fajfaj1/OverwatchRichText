@@ -43,7 +43,7 @@
     --color-gray: #333d47;
     --color-light-gray: #7c7e80;
     --color-chat-placeholder: #7d7e81;
-    --color-chat-background: #373848;
+    --color-chat-background: rgba(16, 15, 33, 0.8);
 
     font-family: var(--font-text);
     font-weight: 400;
