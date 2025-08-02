@@ -3,7 +3,7 @@ import type { HTMLReactParserOptions } from 'html-react-parser';
 import { Element, Text } from 'html-react-parser';
 
 export function ContentRedactor({ content }: { content: string }) {
-    console.log(`Before: ${content}`);
+    // console.log(`Before: ${content}`);
     // Sanitize input
     content = content.replaceAll(/<([/a-z0-9]+)([^\n>]*>)?/gi, (match) => {
         if (
@@ -15,7 +15,7 @@ export function ContentRedactor({ content }: { content: string }) {
         }
         return match.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
     });
-    console.log(`After: ${content}`);
+    // console.log(`After: ${content}`);
 
     content = content.replaceAll(/<FG([^>]{0,28})>/gi, (_, hex: string) => {
         let hexcode = 'inherit';
@@ -28,7 +28,7 @@ export function ContentRedactor({ content }: { content: string }) {
         content += '</span>';
         return `<span class="${className}" style="color: ${hexcode}">`;
     });
-    console.log(content);
+    // console.log(content);
     content = content.replaceAll(
         /<TX0?C00([0-9A-F]{12})>/gi,
         (_, id: string) => {
