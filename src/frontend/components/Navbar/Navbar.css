@@ -1,5 +1,6 @@
 .titlebar {
     padding: 10px 0;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.5);
 }
 .page-header {
     margin: 0;
@@ -18,10 +19,8 @@
     margin: 10px 20px;
 }
 .links-wrapper {
-    font-family: var(--font-links);
-    /* color: var(--color-light-gray); */
-
-    font-size: 30px;
+    font-family: var(--font-headlines);
+    font-size: 25px;
     font-weight: 600;
 
     display: block;
@@ -33,13 +32,12 @@
     justify-content: end;
     gap: 20px;
 }
-.links a {
+.links li {
     text-decoration: none;
-    transition: color 0.1s ease, transform 0.1s ease;
+    transition: transform 0.05s ease;
 }
 .links li:hover {
-    /* color: var(--color-foreground); */
-    transform-origin: center;
+    transform-origin: 50%, 80%;
     transform: scale(110%);
 }
 
