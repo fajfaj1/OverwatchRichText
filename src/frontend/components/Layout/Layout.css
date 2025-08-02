@@ -6,6 +6,18 @@
 
     user-select: none;
 }
+#root::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background-image: url('/glyphs/000000000F22.png');
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(4px);
+    z-index: -1;
+}
 
 .page {
     /* padding: 0 5px; */
