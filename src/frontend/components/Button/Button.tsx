@@ -10,6 +10,7 @@ export function Button({
     popoverTarget,
     popoverTargetAction,
     onClick,
+    onMouseDown,
 }: {
     variant: ButtonVariant;
     size: ButtonSize;
@@ -19,7 +20,8 @@ export function Button({
     icon?: React.ReactNode;
     popoverTarget?: string;
     popoverTargetAction?: 'hide' | 'show' | 'toggle';
-    onClick?: () => void;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    onMouseDown?: React.MouseEventHandler<HTMLButtonElement>;
 }) {
     const iconComponent = icon ? (
         <div className='input-icon'>{icon}</div>
@@ -32,6 +34,7 @@ export function Button({
         >
             <button
                 {...(onClick ? { onClick } : {})}
+                {...(onMouseDown ? { onMouseDown } : {})}
                 className={`input input-${variant} input-${size} button button-${variant}`}
                 {...(popoverTarget !== undefined ? { popoverTarget } : {})}
                 {...(popoverTargetAction !== undefined

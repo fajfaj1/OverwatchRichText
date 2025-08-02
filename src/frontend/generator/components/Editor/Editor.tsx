@@ -16,6 +16,7 @@ import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
 import { generateID } from '../ChatPreview/Message/generateID';
 import type { ChatMessage } from '../ChatPreview/Message/Message';
 import { ColorPicker } from './ColorPicker/ColorPicker';
+
 // import type { RGBColor } from 'react-color';
 
 export function Editor() {
@@ -25,7 +26,9 @@ export function Editor() {
     const [content, setContent] = useState('');
     const [channel, setChannel] = useState<ChannelType>('match');
     const [usedColors, setUsedColors] = useState<string[]>([]);
-    // const [selection, setSelection] = useSt;
+
+    let previousContent = '';
+    let undoneContent = '';
 
     const message: ChatMessage = useMemo<ChatMessage>(() => {
         return {
@@ -36,13 +39,25 @@ export function Editor() {
         };
     }, [content, channel, id]);
 
+    function updateUsedColors(textarea: HTMLTextAreaElement) {
+        const colorTagMatches = [
+            ...textarea.value.matchAll(/(?<=<FG)([0-9A-F]{8})(?=>)/gi),
+        ];
+        const colors = colorTagMatches.map((match) => '#' + match[0]);
+        setUsedColors([...new Set(colors)]);
+    }
+    function normalizeTextareaValue(textarea: HTMLTextAreaElement) {
+        // textarea.value = textarea.value.replaceAll('\n', '');
+    }
+
     function sendMessage() {
         const sendMessageEvent = new CustomEvent('send-message', {
             detail: message,
         });
         window.dispatchEvent(sendMessageEvent);
-        if (textareaRef.current) {
-            textareaRef.current.value = '';
+        const textarea = textareaRef.current;
+        if (textarea) {
+            textarea.setRangeText('', 0, textarea.value.length);
         }
         setContent('');
         setID(generateID());
@@ -62,27 +77,84 @@ export function Editor() {
         } else if (e.code === 'Tab') {
             e.preventDefault();
             changeChannel();
+        } else if (e.ctrlKey && e.code === 'KeyZ') {
+            const textarea = textareaRef.current;
+            if (!textarea)
+                throw new Error(
+                    `Failed to perform CTRL + Z, textareaRef.current is null.`
+                );
+            undoneContent = textarea.value;
+            textarea.value = previousContent;
+        } else if (e.ctrlKey && e.code === 'KeyY') {
+            const textarea = textareaRef.current;
+            if (!textarea)
+                throw new Error(
+                    `Failed to perform CTRL + Y, textareaRef.current is null.`
+                );
+            textarea.value = undoneContent;
         }
     }
-    function onChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
-        const textArea = e.currentTarget;
-        // const corruptedColorTags =
-        //     /(<FG[0-9A-F]{8}(?!>))/gi;
-        // const corruptedGlyphTags =
-        //     /(<TX0?C00[0-9A-F]{12}(?!>))/gi;
-        textArea.value = textArea.value.replaceAll('\n', '');
-        // .replaceAll(corruptedColorTags, '')
-        // .replaceAll(corruptedGlyphTags, '');
-        setContent(textArea.value);
-        const colorTags = [
-            ...textArea.value.matchAll(/(?<=<FG)([0-9A-F]{8})(?=>)/gi),
-        ];
-        setUsedColors(colorTags.map((match) => '#' + match[0]));
+    function onChange() {
+        const textarea = textareaRef.current;
+        if (!textarea)
+            throw new Error(
+                `Failed to handle textarea change event, textareaRef.current is null.`
+            );
+        normalizeTextareaValue(textarea);
+        setContent(textarea.value);
+        updateUsedColors(textarea);
     }
 
-    function insertColor(color: string) {}
+    function insertColor(color: string) {
+        const textarea = textareaRef.current;
+        if (!textarea)
+            throw new Error(`Failed to insert color tag, textareRef is null.`);
+
+        if (!/^#[0-9A-F]{8}$/.test(color))
+            throw new Error(
+                `Failed to insert color tag, color picker didnt return a valid hex code.`
+            );
+        color = color.slice(1).toUpperCase();
+
+        function getTextSelection() {
+            const start = textarea?.selectionStart;
+            const end = textarea?.selectionEnd;
+            if (start === undefined || end === undefined)
+                throw new Error(
+                    `Failed to insert color tag, selectionStart or selectionEnd is undefined.`
+                );
+            return { start, end };
+        }
+        const selection = getTextSelection();
+
+        textarea.focus();
+        previousContent = textarea.value;
+
+        const previousTag = textarea.value
+            .slice(0, selection.start)
+            .match(/<FG[0-9A-F]{8}> *$/i);
+
+        if (previousTag) {
+            if (previousTag.index === undefined) return;
+            textarea.setRangeText(
+                '',
+                previousTag.index,
+                previousTag.index + 12,
+                'preserve'
+            );
+        }
+        textarea.setRangeText(
+            `<FG${color}>`,
+            selection.start,
+            selection.start,
+            'end'
+        );
+
+        // onChange();
+    }
 
     useEffect(() => {
+        console.log(`Reload`);
         function updatePreview() {
             const updatePreviewEvent = new CustomEvent('update-preview', {
                 detail: message,
