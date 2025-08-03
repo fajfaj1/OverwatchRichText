@@ -10,7 +10,7 @@ import Send from '@/components/icons/FontAwesome/Send';
 import Brush from '@/components/icons/FontAwesome/Brush';
 import Font from '@/components/icons/FontAwesome/Font';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
 import { generateID } from '../ChatPreview/Message/generateID';
@@ -24,22 +24,24 @@ export function Editor() {
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-    const [id, setID] = useState(generateID());
-    const [content, setContent] = useState('');
-    const [channel, setChannel] = useState<ChannelType>('match');
     const [usedColors, setUsedColors] = useState<string[]>([]);
 
-    let previousContent = '';
-    let undoneContent = '';
+    const idRef = useRef('');
+    const channelRef = useRef<ChannelType>('match');
+    const contentRef = useRef('');
+    const userRef = useRef('User');
 
-    const message: ChatMessage = useMemo<ChatMessage>(() => {
+    const previousContentRef = useRef('');
+    const undoneContentRef = useRef('');
+
+    function getMessageObject(): ChatMessage {
         return {
-            content: content,
-            channel: channel,
-            id: id,
-            author: 'user',
+            content: contentRef.current,
+            channel: channelRef.current,
+            id: idRef.current,
+            author: userRef.current,
         };
-    }, [content, channel, id]);
+    }
 
     function updateUsedColors(textarea: HTMLTextAreaElement) {
         const colorTagMatches = [
@@ -49,29 +51,40 @@ export function Editor() {
         setUsedColors([...new Set(colors)]);
     }
     function normalizeTextareaValue(textarea: HTMLTextAreaElement) {
-        // textarea.value = textarea.value.replaceAll('\n', '');
+        textarea.value.matchAll(/\n/g);
     }
 
     function sendMessage() {
         const sendMessageEvent = new CustomEvent('send-message', {
-            detail: message,
+            detail: getMessageObject(),
         });
         window.dispatchEvent(sendMessageEvent);
+
         const textarea = textareaRef.current;
-        if (textarea) {
-            textarea.setRangeText('', 0, textarea.value.length);
-        }
-        setContent('');
+        if (!textarea)
+            throw new Error(
+                `Failed to clear input field, textarea is not defined.`
+            );
+        textarea.setRangeText('', 0, textarea.value.length);
+        contentRef.current = '';
         setID(generateID());
     }
-
+    function updatePreview() {
+        const updatePreviewEvent = new CustomEvent('update-preview', {
+            detail: getMessageObject(),
+        });
+        window.dispatchEvent(updatePreviewEvent);
+    }
     function changeChannel() {
         const channels: ChannelType[] = ['match', 'team', 'group'];
-        setChannel(
-            channels[(channels.findIndex((value) => value === channel) + 1) % 3]
-        );
+        const current = channelRef.current;
+        const nextChannelIndex =
+            (channels.findIndex((value) => value === current) + 1) % 3;
+        channelRef.current = channels[nextChannelIndex];
+        updatePreview();
     }
 
+    //
     function onKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
         if (e.code === 'Enter') {
             e.preventDefault();
@@ -80,20 +93,37 @@ export function Editor() {
             e.preventDefault();
             changeChannel();
         } else if (e.ctrlKey && e.code === 'KeyZ') {
+            // Browsers dont seem to fire onChange on ctrl+Z
+            setTimeout(onChange);
+
+            const previousContent = previousContentRef.current;
+            if (previousContent === null) return;
+
             const textarea = textareaRef.current;
             if (!textarea)
                 throw new Error(
                     `Failed to perform CTRL + Z, textareaRef.current is null.`
                 );
-            undoneContent = textarea.value;
+
+            console.log(`ctrl + z`);
+            undoneContentRef.current = textarea.value;
             textarea.value = previousContent;
+            e.preventDefault();
         } else if (e.ctrlKey && e.code === 'KeyY') {
+            // Browsers dont seem to fire onChange on ctrl+Y
+            setTimeout(onChange);
+
+            const undoneContent = undoneContentRef.current;
+            if (undoneContent === null) return;
+
             const textarea = textareaRef.current;
             if (!textarea)
                 throw new Error(
                     `Failed to perform CTRL + Y, textareaRef.current is null.`
                 );
+
             textarea.value = undoneContent;
+            e.preventDefault();
         }
     }
     function onChange() {
@@ -103,7 +133,8 @@ export function Editor() {
                 `Failed to handle textarea change event, textareaRef.current is null.`
             );
         normalizeTextareaValue(textarea);
-        setContent(textarea.value);
+        contentRef.current = textarea.value;
+        updatePreview();
         updateUsedColors(textarea);
     }
 
@@ -130,8 +161,7 @@ export function Editor() {
         const selection = getTextSelection();
 
         textarea.focus();
-        previousContent = textarea.value;
-
+        previousContentRef.current = textarea.value;
         const previousTag = textarea.value
             .slice(0, selection.start)
             .match(/<FG[0-9A-F]{8}> *$/i);
@@ -154,17 +184,6 @@ export function Editor() {
 
         // onChange();
     }
-
-    useEffect(() => {
-        console.log(`Reload`);
-        function updatePreview() {
-            const updatePreviewEvent = new CustomEvent('update-preview', {
-                detail: message,
-            });
-            window.dispatchEvent(updatePreviewEvent);
-        }
-        updatePreview();
-    }, [message]);
 
     return (
         <>
