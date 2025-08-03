@@ -1,12 +1,14 @@
 .popover-wrapper {
     position: relative;
 }
-.popover:popover-open {
-    /* Removes default browser styling for popovers */
-    inset: unset !important;
-
+.popover {
     position: absolute;
     z-index: 3;
-
     background-color: transparent;
+}
+.popover-hidden {
+    visibility: hidden;
+}
+.popover-shown {
+    visibility: visible;
 }

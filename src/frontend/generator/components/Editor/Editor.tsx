@@ -20,6 +20,8 @@ import { ColorPicker } from './ColorPicker/ColorPicker';
 // import type { RGBColor } from 'react-color';
 
 export function Editor() {
+    const [isColorPickerOpen, setIsColorPickerOpen] = useState(false);
+
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const [id, setID] = useState(generateID());
@@ -174,20 +176,28 @@ export function Editor() {
                             <Popover
                                 content={
                                     <ColorPicker
-                                        insertColor={insertColor}
                                         colors={usedColors}
                                         popoverId='color-picker-popover'
+                                        onConfirm={(color) => {
+                                            setIsColorPickerOpen(false);
+                                            insertColor(color);
+                                        }}
+                                        onCancel={() =>
+                                            setIsColorPickerOpen(false)
+                                        }
                                     />
                                 }
-                                id='color-picker-popover'
+                                isOpen={isColorPickerOpen}
+                                setIsOpen={setIsColorPickerOpen}
                             >
                                 <Tooltip text='Insert color marker'>
                                     <Button
                                         variant='normal'
                                         size='min'
                                         icon={<Font />}
-                                        popoverTarget='color-picker-popover'
-                                        popoverTargetAction='show'
+                                        onClick={() => {
+                                            setIsColorPickerOpen(true);
+                                        }}
                                     >
                                         <></>
                                     </Button>

@@ -6,13 +6,15 @@ import Check from '@/components/icons/FontAwesome/Check';
 import Cross from '@/components/icons/FontAwesome/Cross';
 
 export function ColorPicker({
-    insertColor,
     colors,
     popoverId,
+    onConfirm,
+    onCancel,
 }: {
-    insertColor: (color: string) => void;
     colors: string[];
     popoverId?: string;
+    onConfirm?: (color: string) => void;
+    onCancel?: () => void;
 }) {
     const [color, setColor] = useState<RGBColor>({
         r: 255,
@@ -89,6 +91,9 @@ export function ColorPicker({
                                   popoverTargetAction: 'hide',
                               }
                             : {})}
+                        onClick={() => {
+                            if (onCancel) onCancel();
+                        }}
                     >
                         <></>
                     </Button>
@@ -96,13 +101,9 @@ export function ColorPicker({
                         size='min'
                         variant='highlight'
                         icon={<Check />}
-                        onClick={() => insertColor(rgbToHex(color))}
-                        {...(popoverId
-                            ? {
-                                  popoverTarget: popoverId,
-                                  popoverTargetAction: 'hide',
-                              }
-                            : {})}
+                        onClick={() => {
+                            if (onConfirm) onConfirm(rgbToHex(color));
+                        }}
                     >
                         <></>
                     </Button>
