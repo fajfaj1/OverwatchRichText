@@ -3,5 +3,10 @@ export type Glyph = {
     name: string;
     type: string;
     style: string;
+    hero: string;
     aliases: string[];
+    size: {
+        width: number;
+        height: number;
+    };
 };
