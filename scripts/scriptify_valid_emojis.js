@@ -7,7 +7,4 @@ const ids = idListString
     .split('\n')
     .map((id) => `    '${id}'`)
     .join(',\n');
-fs.writeFileSync(
-    'src/fontend/generator/glyphs.ts',
-    `export const ids = [\n${ids}\n]`
-);
+fs.writeFileSync('src/generator/glyphs.ts', `export const ids = [\n${ids}\n]`);

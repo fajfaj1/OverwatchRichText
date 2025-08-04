@@ -32,7 +32,7 @@ rl.question(`Paste your FontAwesome SVG:\n`, (answer) => {
     rl.question('What will be the name of your icon? ', (name) => {
         name = name[0].toUpperCase() + name.slice(1).toLocaleLowerCase();
         fs.writeFileSync(
-            `src/frontend/components/icons/FontAwesome/${name}.tsx`,
+            `src/components/icons/FontAwesome/${name}.tsx`,
             content,
             { flag: 'w' }
         );

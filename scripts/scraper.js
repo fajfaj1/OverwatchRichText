@@ -61,7 +61,7 @@ async function downscaleAndDownload(url, filepath) {
     successes++;
 }
 
-const assetFilePath = (id) => `./src/frontend/public/glyphs/${id}.png`;
+const assetFilePath = (id) => `./src/public/glyphs/${id}.png`;
 // downscaleAndDownload(`https://fajfaj.site/`, assetFilePath('test'));
 for (let i = start; i < end; i++) {
     await downscaleAndDownload(assetUrl(ids[i]), assetFilePath(ids[i]));

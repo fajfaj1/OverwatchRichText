@@ -9,27 +9,20 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
-    root: resolve(__dirname, './src/frontend'),
+    root: resolve(__dirname, './src'),
     plugins: [react(), tailwindcss()],
     build: {
         rollupOptions: {
             input: {
-                home: resolve(__dirname, 'src/frontend/index.html'),
-                generator: resolve(
-                    __dirname,
-                    'src/frontend/generator/index.html'
-                ),
-                glyphViewer: resolve(
-                    __dirname,
-                    'src/frontend/glyph_viewer/index.html'
-                ),
-                // about: resolve(__dirname, './src/routes/about/about.html'),
+                home: resolve(__dirname, 'src/index.html'),
+                generator: resolve(__dirname, 'src/generator/index.html'),
+                glyphViewer: resolve(__dirname, 'src/glyph_viewer/index.html'),
             },
         },
     },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src/frontend'),
+            '@': path.resolve(__dirname, './src'),
         },
     },
 });
