@@ -10,7 +10,7 @@ const assetUrl = (id) =>
     `https://assets.overwatchitemtracker.com/textures/${id}.png`;
 
 let successes = 0;
-const start = 10000;
+const start = 10;
 const end = ids.length;
 let failures = 0;
 
@@ -49,10 +49,10 @@ async function downscaleAndDownload(url, filepath) {
     }
     await pipeline(
         response.body,
-        sharp().resize(512, 512, {
-            fit: `inside`,
-            withoutEnlargement: true,
-        }),
+        // sharp().resize(512, 512, {
+        //     fit: `inside`,
+        //     withoutEnlargement: true,
+        // }),
         fs.createWriteStream(filepath, {
             flags: 'a',
         })
@@ -61,8 +61,7 @@ async function downscaleAndDownload(url, filepath) {
     successes++;
 }
 
-const assetFilePath = (id) => `./src/public/glyphs/${id}.png`;
-// downscaleAndDownload(`https://fajfaj.site/`, assetFilePath('test'));
+const assetFilePath = (id) => `./data/glyphs/${id}.png`;
 for (let i = start; i < end; i++) {
     await downscaleAndDownload(assetUrl(ids[i]), assetFilePath(ids[i]));
     if (i % 100 === 0) {
