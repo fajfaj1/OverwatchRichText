@@ -12,6 +12,7 @@ export default defineConfig({
     root: resolve(__dirname, './src'),
     plugins: [react(), tailwindcss()],
     build: {
+        outDir: '../dist',
         rollupOptions: {
             input: {
                 home: resolve(__dirname, 'src/index.html'),
