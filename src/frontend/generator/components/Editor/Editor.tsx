@@ -67,7 +67,7 @@ export function Editor() {
             );
         textarea.setRangeText('', 0, textarea.value.length);
         contentRef.current = '';
-        setID(generateID());
+        idRef.current = generateID();
     }
     function updatePreview() {
         const updatePreviewEvent = new CustomEvent('update-preview', {

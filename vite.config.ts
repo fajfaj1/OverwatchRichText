@@ -19,6 +19,10 @@ export default defineConfig({
                     __dirname,
                     'src/frontend/generator/index.html'
                 ),
+                glyphViewer: resolve(
+                    __dirname,
+                    'src/frontend/glyph_viewer/index.html'
+                ),
                 // about: resolve(__dirname, './src/routes/about/about.html'),
             },
         },
