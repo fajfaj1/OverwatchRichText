@@ -1,9 +1,9 @@
 import parse from 'html-react-parser';
 import type { HTMLReactParserOptions } from 'html-react-parser';
 import { Element, Text } from 'html-react-parser';
+import { glyphs, ids } from '@/data_loaders/glyphs';
 
 export function ContentRedactor({ content }: { content: string }) {
-    // console.log(`Before: ${content}`);
     // Sanitize input
     content = content.replaceAll(/<([/a-z0-9]+)([^\n>]*>)?/gi, (match) => {
         if (
@@ -15,8 +15,8 @@ export function ContentRedactor({ content }: { content: string }) {
         }
         return match.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
     });
-    // console.log(`After: ${content}`);
 
+    // Apply color tags
     content = content.replaceAll(/<FG([^>]{0,28})>/gi, (_, hex: string) => {
         let hexcode = 'inherit';
         let className = 'color-tag';
@@ -28,15 +28,18 @@ export function ContentRedactor({ content }: { content: string }) {
         content += '</span>';
         return `<span class="${className}" style="color: ${hexcode}">`;
     });
-    // console.log(content);
+
+    // Apply glyph tags
     content = content.replaceAll(
         /<TX0?C00([0-9A-F]{12})>/gi,
         (_, id: string) => {
-            content += '</span>';
-            return `<img class="glyph" src="/glyphs/${id}.png" />`;
+            const glyph = glyphs[ids.findIndex((value) => value === id)];
+            const aspectRatio = glyph.size.width / glyph.size.height;
+            return `<img class="glyph" src="/glyphs/${id}.webp" height="1em" width="calc(1em*${aspectRatio})" alt="${glyph.name}"/>`;
         }
     );
 
+    // Parse to react
     const options: HTMLReactParserOptions = {
         replace(node) {
             if (node instanceof Text) {
@@ -60,6 +63,5 @@ export function ContentRedactor({ content }: { content: string }) {
             }
         },
     };
-
     return parse(content, options);
 }

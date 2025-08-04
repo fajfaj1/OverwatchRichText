@@ -35,6 +35,10 @@ fs.writeFileSync('./data/glyphs.json', JSON.stringify(glyphs, null, 4));
 types.sort();
 styles.sort();
 heroes.sort();
-fs.writeFileSync('./data/glyph_types.json', JSON.stringify(types, null, 4));
-fs.writeFileSync('./data/glyph_styles.json', JSON.stringify(styles, null, 4));
-fs.writeFileSync('./data/glyph_heroes.json', JSON.stringify(heroes, null, 4));
+fs.writeFileSync(
+    './data/glyph_ids.json',
+    JSON.stringify(glyphs.map((glyph) => glyph.id))
+);
+fs.writeFileSync('./data/glyph_types.json', JSON.stringify(types));
+fs.writeFileSync('./data/glyph_styles.json', JSON.stringify(styles));
+fs.writeFileSync('./data/glyph_heroes.json', JSON.stringify(heroes));
