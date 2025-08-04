@@ -49,10 +49,10 @@ async function downscaleAndDownload(url, filepath) {
     }
     await pipeline(
         response.body,
-        // sharp().resize(512, 512, {
-        //     fit: `inside`,
-        //     withoutEnlargement: true,
-        // }),
+        sharp().resize(512, 512, {
+            fit: `inside`,
+            withoutEnlargement: true,
+        }),
         fs.createWriteStream(filepath, {
             flags: 'a',
         })

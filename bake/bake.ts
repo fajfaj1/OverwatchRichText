@@ -1,6 +1,7 @@
-// import glyphs from '../data/glyphs.json';
+import glyphs from '../data/glyphs.json';
 // import { Glyph } from '../src/types/Glyph';
-// import fs from 'fs';
+import fs from 'fs';
+import sharp from 'sharp';
 
-// function copyGlyph(id) {
-//     fs.copyFile(`../data/glyphs/${id}.png`)
+const id = glyphs[0].id;
+sharp('data/glyphs/' + id + '.png').toFile(`src/public/glyphs/${id}.webp`);
