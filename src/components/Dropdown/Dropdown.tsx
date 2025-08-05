@@ -1,0 +1,89 @@
+import './dropdown.css';
+import '../input.css';
+import type { InputSize, InputVariant } from '@/types/Input';
+import { useState } from 'react';
+import Caret from '@/components/icons/FontAwesome/Caret';
+import { Popover } from '../Popover/Popover';
+
+export type Option = { id: string; name: string; icon?: React.ReactNode };
+
+function DropdownOption({
+    name,
+    option,
+    onChoice,
+}: {
+    name: string;
+    option: Option;
+    onChoice: (option: Option) => void;
+}) {
+    const id = `dropdown-option-${option.name}`;
+    return (
+        <>
+            <input
+                type='radio'
+                name={`dropdown-option-${name}`}
+                className='dropdown-option-checkbox'
+                id={id}
+            />
+            <label className='dropdown-option' key={option.id} htmlFor={id}>
+                {' '}
+                <>
+                    <div className='dropdown-option-icon'>
+                        {option.icon || ''}
+                    </div>
+                    <span className='dropdown-option-label'>{option.name}</span>
+                </>
+            </label>
+        </>
+    );
+}
+
+export function Dropdown({
+    name,
+    options,
+    onChoice,
+    variant = 'normal',
+    size = 'full',
+}: {
+    name: string;
+    options: Option[];
+    onChoice: (id: string) => void;
+    variant: InputVariant;
+    size: InputSize;
+}) {
+    const [currentOption, setCurrentOption] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <div className='dropdown'>
+            <Popover
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                content={
+                    <>
+                        <div className='dropdown-popover'>
+                            {options.map((option) =>
+                                DropdownOption({
+                                    name,
+                                    option,
+                                    onChoice: (choice) =>
+                                        setCurrentOption(choice),
+                                })
+                            )}
+                        </div>
+                    </>
+                }
+            >
+                <div className='dropdown-button-wrapper'>
+                    <button
+                        onClick={() => setIsOpen(true)}
+                        className={`input input-${variant} dropdown-button input-${size}`}
+                    >
+                        {options[currentOption]?.name}
+                        <Caret />
+                    </button>
+                </div>
+            </Popover>
+        </div>
+    );
+}

@@ -1,0 +1,8 @@
+.button {
+    transition: 0.1s transform ease;
+    border-radius: 3px;
+}
+
+.button:not(:disabled):hover {
+    transform: scale(110%);
+}

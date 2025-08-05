@@ -4,8 +4,3 @@
     text-wrap: nowrap;
     overflow-x: hidden !important;
 }
-
-.glyph {
-    height: 1em;
-    display: inline;
-}

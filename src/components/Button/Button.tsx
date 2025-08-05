@@ -1,6 +1,7 @@
 import '../input.css';
-export type ButtonVariant = 'normal' | 'outline' | 'highlight' | 'ghost';
-export type ButtonSize = 'full' | 'min';
+import './buttons.css';
+import type { InputVariant, InputSize } from '@/types/Input';
+
 export function Button({
     variant,
     size,
@@ -12,8 +13,8 @@ export function Button({
     onClick,
     onMouseDown,
 }: {
-    variant: ButtonVariant;
-    size: ButtonSize;
+    variant: InputVariant;
+    size: InputSize;
 
     children: React.ReactNode;
     disabled?: boolean;

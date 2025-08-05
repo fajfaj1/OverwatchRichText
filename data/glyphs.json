@@ -7669,7 +7669,7 @@
     },
     {
         "id": "000000047820",
-        "name": "Background",
+        "name": "Hero Tile Background",
         "type": "Background",
         "style": "Texture",
         "hero": "",

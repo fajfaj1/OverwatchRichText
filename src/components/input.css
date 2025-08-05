@@ -17,10 +17,9 @@
     background-color: var(--input-background);
     color: var(--input-foreground);
     border: 3px solid var(--input-border);
-    border-radius: 3px;
 
     font-family: var(--font-chat);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-wrap: nowrap;
 
@@ -29,9 +28,8 @@
     justify-content: center;
 
     /* padding: 5px 15px; */
-    padding: 5px;
+    padding: 2px;
 
-    transition: 0.1s transform ease;
     will-change: transform;
 
     height: 100%;
@@ -46,6 +44,7 @@
 .input-icon {
     line-height: 30px;
     font-size: inherit;
+    scale: 120%;
 }
 .input-icon {
     transition: transform 0.2s ease;
@@ -76,7 +75,6 @@
 } */
 
 .input:not(:disabled):hover {
-    transform: scale(110%);
     z-index: 1;
     border-color: var(--input-hover-border);
 }

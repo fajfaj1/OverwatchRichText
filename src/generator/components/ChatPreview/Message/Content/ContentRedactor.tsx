@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 import type { HTMLReactParserOptions } from 'html-react-parser';
 import { Element, Text } from 'html-react-parser';
-import { glyphs, ids } from '@/data_loaders/glyphs';
+import OverwatchTexture from '@/components/icons/OverwatchTexture';
 
 export function ContentRedactor({ content }: { content: string }) {
     // Sanitize input
@@ -33,9 +33,7 @@ export function ContentRedactor({ content }: { content: string }) {
     content = content.replaceAll(
         /<TX0?C00([0-9A-F]{12})>/gi,
         (_, id: string) => {
-            const glyph = glyphs[ids.findIndex((value) => value === id)];
-            const aspectRatio = glyph.size.width / glyph.size.height;
-            return `<img class="glyph" src="/glyphs/${id}.webp" height="1em" width="calc(1em*${aspectRatio})" alt="${glyph.name}"/>`;
+            return `<glyph id="${id}"/>`;
         }
     );
 
@@ -55,8 +53,10 @@ export function ContentRedactor({ content }: { content: string }) {
                     node.attribs['class'] === 'glyph'
                 ) {
                     return node;
+                } else if (node.name === 'glyph') {
+                    return <OverwatchTexture id={node.attribs.id || ''} />;
                 } else {
-                    return <></>;
+                    return;
                 }
             } else {
                 return <></>;

@@ -16,11 +16,13 @@ import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
 import { generateID } from '../ChatPreview/Message/generateID';
 import type { ChatMessage } from '../ChatPreview/Message/Message';
 import { ColorPicker } from './ColorPicker/ColorPicker';
+import { GlyphPicker } from './GlyphPicker/GlyphPicker';
 
 // import type { RGBColor } from 'react-color';
 
 export function Editor() {
     const [isColorPickerOpen, setIsColorPickerOpen] = useState(false);
+    const [isGlyphPickerOpen, setIsGlyphPickerOpen] = useState(false);
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -184,6 +186,7 @@ export function Editor() {
 
         // onChange();
     }
+    function insertGlyph(glyph: Glyph) {}
 
     return (
         <>
@@ -223,15 +226,25 @@ export function Editor() {
                                 </Tooltip>
                             </Popover>
 
-                            <Tooltip text='Insert a glyph'>
-                                <Button
-                                    variant='normal'
-                                    size='min'
-                                    icon={<Image />}
-                                >
-                                    <></>
-                                </Button>
-                            </Tooltip>
+                            <Popover
+                                content={<GlyphPicker onChoice={insertGlyph} />}
+                                isOpen={isGlyphPickerOpen}
+                                setIsOpen={setIsGlyphPickerOpen}
+                            >
+                                <Tooltip text='Insert a glyph'>
+                                    <Button
+                                        variant='normal'
+                                        size='min'
+                                        icon={<Image />}
+                                        onClick={() => {
+                                            setIsGlyphPickerOpen(true);
+                                        }}
+                                    >
+                                        <></>
+                                    </Button>
+                                </Tooltip>
+                            </Popover>
+
                             <Tooltip text='Insert a gradient'>
                                 <Button
                                     variant='normal'

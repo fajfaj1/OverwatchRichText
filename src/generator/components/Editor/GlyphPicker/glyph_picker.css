@@ -1,0 +1,19 @@
+.glyph-picker {
+    background-color: var(--color-foreground);
+    border: 1px solid var(--color-light-gray);
+    color: var(--color-background);
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.glyph-filters {
+    text-transform: uppercase;
+    font-weight: 600;
+
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}

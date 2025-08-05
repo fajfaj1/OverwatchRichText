@@ -9,4 +9,4 @@ export const glyphs = glyphsJson as Glyph[];
 export const ids = glyphIds as string[];
 export const types = glyphTypes as string[];
 export const styles = glyphStyles as string[];
-export const heroes = glyphHeroes as string[];
+export const heroIcons = glyphHeroes as { [name: string]: string };
