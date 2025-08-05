@@ -1,6 +1,6 @@
 import './glyph_picker.css';
 import type { Glyph } from '@/types/Glyph';
-import { Dropdown } from '@/components/Dropdown/Dropdown';
+import { Dropdown, type Option } from '@/components/Dropdown/Dropdown';
 import { glyphs, heroIcons, styles } from '@/data_loaders/glyphs';
 import OverwatchTexture from '@/components/icons/OverwatchTexture';
 
@@ -9,7 +9,7 @@ export function GlyphPicker({
 }: {
     onChoice: (glyph: Glyph) => void;
 }) {
-    const heroOptions = Object.keys(heroIcons).map((heroName) => {
+    const heroOptions: Option[] = Object.keys(heroIcons).map((heroName) => {
         return {
             id: heroName,
             name: heroName,

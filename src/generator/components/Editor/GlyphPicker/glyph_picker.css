@@ -10,10 +10,17 @@
     text-transform: uppercase;
     font-weight: 600;
 
-    width: 500px;
+    width: 490px;
 
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 630px) {
+    .glyph-filters {
+        flex-direction: column;
+        align-items: start;
+        width: fit-content;
+    }
 }

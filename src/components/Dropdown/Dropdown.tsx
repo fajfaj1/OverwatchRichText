@@ -48,7 +48,7 @@ export function Dropdown({
 }: {
     name: string;
     options: Option[];
-    onChoice: (id: string) => void;
+    onChoice: (option: Option) => void;
     variant: InputVariant;
     size: InputSize;
 }) {
@@ -67,8 +67,11 @@ export function Dropdown({
                                 DropdownOption({
                                     name,
                                     option,
-                                    onChoice: (choice) =>
-                                        setCurrentOption(choice),
+                                    onChoice: (choice) => {
+                                        setCurrentOption(choice);
+                                        setIsOpen(false);
+                                        onChoice(choice);
+                                    },
                                 })
                             )}
                         </fieldset>
