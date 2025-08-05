@@ -5,7 +5,6 @@ import sharp from 'sharp';
 
 const glyphs = glyphsJSON as Glyph[];
 
-const types: string[] = [];
 const styles: string[] = [];
 const heroNames: string[] = [];
 
@@ -25,7 +24,6 @@ for (let i = 0; i < glyphs.length; i++) {
         height: metadata.height,
     };
 
-    if (!types.includes(glyph.type)) types.push(glyph.type);
     if (!styles.includes(glyph.style)) styles.push(glyph.style);
     if (!heroNames.includes(glyph.hero) && glyph.hero !== '') {
         heroNames.push(glyph.hero);
@@ -34,7 +32,6 @@ for (let i = 0; i < glyphs.length; i++) {
 
 const heroes: { [name: string]: string } = {};
 
-types.sort();
 styles.sort();
 heroNames.sort();
 heroNames.forEach((heroName) => {
@@ -54,6 +51,5 @@ fs.writeFileSync(
     './data/glyph_ids.json',
     JSON.stringify(glyphs.map((glyph) => glyph.id))
 );
-fs.writeFileSync('./data/glyph_types.json', JSON.stringify(types));
 fs.writeFileSync('./data/glyph_styles.json', JSON.stringify(styles));
 fs.writeFileSync('./data/glyph_heroes.json', JSON.stringify(heroes));

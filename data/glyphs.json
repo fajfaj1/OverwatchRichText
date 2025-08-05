@@ -2,7 +2,7 @@
     {
         "id": "00000000042A",
         "name": "Vertical Bar",
-        "type": "",
+        "category": "",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -14,7 +14,7 @@
     {
         "id": "0000000012F3",
         "name": "Guardian Angel",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mercy",
         "aliases": [],
@@ -26,7 +26,7 @@
     {
         "id": "0000000012F6",
         "name": "Angelic Descent",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mercy",
         "aliases": [],
@@ -38,7 +38,7 @@
     {
         "id": "0000000012F7",
         "name": "Dragonstrike",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Hanzo",
         "aliases": [],
@@ -50,7 +50,7 @@
     {
         "id": "0000000012F9",
         "name": "Sonic Arrow",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Hanzo",
         "aliases": [],
@@ -62,7 +62,7 @@
     {
         "id": "0000000012FA",
         "name": "Orb of Discord",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zenyatta",
         "aliases": [],
@@ -74,7 +74,7 @@
     {
         "id": "0000000012FB",
         "name": "Orb of Harmony",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zenyatta",
         "aliases": [],
@@ -86,7 +86,7 @@
     {
         "id": "0000000012FC",
         "name": "Transcendence",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zenyatta",
         "aliases": [],
@@ -98,7 +98,7 @@
     {
         "id": "0000000012FF",
         "name": "Reconfigure",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -110,7 +110,7 @@
     {
         "id": "000000001301",
         "name": "Deploy Turret",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -122,7 +122,7 @@
     {
         "id": "000000001303",
         "name": "Charge",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reinhardt",
         "aliases": [],
@@ -134,7 +134,7 @@
     {
         "id": "000000001304",
         "name": "Earthshatter",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reinhardt",
         "aliases": [],
@@ -146,7 +146,7 @@
     {
         "id": "000000001305",
         "name": "Fire Strike",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reinhardt",
         "aliases": [],
@@ -158,7 +158,7 @@
     {
         "id": "000000001306",
         "name": "Death Blossom",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -170,7 +170,7 @@
     {
         "id": "000000001307",
         "name": "Shadow Step",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -182,7 +182,7 @@
     {
         "id": "000000001308",
         "name": "Wraith Form",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -194,7 +194,7 @@
     {
         "id": "000000001309",
         "name": "Concussive Blast",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -206,7 +206,7 @@
     {
         "id": "00000000130A",
         "name": "Jump Jet",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -218,7 +218,7 @@
     {
         "id": "00000000130B",
         "name": "Jump Pack",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Winston",
         "aliases": [],
@@ -230,7 +230,7 @@
     {
         "id": "00000000130C",
         "name": "Primal Rage",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Winston",
         "aliases": [],
@@ -242,7 +242,7 @@
     {
         "id": "00000000130D",
         "name": "Barrier Projector",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Winston",
         "aliases": [],
@@ -254,7 +254,7 @@
     {
         "id": "00000000130E",
         "name": "Sentry Turret",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Symmetra",
         "aliases": [],
@@ -266,7 +266,7 @@
     {
         "id": "00000000130F",
         "name": "Teleporter",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Symmetra",
         "aliases": [],
@@ -278,7 +278,7 @@
     {
         "id": "000000001310",
         "name": "Blink",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -290,7 +290,7 @@
     {
         "id": "000000001311",
         "name": "Pulse Bomb",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -302,7 +302,7 @@
     {
         "id": "000000001312",
         "name": "Recall",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -314,7 +314,7 @@
     {
         "id": "000000001313",
         "name": "Grappling Hook",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Widowmaker",
         "aliases": [],
@@ -326,7 +326,7 @@
     {
         "id": "000000001314",
         "name": "Infra-Sight",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Widowmaker",
         "aliases": [],
@@ -338,7 +338,7 @@
     {
         "id": "000000001315",
         "name": "Venom Mine",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Widowmaker",
         "aliases": [],
@@ -350,7 +350,7 @@
     {
         "id": "000000001331",
         "name": "Pulse Pistols",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -362,7 +362,7 @@
     {
         "id": "000000001332",
         "name": "Caduceus Staff",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Mercy",
         "aliases": [],
@@ -374,7 +374,7 @@
     {
         "id": "000000001333",
         "name": "Storm Bow",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Hanzo",
         "aliases": [],
@@ -386,7 +386,7 @@
     {
         "id": "000000001334",
         "name": "Orb of Destruction",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Zenyatta",
         "aliases": [],
@@ -398,7 +398,7 @@
     {
         "id": "000000001335",
         "name": "Forge Hammer",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -410,7 +410,7 @@
     {
         "id": "000000001336",
         "name": "Rivet Gun",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -422,7 +422,7 @@
     {
         "id": "000000001337",
         "name": "Rocket Hammer",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Reinhardt",
         "aliases": [],
@@ -434,7 +434,7 @@
     {
         "id": "000000001338",
         "name": "Hellfire Shotguns",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -446,7 +446,7 @@
     {
         "id": "000000001339",
         "name": "Rocket Launcher",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -458,7 +458,7 @@
     {
         "id": "00000000133A",
         "name": "Tesla Cannon",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Winston",
         "aliases": [],
@@ -470,7 +470,7 @@
     {
         "id": "00000000133B",
         "name": "Photon Projector",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Symmetra",
         "aliases": [],
@@ -482,7 +482,7 @@
     {
         "id": "00000000133C",
         "name": "Pulse Pistols",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -494,7 +494,7 @@
     {
         "id": "00000000133D",
         "name": "Barrier Field",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reinhardt",
         "aliases": [],
@@ -506,7 +506,7 @@
     {
         "id": "0000000013A2",
         "name": "Patch",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -518,7 +518,7 @@
     {
         "id": "0000000013EB",
         "name": "Barrage",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -530,7 +530,7 @@
     {
         "id": "000000001407",
         "name": "Widow's Kiss",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Widowmaker",
         "aliases": [],
@@ -542,7 +542,7 @@
     {
         "id": "000000001509",
         "name": "Lock",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -554,7 +554,7 @@
     {
         "id": "0000000015BB",
         "name": "Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -566,7 +566,7 @@
     {
         "id": "0000000016F3",
         "name": "Configuration: Recon",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -578,7 +578,7 @@
     {
         "id": "000000001BAD",
         "name": "Configuration: Assault",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -590,7 +590,7 @@
     {
         "id": "000000002692",
         "name": "Combat Roll",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Cassidy",
         "aliases": [],
@@ -602,7 +602,7 @@
     {
         "id": "000000002693",
         "name": "Deadeye",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Cassidy",
         "aliases": [],
@@ -614,7 +614,7 @@
     {
         "id": "000000002694",
         "name": "Flashbang",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Cassidy",
         "aliases": [],
@@ -626,7 +626,7 @@
     {
         "id": "000000002695",
         "name": "Graviton Surge",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zarya",
         "aliases": [],
@@ -638,7 +638,7 @@
     {
         "id": "000000002696",
         "name": "Particle Cannon",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Zarya",
         "aliases": [],
@@ -650,7 +650,7 @@
     {
         "id": "000000002697",
         "name": "Peacekeeper",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Cassidy",
         "aliases": [],
@@ -662,7 +662,7 @@
     {
         "id": "000000002698",
         "name": "Projected Barrier",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zarya",
         "aliases": [],
@@ -674,7 +674,7 @@
     {
         "id": "000000002699",
         "name": "Particle Barrier",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zarya",
         "aliases": [],
@@ -686,7 +686,7 @@
     {
         "id": "000000002A8A",
         "name": "Configuration: Artillery",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -698,7 +698,7 @@
     {
         "id": "000000003339",
         "name": "Shield Bash",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -710,7 +710,7 @@
     {
         "id": "00000000333A",
         "name": "Biotic Field",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -722,7 +722,7 @@
     {
         "id": "000000003380",
         "name": "Take a Breather",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Roadhog",
         "aliases": [],
@@ -734,7 +734,7 @@
     {
         "id": "000000003381",
         "name": "Chain Hook",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Roadhog",
         "aliases": [],
@@ -746,7 +746,7 @@
     {
         "id": "000000003382",
         "name": "Whole Hog",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Roadhog",
         "aliases": [],
@@ -758,7 +758,7 @@
     {
         "id": "000000003383",
         "name": "Scrap Gun",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Roadhog",
         "aliases": [],
@@ -770,7 +770,7 @@
     {
         "id": "00000000356C",
         "name": "Tactical Visor",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -782,7 +782,7 @@
     {
         "id": "000000003592",
         "name": "Heavy Pulse Rifle",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -794,7 +794,7 @@
     {
         "id": "0000000035CD",
         "name": "Sonic Amplifier",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -806,7 +806,7 @@
     {
         "id": "000000003A2D",
         "name": "Blue Gradient",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -818,7 +818,7 @@
     {
         "id": "000000003C1A",
         "name": "Helix Rockets",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -830,7 +830,7 @@
     {
         "id": "000000003C5E",
         "name": "Amp It Up",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -842,7 +842,7 @@
     {
         "id": "000000003C5F",
         "name": "Sound Barrier",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -854,7 +854,7 @@
     {
         "id": "000000003E78",
         "name": "Crossfade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -866,7 +866,7 @@
     {
         "id": "000000003E7A",
         "name": "Soundwave",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -878,7 +878,7 @@
     {
         "id": "000000003FCF",
         "name": "The Reaping",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -890,7 +890,7 @@
     {
         "id": "000000003FD1",
         "name": "Energy",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zarya",
         "aliases": [],
@@ -902,7 +902,7 @@
     {
         "id": "000000004120",
         "name": "Tank",
-        "type": "Role",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -914,7 +914,7 @@
     {
         "id": "000000004122",
         "name": "Damage",
-        "type": "Role",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -926,7 +926,7 @@
     {
         "id": "000000004123",
         "name": "Support",
-        "type": "Role",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -938,7 +938,7 @@
     {
         "id": "00000000447F",
         "name": "Mouse Left Click",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -950,7 +950,7 @@
     {
         "id": "000000004480",
         "name": "Mouse Right Click",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -962,7 +962,7 @@
     {
         "id": "0000000044A5",
         "name": "Controller Right",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -974,7 +974,7 @@
     {
         "id": "0000000044A6",
         "name": "Controller Up",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -986,7 +986,7 @@
     {
         "id": "0000000044A7",
         "name": "Controller Left Joystick",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -998,7 +998,7 @@
     {
         "id": "0000000044A8",
         "name": "Controller Right Joystick",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1010,7 +1010,7 @@
     {
         "id": "0000000044A9",
         "name": "Controller Left Button",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1022,7 +1022,7 @@
     {
         "id": "0000000044AA",
         "name": "Controller Right Button",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1034,7 +1034,7 @@
     {
         "id": "0000000044AB",
         "name": "Controller Menu",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1046,7 +1046,7 @@
     {
         "id": "0000000044AC",
         "name": "Controller Left Trigger",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1058,7 +1058,7 @@
     {
         "id": "0000000044AD",
         "name": "Controller Right Trigger",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1070,7 +1070,7 @@
     {
         "id": "0000000044AE",
         "name": "Controller Both Buttons",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1082,7 +1082,7 @@
     {
         "id": "0000000044AF",
         "name": "Controller A",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1094,7 +1094,7 @@
     {
         "id": "0000000044B0",
         "name": "Controller X",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1106,7 +1106,7 @@
     {
         "id": "0000000044B1",
         "name": "Controller B",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1118,7 +1118,7 @@
     {
         "id": "0000000044B2",
         "name": "Controller Y",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1130,7 +1130,7 @@
     {
         "id": "0000000044B3",
         "name": "Controller Down",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1142,7 +1142,7 @@
     {
         "id": "0000000044B4",
         "name": "Controller Left",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1154,7 +1154,7 @@
     {
         "id": "000000004581",
         "name": "Blue Stripes",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -1166,7 +1166,7 @@
     {
         "id": "000000004E54",
         "name": "Total Mayhem",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junkrat",
         "aliases": [],
@@ -1178,7 +1178,7 @@
     {
         "id": "000000004E55",
         "name": "Rip-Tire",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junkrat",
         "aliases": [],
@@ -1190,7 +1190,7 @@
     {
         "id": "000000004E56",
         "name": "Steel Trap",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junkrat",
         "aliases": [],
@@ -1202,7 +1202,7 @@
     {
         "id": "000000004E57",
         "name": "Concussion Mine",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junkrat",
         "aliases": [],
@@ -1214,7 +1214,7 @@
     {
         "id": "000000004E58",
         "name": "Frag Launcher",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Junkrat",
         "aliases": [],
@@ -1226,7 +1226,7 @@
     {
         "id": "000000004E6A",
         "name": "Cryo-Freeze",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -1238,7 +1238,7 @@
     {
         "id": "000000004E6B",
         "name": "Ice Wall",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -1250,7 +1250,7 @@
     {
         "id": "000000004E6C",
         "name": "Blizzard",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -1262,7 +1262,7 @@
     {
         "id": "000000004E75",
         "name": "Endothermic Blaster",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -1274,7 +1274,7 @@
     {
         "id": "000000004E83",
         "name": "Shuriken",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -1286,7 +1286,7 @@
     {
         "id": "000000004E93",
         "name": "Dragonblade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -1298,7 +1298,7 @@
     {
         "id": "000000004E94",
         "name": "Swift Strike",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -1310,7 +1310,7 @@
     {
         "id": "000000004E95",
         "name": "Deflect",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -1322,7 +1322,7 @@
     {
         "id": "000000004EA1",
         "name": "Defense Matrix",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1334,7 +1334,7 @@
     {
         "id": "000000004EA2",
         "name": "Boosters",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1346,7 +1346,7 @@
     {
         "id": "000000004EA7",
         "name": "Self-Destruct",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1358,7 +1358,7 @@
     {
         "id": "000000004EA8",
         "name": "Fusion Cannons",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1370,7 +1370,7 @@
     {
         "id": "000000004EA9",
         "name": "Light Gun",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1382,7 +1382,7 @@
     {
         "id": "000000004EAB",
         "name": "Call Mech",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1394,7 +1394,7 @@
     {
         "id": "00000000508B",
         "name": "Dash",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -1406,7 +1406,7 @@
     {
         "id": "000000005405",
         "name": "Eject!",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "D.Va",
         "aliases": [],
@@ -1418,7 +1418,7 @@
     {
         "id": "0000000059F1",
         "name": "Overwatch",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1430,7 +1430,7 @@
     {
         "id": "000000005B6D",
         "name": "Spin",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Lúcio",
         "aliases": [],
@@ -1442,7 +1442,7 @@
     {
         "id": "000000005C5B",
         "name": "Breather",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Roadhog",
         "aliases": [],
@@ -1454,7 +1454,7 @@
     {
         "id": "000000005CE2",
         "name": "Walk",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -1466,7 +1466,7 @@
     {
         "id": "000000005D0A",
         "name": "Web",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Card",
         "hero": "Symmetra",
         "aliases": [],
@@ -1478,7 +1478,7 @@
     {
         "id": "000000005DA0",
         "name": "Mouse Middle Up",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1490,7 +1490,7 @@
     {
         "id": "000000005DA1",
         "name": "Mouse Middle Down",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1502,7 +1502,7 @@
     {
         "id": "000000005DAB",
         "name": "Mouse Side",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1514,7 +1514,7 @@
     {
         "id": "000000005DAD",
         "name": "Mouse Middle",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1526,7 +1526,7 @@
     {
         "id": "000000006275",
         "name": "Astronaut",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Winston",
         "aliases": [],
@@ -1538,7 +1538,7 @@
     {
         "id": "0000000065FD",
         "name": "Screen Share",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1550,7 +1550,7 @@
     {
         "id": "000000007664",
         "name": "Revolver",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Cassidy",
         "aliases": [],
@@ -1562,7 +1562,7 @@
     {
         "id": "00000000785B",
         "name": "Beam",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Mercy",
         "aliases": [],
@@ -1574,7 +1574,7 @@
     {
         "id": "000000007B5C",
         "name": "Grenades",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Junkrat",
         "aliases": [],
@@ -1586,7 +1586,7 @@
     {
         "id": "000000007B6B",
         "name": "Barrage",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Pharah",
         "aliases": [],
@@ -1598,7 +1598,7 @@
     {
         "id": "000000007B9C",
         "name": "Focused",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Zarya",
         "aliases": [],
@@ -1610,7 +1610,7 @@
     {
         "id": "00000000849B",
         "name": "Enlightened",
-        "type": "Spray",
+        "category": "Spray",
         "style": "Drawing",
         "hero": "Zenyatta",
         "aliases": [],
@@ -1622,7 +1622,7 @@
     {
         "id": "000000008E02",
         "name": "Coins",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1634,7 +1634,7 @@
     {
         "id": "00000000906E",
         "name": "Purple Token",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1646,7 +1646,7 @@
     {
         "id": "0000000090D6",
         "name": "Controller R",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1658,7 +1658,7 @@
     {
         "id": "0000000090D7",
         "name": "Controller L",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1670,7 +1670,7 @@
     {
         "id": "000000009AF8",
         "name": "Biotic Rifle",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Ana",
         "aliases": [],
@@ -1682,7 +1682,7 @@
     {
         "id": "000000009B36",
         "name": "Sleep Dart",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ana",
         "aliases": [],
@@ -1694,7 +1694,7 @@
     {
         "id": "000000009B37",
         "name": "Biotic Grenade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ana",
         "aliases": [],
@@ -1706,7 +1706,7 @@
     {
         "id": "000000009B38",
         "name": "Nano Boost",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ana",
         "aliases": [],
@@ -1718,7 +1718,7 @@
     {
         "id": "000000009F75",
         "name": "EMP",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -1730,7 +1730,7 @@
     {
         "id": "000000009F9A",
         "name": "Translocator",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -1742,7 +1742,7 @@
     {
         "id": "00000000A180",
         "name": "Machine Pistol",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -1754,7 +1754,7 @@
     {
         "id": "00000000A6B5",
         "name": "Hack",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -1766,7 +1766,7 @@
     {
         "id": "00000000A824",
         "name": "Blast",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1778,7 +1778,7 @@
     {
         "id": "00000000A825",
         "name": "Target Confirmed",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1790,7 +1790,7 @@
     {
         "id": "00000000A826",
         "name": "Fire",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1802,7 +1802,7 @@
     {
         "id": "00000000A827",
         "name": "Heal",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1814,7 +1814,7 @@
     {
         "id": "00000000A82A",
         "name": "Player Target",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1826,7 +1826,7 @@
     {
         "id": "00000000ABAB",
         "name": "Halloween",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1838,7 +1838,7 @@
     {
         "id": "00000000ABAC",
         "name": "Blizzard",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1850,7 +1850,7 @@
     {
         "id": "00000000ABAD",
         "name": "Summer Games",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1862,7 +1862,7 @@
     {
         "id": "00000000AFBF",
         "name": "Opportunist",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1874,7 +1874,7 @@
     {
         "id": "00000000B93A",
         "name": "Winter Wonderland",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1886,7 +1886,7 @@
     {
         "id": "00000000B93B",
         "name": "Chinese New Year",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1898,7 +1898,7 @@
     {
         "id": "00000000D073",
         "name": "Heroes",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1910,7 +1910,7 @@
     {
         "id": "00000000D074",
         "name": "Lobby",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1922,7 +1922,7 @@
     {
         "id": "00000000D075",
         "name": "Maps",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1934,7 +1934,7 @@
     {
         "id": "00000000D076",
         "name": "Modes",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1946,7 +1946,7 @@
     {
         "id": "00000000D077",
         "name": "Presets",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1958,7 +1958,7 @@
     {
         "id": "00000000D296",
         "name": "Augmented Fusion Driver",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Orisa",
         "aliases": [],
@@ -1970,7 +1970,7 @@
     {
         "id": "00000000D297",
         "name": "Globe",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1982,7 +1982,7 @@
     {
         "id": "00000000D29B",
         "name": "Bounty Hunter",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1994,7 +1994,7 @@
     {
         "id": "00000000D29C",
         "name": "Elimination",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2006,7 +2006,7 @@
     {
         "id": "00000000D364",
         "name": "Origami",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -2018,7 +2018,7 @@
     {
         "id": "00000000D7D2",
         "name": "Fortify",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Orisa",
         "aliases": [],
@@ -2030,7 +2030,7 @@
     {
         "id": "00000000E04A",
         "name": "Missions",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2042,7 +2042,7 @@
     {
         "id": "00000000E2A7",
         "name": "Reaper",
-        "type": "Profile Icon",
+        "category": "Miscellaneous",
         "style": "Icon",
         "hero": "Reaper",
         "aliases": [],
@@ -2054,7 +2054,7 @@
     {
         "id": "00000000E613",
         "name": "Melee",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2066,7 +2066,7 @@
     {
         "id": "00000000EE0C",
         "name": "Shiny",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2078,7 +2078,7 @@
     {
         "id": "00000000F445",
         "name": "Seismic Slam",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -2090,7 +2090,7 @@
     {
         "id": "00000000F446",
         "name": "Rocket Punch",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -2102,7 +2102,7 @@
     {
         "id": "00000000F447",
         "name": "Hand Cannon",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -2114,7 +2114,7 @@
     {
         "id": "00000000F448",
         "name": "Meteor Strike",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -2126,7 +2126,7 @@
     {
         "id": "00000000F4C2",
         "name": "The Best Defense…",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -2138,7 +2138,7 @@
     {
         "id": "00000000F76A",
         "name": "Orb",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2150,7 +2150,7 @@
     {
         "id": "000000011D5C",
         "name": "Life Drain",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Moira",
         "aliases": [],
@@ -2162,7 +2162,7 @@
     {
         "id": "000000011D5D",
         "name": "Biotic Grasp",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Moira",
         "aliases": [],
@@ -2174,7 +2174,7 @@
     {
         "id": "000000011D87",
         "name": "Coalescence",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Moira",
         "aliases": [],
@@ -2186,7 +2186,7 @@
     {
         "id": "000000011DBD",
         "name": "Fade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Moira",
         "aliases": [],
@@ -2198,7 +2198,7 @@
     {
         "id": "000000011DD6",
         "name": "Biotic Orb",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Moira",
         "aliases": [],
@@ -2210,7 +2210,7 @@
     {
         "id": "000000011DFA",
         "name": "Rockets",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2222,7 +2222,7 @@
     {
         "id": "000000011E06",
         "name": "Resurrect",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mercy",
         "aliases": [],
@@ -2234,7 +2234,7 @@
     {
         "id": "000000011E07",
         "name": "Valkyrie",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mercy",
         "aliases": [],
@@ -2246,7 +2246,7 @@
     {
         "id": "00000001233C",
         "name": "Junkertown Goons",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2258,7 +2258,7 @@
     {
         "id": "000000012C11",
         "name": "Genji",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -2270,7 +2270,7 @@
     {
         "id": "000000013189",
         "name": "Heal",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2282,7 +2282,7 @@
     {
         "id": "00000001318B",
         "name": "Arrow Up",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2294,7 +2294,7 @@
     {
         "id": "00000001346F",
         "name": "Yeti Survivor Mei",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -2306,7 +2306,7 @@
     {
         "id": "000000013502",
         "name": "Yeti Winston",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Mei",
         "aliases": [],
@@ -2318,7 +2318,7 @@
     {
         "id": "000000013521",
         "name": "Ultimate Ready",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2330,7 +2330,7 @@
     {
         "id": "0000000135E7",
         "name": "Yeti Winston",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2342,7 +2342,7 @@
     {
         "id": "0000000135F8",
         "name": "BW Gradient",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -2354,7 +2354,7 @@
     {
         "id": "000000013DCC",
         "name": "Overwatch League",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2366,7 +2366,7 @@
     {
         "id": "000000014328",
         "name": "Overwatch League",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2378,7 +2378,7 @@
     {
         "id": "0000000144A4",
         "name": "Whip Shot",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2390,7 +2390,7 @@
     {
         "id": "0000000144A5",
         "name": "Repair Pack",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2402,7 +2402,7 @@
     {
         "id": "0000000144A6",
         "name": "Rally",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2414,7 +2414,7 @@
     {
         "id": "0000000144A7",
         "name": "Rocket Flail",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2426,7 +2426,7 @@
     {
         "id": "0000000144A8",
         "name": "Inspire",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2438,7 +2438,7 @@
     {
         "id": "0000000144B1",
         "name": "Barrier Shield",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Brigitte",
         "aliases": [],
@@ -2450,7 +2450,7 @@
     {
         "id": "000000014ADF",
         "name": "Spring",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -2462,7 +2462,7 @@
     {
         "id": "000000014F0C",
         "name": "Lunge",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Hanzo",
         "aliases": [],
@@ -2474,7 +2474,7 @@
     {
         "id": "000000016F30",
         "name": "Storm Arrows",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Hanzo",
         "aliases": [],
@@ -2486,7 +2486,7 @@
     {
         "id": "000000017112",
         "name": "Heart",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2498,7 +2498,7 @@
     {
         "id": "000000017C2A",
         "name": "Lootbox",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2510,7 +2510,7 @@
     {
         "id": "000000017C9A",
         "name": "Hack",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -2522,7 +2522,7 @@
     {
         "id": "000000017C9B",
         "name": "Tracer",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -2534,7 +2534,7 @@
     {
         "id": "000000017C9C",
         "name": "Competitive",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2546,7 +2546,7 @@
     {
         "id": "000000017C9D",
         "name": "Tracer",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -2558,7 +2558,7 @@
     {
         "id": "000000017C9E",
         "name": "Lightning Bolt",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2570,7 +2570,7 @@
     {
         "id": "000000017CE7",
         "name": "Photon Barrier",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Symmetra",
         "aliases": [],
@@ -2582,7 +2582,7 @@
     {
         "id": "000000017E50",
         "name": "Quad Cannons",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2594,7 +2594,7 @@
     {
         "id": "000000017EB8",
         "name": "Asterisk",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2606,7 +2606,7 @@
     {
         "id": "000000017EF8",
         "name": "Piledriver",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2618,7 +2618,7 @@
     {
         "id": "000000017EF9",
         "name": "Roll",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2630,7 +2630,7 @@
     {
         "id": "000000017EFB",
         "name": "Grappling Claw",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2642,7 +2642,7 @@
     {
         "id": "000000017EFC",
         "name": "Minefield",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2654,7 +2654,7 @@
     {
         "id": "000000017F12",
         "name": "Adaptive Shield",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2666,7 +2666,7 @@
     {
         "id": "000000018FD4",
         "name": "OW1 Doomfist",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Doomfist",
         "aliases": [],
@@ -2678,7 +2678,7 @@
     {
         "id": "000000018FD6",
         "name": "OW1 Bastion",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Bastion",
         "aliases": [],
@@ -2690,7 +2690,7 @@
     {
         "id": "000000018FDF",
         "name": "OW1 Wrecking Ball",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -2702,7 +2702,7 @@
     {
         "id": "0000000190DE",
         "name": "Overwatch",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2714,7 +2714,7 @@
     {
         "id": "0000000190DF",
         "name": "Trophy",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2726,7 +2726,7 @@
     {
         "id": "0000000190E0",
         "name": "Competitive",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2738,7 +2738,7 @@
     {
         "id": "00000001935F",
         "name": "Limited Time",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2750,7 +2750,7 @@
     {
         "id": "00000001B650",
         "name": "Molten Core",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -2762,7 +2762,7 @@
     {
         "id": "00000001BCF3",
         "name": "The Viper",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Ashe",
         "aliases": [],
@@ -2774,7 +2774,7 @@
     {
         "id": "00000001BD47",
         "name": "B.O.B.",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ashe",
         "aliases": [],
@@ -2786,7 +2786,7 @@
     {
         "id": "00000001BD54",
         "name": "Dynamite",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ashe",
         "aliases": [],
@@ -2798,7 +2798,7 @@
     {
         "id": "00000001BD59",
         "name": "Coach Gun",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ashe",
         "aliases": [],
@@ -2810,7 +2810,7 @@
     {
         "id": "00000001C365",
         "name": "Circular BW",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -2822,7 +2822,7 @@
     {
         "id": "00000001E2A8",
         "name": "Biotic Launcher",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2834,7 +2834,7 @@
     {
         "id": "00000001E2AF",
         "name": "Healing Grenade",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2846,7 +2846,7 @@
     {
         "id": "00000001E2D3",
         "name": "Regenerative Burst",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2858,7 +2858,7 @@
     {
         "id": "00000001E2D9",
         "name": "Immortality Field",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2870,7 +2870,7 @@
     {
         "id": "00000001E2E2",
         "name": "Amplification Matrix",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2882,7 +2882,7 @@
     {
         "id": "00000001E304",
         "name": "Exo Boots",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Baptiste",
         "aliases": [],
@@ -2894,7 +2894,7 @@
     {
         "id": "00000001EF19",
         "name": "Maximilien",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "3D Render",
         "hero": "",
         "aliases": [],
@@ -2906,7 +2906,7 @@
     {
         "id": "00000001F70D",
         "name": "Workshop",
-        "type": "Workshop Setting",
+        "category": "Workshop Setting",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2918,7 +2918,7 @@
     {
         "id": "00000001F922",
         "name": "Arrow Down",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2930,7 +2930,7 @@
     {
         "id": "00000001F923",
         "name": "Arrow Left",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2942,7 +2942,7 @@
     {
         "id": "00000001F924",
         "name": "Arrow Right",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2954,7 +2954,7 @@
     {
         "id": "00000001F925",
         "name": "Arrow Up",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2966,7 +2966,7 @@
     {
         "id": "00000001F926",
         "name": "Asterisk",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2978,7 +2978,7 @@
     {
         "id": "00000001F927",
         "name": "Lightning Bolt",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2990,7 +2990,7 @@
     {
         "id": "00000001F928",
         "name": "Check",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3002,7 +3002,7 @@
     {
         "id": "00000001F929",
         "name": "Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3014,7 +3014,7 @@
     {
         "id": "00000001F92A",
         "name": "Clubs",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3026,7 +3026,7 @@
     {
         "id": "00000001F92B",
         "name": "Diamonds",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3038,7 +3038,7 @@
     {
         "id": "00000001F92C",
         "name": "Stun",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3050,7 +3050,7 @@
     {
         "id": "00000001F92D",
         "name": "Exclamation Mark",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3062,7 +3062,7 @@
     {
         "id": "00000001F92E",
         "name": "Eye",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3074,7 +3074,7 @@
     {
         "id": "00000001F92F",
         "name": "Fire",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3086,7 +3086,7 @@
     {
         "id": "00000001F930",
         "name": "Flag",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3098,7 +3098,7 @@
     {
         "id": "00000001F931",
         "name": "Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3110,7 +3110,7 @@
     {
         "id": "00000001F932",
         "name": "Smiley Face",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3122,7 +3122,7 @@
     {
         "id": "00000001F933",
         "name": "Heart",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3134,7 +3134,7 @@
     {
         "id": "00000001F934",
         "name": "Moon",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3146,7 +3146,7 @@
     {
         "id": "00000001F935",
         "name": "Block",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3158,7 +3158,7 @@
     {
         "id": "00000001F936",
         "name": "Plus",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3170,7 +3170,7 @@
     {
         "id": "00000001F937",
         "name": "Poison",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3182,7 +3182,7 @@
     {
         "id": "00000001F938",
         "name": "Poison",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3194,7 +3194,7 @@
     {
         "id": "00000001F939",
         "name": "Question Mark",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3206,7 +3206,7 @@
     {
         "id": "00000001F93A",
         "name": "Radioactive",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3218,7 +3218,7 @@
     {
         "id": "00000001F93B",
         "name": "Recycle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3230,7 +3230,7 @@
     {
         "id": "00000001F93C",
         "name": "Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3242,7 +3242,7 @@
     {
         "id": "00000001F93D",
         "name": "Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3254,7 +3254,7 @@
     {
         "id": "00000001F93E",
         "name": "Sad Face",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3266,7 +3266,7 @@
     {
         "id": "00000001F93F",
         "name": "Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3278,7 +3278,7 @@
     {
         "id": "00000001F940",
         "name": "Spades",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3290,7 +3290,7 @@
     {
         "id": "00000001F941",
         "name": "Swirl",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3302,7 +3302,7 @@
     {
         "id": "00000001F942",
         "name": "Hold",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3314,7 +3314,7 @@
     {
         "id": "00000001F943",
         "name": "Trash Bin",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3326,7 +3326,7 @@
     {
         "id": "00000001F944",
         "name": "Warning Sign",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3338,7 +3338,7 @@
     {
         "id": "00000001F945",
         "name": "Cross",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3350,7 +3350,7 @@
     {
         "id": "00000001FBDC",
         "name": "Hyperspheres",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Sigma",
         "aliases": [],
@@ -3362,7 +3362,7 @@
     {
         "id": "00000001FBDD",
         "name": "Kinetic Grasp",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sigma",
         "aliases": [],
@@ -3374,7 +3374,7 @@
     {
         "id": "00000001FBDE",
         "name": "Gravitic Flux",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sigma",
         "aliases": [],
@@ -3386,7 +3386,7 @@
     {
         "id": "00000001FBDF",
         "name": "Experimental Barrier",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sigma",
         "aliases": [],
@@ -3398,7 +3398,7 @@
     {
         "id": "00000001FBE0",
         "name": "Accretion",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sigma",
         "aliases": [],
@@ -3410,7 +3410,7 @@
     {
         "id": "00000001FEE9",
         "name": "Hammer",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3422,7 +3422,7 @@
     {
         "id": "0000000200D6",
         "name": "Circled Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3434,7 +3434,7 @@
     {
         "id": "000000020335",
         "name": "Combat Medic",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Baptiste",
         "aliases": [],
@@ -3446,7 +3446,7 @@
     {
         "id": "0000000207B5",
         "name": "Warning Sign",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3458,7 +3458,7 @@
     {
         "id": "0000000207B6",
         "name": "Split Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3470,7 +3470,7 @@
     {
         "id": "0000000207B7",
         "name": "Arrow Down Sign",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3482,7 +3482,7 @@
     {
         "id": "0000000207B8",
         "name": "Credits",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3494,7 +3494,7 @@
     {
         "id": "0000000207B9",
         "name": "Lootbox",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3506,7 +3506,7 @@
     {
         "id": "000000020A33",
         "name": "Assault",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3518,7 +3518,7 @@
     {
         "id": "000000020AF3",
         "name": "Escort",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3530,7 +3530,7 @@
     {
         "id": "000000020AF4",
         "name": "Elimination",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3542,7 +3542,7 @@
     {
         "id": "000000020AF5",
         "name": "Deathmatch",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3554,7 +3554,7 @@
     {
         "id": "000000020AFA",
         "name": "Skirmish",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3566,7 +3566,7 @@
     {
         "id": "000000020AFB",
         "name": "Hybrid",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3578,7 +3578,7 @@
     {
         "id": "000000020CD5",
         "name": "Cube Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3590,7 +3590,7 @@
     {
         "id": "000000021569",
         "name": "Spiked Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3602,7 +3602,7 @@
     {
         "id": "0000000215B4",
         "name": "Push",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3614,7 +3614,7 @@
     {
         "id": "000000021660",
         "name": "BW Sphere",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -3626,7 +3626,7 @@
     {
         "id": "00000002178B",
         "name": "Red Sphere",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -3638,7 +3638,7 @@
     {
         "id": "0000000220A2",
         "name": "Unknown Hero",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3650,7 +3650,7 @@
     {
         "id": "0000000221AC",
         "name": "Pushbot Standing",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3662,7 +3662,7 @@
     {
         "id": "0000000221AD",
         "name": "Pushbot Walking",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3674,7 +3674,7 @@
     {
         "id": "0000000221AE",
         "name": "Pushbot Pushing",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3686,7 +3686,7 @@
     {
         "id": "000000027AB5",
         "name": "Cube Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3698,7 +3698,7 @@
     {
         "id": "0000000280C0",
         "name": "Practice Range",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3710,7 +3710,7 @@
     {
         "id": "000000028FCB",
         "name": "Duplicate",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -3722,7 +3722,7 @@
     {
         "id": "000000028FCC",
         "name": "Flight",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -3734,7 +3734,7 @@
     {
         "id": "000000028FCD",
         "name": "Sticky Bombs",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -3746,7 +3746,7 @@
     {
         "id": "000000028FCE",
         "name": "Focusing Beam",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -3758,7 +3758,7 @@
     {
         "id": "000000029156",
         "name": "Swirl",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -3770,7 +3770,7 @@
     {
         "id": "00000002915D",
         "name": "Blue Sphere",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -3782,7 +3782,7 @@
     {
         "id": "00000002915E",
         "name": "Loading",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -3794,7 +3794,7 @@
     {
         "id": "000000029CE6",
         "name": "Disruptor Shot",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sojourn",
         "aliases": [],
@@ -3806,7 +3806,7 @@
     {
         "id": "000000029CE7",
         "name": "Overclock",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sojourn",
         "aliases": [],
@@ -3818,7 +3818,7 @@
     {
         "id": "000000029CE8",
         "name": "Power Slide",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sojourn",
         "aliases": [],
@@ -3830,7 +3830,7 @@
     {
         "id": "000000029D83",
         "name": "Railgun",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Sojourn",
         "aliases": [],
@@ -3842,7 +3842,7 @@
     {
         "id": "000000029D99",
         "name": "Charged Shot",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Sojourn",
         "aliases": [],
@@ -3854,7 +3854,7 @@
     {
         "id": "00000002A394",
         "name": "Tri-Shot",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -3866,7 +3866,7 @@
     {
         "id": "00000002A917",
         "name": "Profile",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3878,7 +3878,7 @@
     {
         "id": "00000002A9EC",
         "name": "Attacking",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3890,7 +3890,7 @@
     {
         "id": "00000002A9ED",
         "name": "Defending",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3902,7 +3902,7 @@
     {
         "id": "00000002A9EF",
         "name": "Fall Back",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3914,7 +3914,7 @@
     {
         "id": "00000002A9F1",
         "name": "Going In",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3926,7 +3926,7 @@
     {
         "id": "00000002A9F2",
         "name": "Going In",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3938,7 +3938,7 @@
     {
         "id": "00000002A9F4",
         "name": "Hello",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3950,7 +3950,7 @@
     {
         "id": "00000002A9F5",
         "name": "Ping",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3962,7 +3962,7 @@
     {
         "id": "00000002A9F9",
         "name": "No",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3974,7 +3974,7 @@
     {
         "id": "00000002A9FA",
         "name": "Sprint",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3986,7 +3986,7 @@
     {
         "id": "00000002A9FB",
         "name": "Attack",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3998,7 +3998,7 @@
     {
         "id": "00000002A9FC",
         "name": "Going In",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4010,7 +4010,7 @@
     {
         "id": "00000002A9FD",
         "name": "Acknowledge",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4022,7 +4022,7 @@
     {
         "id": "00000002A9FE",
         "name": "Sorry",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4034,7 +4034,7 @@
     {
         "id": "00000002AA00",
         "name": "Incoming",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4046,7 +4046,7 @@
     {
         "id": "00000002AA01",
         "name": "Acknowledge",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4058,7 +4058,7 @@
     {
         "id": "00000002AA02",
         "name": "Yes",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4070,7 +4070,7 @@
     {
         "id": "00000002AB4F",
         "name": "Noise",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4082,7 +4082,7 @@
     {
         "id": "00000002AB50",
         "name": "Pixels",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4094,7 +4094,7 @@
     {
         "id": "00000002AB5E",
         "name": "Pixels",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4106,7 +4106,7 @@
     {
         "id": "00000002ABE2",
         "name": "Glide",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Echo",
         "aliases": [],
@@ -4118,7 +4118,7 @@
     {
         "id": "00000002B657",
         "name": "Orange",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4130,7 +4130,7 @@
     {
         "id": "00000002BE2F",
         "name": "Target",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4142,7 +4142,7 @@
     {
         "id": "00000002BE30",
         "name": "Time",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4154,7 +4154,7 @@
     {
         "id": "00000002BE31",
         "name": "Captured",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4166,7 +4166,7 @@
     {
         "id": "00000002BE39",
         "name": "Target",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4178,7 +4178,7 @@
     {
         "id": "00000002BE3B",
         "name": "Heroes",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4190,7 +4190,7 @@
     {
         "id": "00000002BE59",
         "name": "Carnage",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -4202,7 +4202,7 @@
     {
         "id": "00000002BE5A",
         "name": "Adrenaline Rush",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -4214,7 +4214,7 @@
     {
         "id": "00000002BE5B",
         "name": "Commanding Shout",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -4226,7 +4226,7 @@
     {
         "id": "00000002BE5C",
         "name": "Jagged Blade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -4238,7 +4238,7 @@
     {
         "id": "00000002C012",
         "name": "Pachimari",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4250,7 +4250,7 @@
     {
         "id": "00000002D5AE",
         "name": "Direction",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4262,7 +4262,7 @@
     {
         "id": "00000002D5AF",
         "name": "Tire",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4274,7 +4274,7 @@
     {
         "id": "00000002D5B0",
         "name": "Humans",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4286,7 +4286,7 @@
     {
         "id": "00000002D5B1",
         "name": "Explosion",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4298,7 +4298,7 @@
     {
         "id": "00000002D5B2",
         "name": "Stunned Goon",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4310,7 +4310,7 @@
     {
         "id": "00000002D5B3",
         "name": "Death Orbs",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4322,7 +4322,7 @@
     {
         "id": "00000002D5B4",
         "name": "Fuming Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4334,7 +4334,7 @@
     {
         "id": "00000002D5B5",
         "name": "Power Up",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4346,7 +4346,7 @@
     {
         "id": "00000002D5B6",
         "name": "Lava",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4358,7 +4358,7 @@
     {
         "id": "00000002D5B7",
         "name": "Target Eliminated",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4370,7 +4370,7 @@
     {
         "id": "00000002D5B8",
         "name": "Headshot",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4382,7 +4382,7 @@
     {
         "id": "00000002D6E8",
         "name": "Void Barrier",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4394,7 +4394,7 @@
     {
         "id": "00000002D6E9",
         "name": "Void Accelerator",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4406,7 +4406,7 @@
     {
         "id": "00000002D71C",
         "name": "Annihilation",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4418,7 +4418,7 @@
     {
         "id": "00000002D71D",
         "name": "Nemesis Form",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4430,7 +4430,7 @@
     {
         "id": "00000002D71E",
         "name": "Ravenous Vortex",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4442,7 +4442,7 @@
     {
         "id": "00000002D8D9",
         "name": "Snowflake",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4454,7 +4454,7 @@
     {
         "id": "00000002DD21",
         "name": "Cursor",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4466,7 +4466,7 @@
     {
         "id": "00000002DD58",
         "name": "Practice Range",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4478,7 +4478,7 @@
     {
         "id": "00000002E0A5",
         "name": "Sprint",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4490,7 +4490,7 @@
     {
         "id": "00000002E0C7",
         "name": "Bounty",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4502,7 +4502,7 @@
     {
         "id": "00000002E11D",
         "name": "Bounty",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4514,7 +4514,7 @@
     {
         "id": "00000002E752",
         "name": "Pummel",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4526,7 +4526,7 @@
     {
         "id": "00000002E842",
         "name": "Block",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Ramattra",
         "aliases": [],
@@ -4538,7 +4538,7 @@
     {
         "id": "00000002F1FC",
         "name": "Heal",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4550,7 +4550,7 @@
     {
         "id": "00000002F1FE",
         "name": "Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4562,7 +4562,7 @@
     {
         "id": "00000002F200",
         "name": "Block",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4574,7 +4574,7 @@
     {
         "id": "00000002FDE5",
         "name": "White Stripes",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4586,7 +4586,7 @@
     {
         "id": "00000002FDF0",
         "name": "Bookmark",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4598,7 +4598,7 @@
     {
         "id": "0000000320D2",
         "name": "Flashpoints",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4610,7 +4610,7 @@
     {
         "id": "000000032720",
         "name": "Kitsune Rush",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4622,7 +4622,7 @@
     {
         "id": "000000032721",
         "name": "Protection Suzu",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4634,7 +4634,7 @@
     {
         "id": "000000032722",
         "name": "Healing Ofuda",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4646,7 +4646,7 @@
     {
         "id": "000000032723",
         "name": "Wall Climb",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4658,7 +4658,7 @@
     {
         "id": "000000032724",
         "name": "Kunai",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4670,7 +4670,7 @@
     {
         "id": "000000032726",
         "name": "Swift Step",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4682,7 +4682,7 @@
     {
         "id": "000000032B11",
         "name": "Skull Sign",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Kiriko",
         "aliases": [],
@@ -4694,7 +4694,7 @@
     {
         "id": "000000033255",
         "name": "Terra Surge",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Orisa",
         "aliases": [],
@@ -4706,7 +4706,7 @@
     {
         "id": "000000033256",
         "name": "Javelin Spin",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Orisa",
         "aliases": [],
@@ -4718,7 +4718,7 @@
     {
         "id": "000000033257",
         "name": "Energy Javelin",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Orisa",
         "aliases": [],
@@ -4730,7 +4730,7 @@
     {
         "id": "000000036FE9",
         "name": "Star Damage",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4742,7 +4742,7 @@
     {
         "id": "000000036FEA",
         "name": "Star Support",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4754,7 +4754,7 @@
     {
         "id": "000000036FEB",
         "name": "Star Tank",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4766,7 +4766,7 @@
     {
         "id": "00000003709F",
         "name": "White Triangle",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -4778,7 +4778,7 @@
     {
         "id": "0000000370BF",
         "name": "Long Vertical Arrow (Left side)",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4790,7 +4790,7 @@
     {
         "id": "00000003711E",
         "name": "Watching",
-        "type": "Communication",
+        "category": "Communication",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4802,7 +4802,7 @@
     {
         "id": "000000037156",
         "name": "Dotted Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4814,7 +4814,7 @@
     {
         "id": "0000000371AC",
         "name": "Split Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4826,7 +4826,7 @@
     {
         "id": "0000000371FE",
         "name": "Play",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4838,7 +4838,7 @@
     {
         "id": "000000037849",
         "name": "Power Block",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Doomfist",
         "aliases": [],
@@ -4850,7 +4850,7 @@
     {
         "id": "000000037D46",
         "name": "Lethal",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4862,7 +4862,7 @@
     {
         "id": "000000037D47",
         "name": "Hard",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4874,7 +4874,7 @@
     {
         "id": "000000037D48",
         "name": "Casual",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4886,7 +4886,7 @@
     {
         "id": "000000037EA0",
         "name": "Circle",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4898,7 +4898,7 @@
     {
         "id": "000000037EA1",
         "name": "Diamon",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4910,7 +4910,7 @@
     {
         "id": "000000037EAC",
         "name": "Circle Loading",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -4922,7 +4922,7 @@
     {
         "id": "000000038490",
         "name": "Tracer",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Tracer",
         "aliases": [],
@@ -4934,7 +4934,7 @@
     {
         "id": "000000038491",
         "name": "Reinhardt",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Reinhardt",
         "aliases": [],
@@ -4946,7 +4946,7 @@
     {
         "id": "000000038492",
         "name": "Genji",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Genji",
         "aliases": [],
@@ -4958,7 +4958,7 @@
     {
         "id": "000000038493",
         "name": "Widowmaker",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Widowmaker",
         "aliases": [],
@@ -4970,7 +4970,7 @@
     {
         "id": "000000038494",
         "name": "D.Va",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "D.Va",
         "aliases": [],
@@ -4982,7 +4982,7 @@
     {
         "id": "000000038495",
         "name": "Doomfist",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Doomfist",
         "aliases": [],
@@ -4994,7 +4994,7 @@
     {
         "id": "000000038497",
         "name": "Ramattra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Ramattra",
         "aliases": [],
@@ -5006,7 +5006,7 @@
     {
         "id": "000000038498",
         "name": "Sigma",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Sigma",
         "aliases": [],
@@ -5018,7 +5018,7 @@
     {
         "id": "000000038499",
         "name": "Zarya",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Zarya",
         "aliases": [],
@@ -5030,7 +5030,7 @@
     {
         "id": "00000003849A",
         "name": "Winston",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Winston",
         "aliases": [],
@@ -5042,7 +5042,7 @@
     {
         "id": "00000003849B",
         "name": "Bastion",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Bastion",
         "aliases": [],
@@ -5054,7 +5054,7 @@
     {
         "id": "00000003849C",
         "name": "Cassidy",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Cassidy",
         "aliases": [],
@@ -5066,7 +5066,7 @@
     {
         "id": "00000003849D",
         "name": "Echo",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Echo",
         "aliases": [],
@@ -5078,7 +5078,7 @@
     {
         "id": "00000003849E",
         "name": "Mei",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Mei",
         "aliases": [],
@@ -5090,7 +5090,7 @@
     {
         "id": "00000003849F",
         "name": "Pharah",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Pharah",
         "aliases": [],
@@ -5102,7 +5102,7 @@
     {
         "id": "0000000384A0",
         "name": "Reaper",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Reaper",
         "aliases": [],
@@ -5114,7 +5114,7 @@
     {
         "id": "0000000384A1",
         "name": "Sombra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Sombra",
         "aliases": [],
@@ -5126,7 +5126,7 @@
     {
         "id": "0000000384A2",
         "name": "Sojourn",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Sojourn",
         "aliases": [],
@@ -5138,7 +5138,7 @@
     {
         "id": "0000000384C2",
         "name": "Brigitte",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Brigitte",
         "aliases": [],
@@ -5150,7 +5150,7 @@
     {
         "id": "0000000385C3",
         "name": "Mercy",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Mercy",
         "aliases": [],
@@ -5162,7 +5162,7 @@
     {
         "id": "0000000385C4",
         "name": "Kiriko",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Kiriko",
         "aliases": [],
@@ -5174,7 +5174,7 @@
     {
         "id": "0000000385C5",
         "name": "Torbjörn",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Torbjörn",
         "aliases": [],
@@ -5186,7 +5186,7 @@
     {
         "id": "0000000385C6",
         "name": "Ana",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Ana",
         "aliases": [],
@@ -5198,7 +5198,7 @@
     {
         "id": "0000000385C7",
         "name": "Baptiste",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Baptiste",
         "aliases": [],
@@ -5210,7 +5210,7 @@
     {
         "id": "0000000385C8",
         "name": "Moira",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Moira",
         "aliases": [],
@@ -5222,7 +5222,7 @@
     {
         "id": "0000000385C9",
         "name": "Lúcio",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Lúcio",
         "aliases": [],
@@ -5234,7 +5234,7 @@
     {
         "id": "0000000385CA",
         "name": "Zenyatta",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Zenyatta",
         "aliases": [],
@@ -5246,7 +5246,7 @@
     {
         "id": "0000000386E3",
         "name": "Battle Pass",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5258,7 +5258,7 @@
     {
         "id": "0000000386FA",
         "name": "Junker Queen",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Junker Queen",
         "aliases": [],
@@ -5270,7 +5270,7 @@
     {
         "id": "0000000386FB",
         "name": "Orisa",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Orisa",
         "aliases": [],
@@ -5282,7 +5282,7 @@
     {
         "id": "0000000386FC",
         "name": "Ashe",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Ashe",
         "aliases": [],
@@ -5294,7 +5294,7 @@
     {
         "id": "0000000386FD",
         "name": "Hanzo",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Hanzo",
         "aliases": [],
@@ -5306,7 +5306,7 @@
     {
         "id": "0000000386FE",
         "name": "Junkrat",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Junkrat",
         "aliases": [],
@@ -5318,7 +5318,7 @@
     {
         "id": "0000000386FF",
         "name": "Soldier: 76",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -5330,7 +5330,7 @@
     {
         "id": "000000038700",
         "name": "Symmetra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Symmetra",
         "aliases": [],
@@ -5342,7 +5342,7 @@
     {
         "id": "000000038701",
         "name": "Wrecking Ball",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -5354,7 +5354,7 @@
     {
         "id": "000000038717",
         "name": "Roadhog",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Roadhog",
         "aliases": [],
@@ -5366,7 +5366,7 @@
     {
         "id": "000000038C19",
         "name": "D.Va",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "D.Va",
         "aliases": [],
@@ -5378,7 +5378,7 @@
     {
         "id": "000000038C1A",
         "name": "Doomfist",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Doomfist",
         "aliases": [],
@@ -5390,7 +5390,7 @@
     {
         "id": "000000038C1B",
         "name": "Junker Queen",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Junker Queen",
         "aliases": [],
@@ -5402,7 +5402,7 @@
     {
         "id": "000000038C1C",
         "name": "Orisa",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Orisa",
         "aliases": [],
@@ -5414,7 +5414,7 @@
     {
         "id": "000000038C1D",
         "name": "Ramattra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Ramattra",
         "aliases": [],
@@ -5426,7 +5426,7 @@
     {
         "id": "000000038C1E",
         "name": "Reinhardt",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Reinhardt",
         "aliases": [],
@@ -5438,7 +5438,7 @@
     {
         "id": "000000038C1F",
         "name": "Roadhog",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Roadhog",
         "aliases": [],
@@ -5450,7 +5450,7 @@
     {
         "id": "000000038C25",
         "name": "Winston",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Winston",
         "aliases": [],
@@ -5462,7 +5462,7 @@
     {
         "id": "000000038C26",
         "name": "Wrecking Ball",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Wrecking Ball",
         "aliases": [],
@@ -5474,7 +5474,7 @@
     {
         "id": "000000038C27",
         "name": "Sigma",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Sigma",
         "aliases": [],
@@ -5486,7 +5486,7 @@
     {
         "id": "000000038C28",
         "name": "Zarya",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Zarya",
         "aliases": [],
@@ -5498,7 +5498,7 @@
     {
         "id": "000000038C29",
         "name": "Ashe",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Ashe",
         "aliases": [],
@@ -5510,7 +5510,7 @@
     {
         "id": "000000038C2A",
         "name": "Bastion",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Bastion",
         "aliases": [],
@@ -5522,7 +5522,7 @@
     {
         "id": "000000038C2B",
         "name": "Cassidy",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Cassidy",
         "aliases": [],
@@ -5534,7 +5534,7 @@
     {
         "id": "000000038C2C",
         "name": "Genji",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Genji",
         "aliases": [],
@@ -5546,7 +5546,7 @@
     {
         "id": "000000038C2D",
         "name": "Hanzo",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Hanzo",
         "aliases": [],
@@ -5558,7 +5558,7 @@
     {
         "id": "000000038C2E",
         "name": "Junkrat",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Junkrat",
         "aliases": [],
@@ -5570,7 +5570,7 @@
     {
         "id": "000000038C2F",
         "name": "Mei",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Mei",
         "aliases": [],
@@ -5582,7 +5582,7 @@
     {
         "id": "000000038C30",
         "name": "Pharah",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Pharah",
         "aliases": [],
@@ -5594,7 +5594,7 @@
     {
         "id": "000000038C31",
         "name": "Reaper",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Reaper",
         "aliases": [],
@@ -5606,7 +5606,7 @@
     {
         "id": "000000038C33",
         "name": "Sojourn",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Sojourn",
         "aliases": [],
@@ -5618,7 +5618,7 @@
     {
         "id": "000000038C34",
         "name": "Soldier: 76",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -5630,7 +5630,7 @@
     {
         "id": "000000038C35",
         "name": "Sombra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Sombra",
         "aliases": [],
@@ -5642,7 +5642,7 @@
     {
         "id": "000000038C36",
         "name": "Symmetra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Symmetra",
         "aliases": [],
@@ -5654,7 +5654,7 @@
     {
         "id": "000000038C37",
         "name": "Torbjörn",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Torbjörn",
         "aliases": [],
@@ -5666,7 +5666,7 @@
     {
         "id": "000000038C38",
         "name": "Widowmaker",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Widowmaker",
         "aliases": [],
@@ -5678,7 +5678,7 @@
     {
         "id": "000000038C39",
         "name": "Mercy",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Mercy",
         "aliases": [],
@@ -5690,7 +5690,7 @@
     {
         "id": "000000038C3A",
         "name": "Moira",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Moira",
         "aliases": [],
@@ -5702,7 +5702,7 @@
     {
         "id": "000000038C3B",
         "name": "Zenyatta",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Moira",
         "aliases": [],
@@ -5714,7 +5714,7 @@
     {
         "id": "000000038C3C",
         "name": "Ana",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Ana",
         "aliases": [],
@@ -5726,7 +5726,7 @@
     {
         "id": "000000038C3D",
         "name": "Tracer",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Tracer",
         "aliases": [],
@@ -5738,7 +5738,7 @@
     {
         "id": "000000038C3E",
         "name": "Baptiste",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Baptiste",
         "aliases": [],
@@ -5750,7 +5750,7 @@
     {
         "id": "000000038C3F",
         "name": "Brigitte",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Brigitte",
         "aliases": [],
@@ -5762,7 +5762,7 @@
     {
         "id": "000000038C40",
         "name": "Kiriko",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Kiriko",
         "aliases": [],
@@ -5774,7 +5774,7 @@
     {
         "id": "000000038C41",
         "name": "Lúcio",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Lúcio",
         "aliases": [],
@@ -5786,7 +5786,7 @@
     {
         "id": "000000038C81",
         "name": "League Tokens",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5798,7 +5798,7 @@
     {
         "id": "000000038DF4",
         "name": "Skull Red",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5810,7 +5810,7 @@
     {
         "id": "000000038DF5",
         "name": "Skull Gold",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5822,7 +5822,7 @@
     {
         "id": "00000003910E",
         "name": "Tracer Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -5834,7 +5834,7 @@
     {
         "id": "000000039E88",
         "name": "Cube Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5846,7 +5846,7 @@
     {
         "id": "000000039E89",
         "name": "Cube Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5858,7 +5858,7 @@
     {
         "id": "000000039E93",
         "name": "Bookmark",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -5870,7 +5870,7 @@
     {
         "id": "000000039FDB",
         "name": "Echo",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Echo",
         "aliases": [],
@@ -5882,7 +5882,7 @@
     {
         "id": "00000003A2C8",
         "name": "Heart",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5894,7 +5894,7 @@
     {
         "id": "00000003A3B2",
         "name": "Shop",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5906,7 +5906,7 @@
     {
         "id": "00000003A4DD",
         "name": "Warcraft Rumble",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5918,7 +5918,7 @@
     {
         "id": "00000003A4DF",
         "name": "Call of Duty: Black Ops 4",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5930,7 +5930,7 @@
     {
         "id": "00000003A4E0",
         "name": "Call of duty: Cold War",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5942,7 +5942,7 @@
     {
         "id": "00000003A4E1",
         "name": "Call of Duty: Modern Warfare",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5954,7 +5954,7 @@
     {
         "id": "00000003A4E2",
         "name": "Call of Duty: Modern Warfare II",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5966,7 +5966,7 @@
     {
         "id": "00000003A4E3",
         "name": "Call of Duty: Vanguard",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5978,7 +5978,7 @@
     {
         "id": "00000003A4E4",
         "name": "Crash Bandicoot",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5990,7 +5990,7 @@
     {
         "id": "00000003A4E5",
         "name": "Diablo II",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6002,7 +6002,7 @@
     {
         "id": "00000003A4E6",
         "name": "Diablo III",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6014,7 +6014,7 @@
     {
         "id": "00000003A4E7",
         "name": "Destiny II",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6026,7 +6026,7 @@
     {
         "id": "00000003A4E8",
         "name": "Diablo I",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6038,7 +6038,7 @@
     {
         "id": "00000003A4E9",
         "name": "Heroes of the Storm",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6050,7 +6050,7 @@
     {
         "id": "00000003A4EA",
         "name": "Heartstone",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6062,7 +6062,7 @@
     {
         "id": "00000003A4EB",
         "name": "Overwatch",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6074,7 +6074,7 @@
     {
         "id": "00000003A4EC",
         "name": "Starcraft",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6086,7 +6086,7 @@
     {
         "id": "00000003A4ED",
         "name": "Starcraft II",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6098,7 +6098,7 @@
     {
         "id": "00000003A4EE",
         "name": "World of Warcraft",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6110,7 +6110,7 @@
     {
         "id": "00000003A4EF",
         "name": "Battle.net Avatar",
-        "type": "Player Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6122,7 +6122,7 @@
     {
         "id": "00000003A50D",
         "name": "Battle Pass",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6134,7 +6134,7 @@
     {
         "id": "00000003A6CD",
         "name": "Noise",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Gradient",
         "hero": "",
         "aliases": [],
@@ -6146,7 +6146,7 @@
     {
         "id": "00000003AE1D",
         "name": "White Star",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6158,7 +6158,7 @@
     {
         "id": "00000003AE1E",
         "name": "Golden Star",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6170,7 +6170,7 @@
     {
         "id": "00000003AF44",
         "name": "Star Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6182,7 +6182,7 @@
     {
         "id": "00000003C4C9",
         "name": "Deathmatch Victor",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6194,7 +6194,7 @@
     {
         "id": "00000003C65C",
         "name": "Healing Blossom",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6206,7 +6206,7 @@
     {
         "id": "00000003C65D",
         "name": "Thorn Volley",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6218,7 +6218,7 @@
     {
         "id": "00000003C732",
         "name": "Life Grip",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6230,7 +6230,7 @@
     {
         "id": "00000003C734",
         "name": "Rejuvenating Dash",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6242,7 +6242,7 @@
     {
         "id": "00000003C735",
         "name": "Petal Platform",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6254,7 +6254,7 @@
     {
         "id": "00000003C736",
         "name": "Tree of Life",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6266,7 +6266,7 @@
     {
         "id": "00000003C76F",
         "name": "Cancel Petal Platform",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6278,7 +6278,7 @@
     {
         "id": "00000003DBD1",
         "name": "Controller Right Joystick",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6290,7 +6290,7 @@
     {
         "id": "00000003DBD2",
         "name": "Controller Right Joystick",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6302,7 +6302,7 @@
     {
         "id": "00000003DBD3",
         "name": "Controller Right Joystick",
-        "type": "Controls",
+        "category": "Controls",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6314,7 +6314,7 @@
     {
         "id": "00000003DC9C",
         "name": "Mauga",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Mauga",
         "aliases": [],
@@ -6326,7 +6326,7 @@
     {
         "id": "00000003EC4B",
         "name": "Cube Outline",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6338,7 +6338,7 @@
     {
         "id": "00000003F48D",
         "name": "Pachi-Mari Clash",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6350,7 +6350,7 @@
     {
         "id": "00000003F522",
         "name": "Meniscus",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6362,7 +6362,7 @@
     {
         "id": "00000003F523",
         "name": "Book-like Meniscus",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6374,7 +6374,7 @@
     {
         "id": "00000003F524",
         "name": "Book-like Meniscus",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6386,7 +6386,7 @@
     {
         "id": "00000003FE37",
         "name": "Cardiac Overdrive",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6398,7 +6398,7 @@
     {
         "id": "00000003FE38",
         "name": "Overrun",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6410,7 +6410,7 @@
     {
         "id": "00000003FE3A",
         "name": "Cage Fight",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6422,7 +6422,7 @@
     {
         "id": "00000003FF00",
         "name": "Volatile Chaingun (Cha-Cha)",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6434,7 +6434,7 @@
     {
         "id": "00000003FF01",
         "name": "Incendiary Chaingun (Gunny)",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6446,7 +6446,7 @@
     {
         "id": "00000003FF61",
         "name": "Lifeweaver",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6458,7 +6458,7 @@
     {
         "id": "0000000401FE",
         "name": "Lifeweaver Voiceline",
-        "type": "Voiceline",
+        "category": "Internal",
         "style": "3D Render",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6470,7 +6470,7 @@
     {
         "id": "0000000402C7",
         "name": "Healing Pylon",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Illari",
         "aliases": [],
@@ -6482,7 +6482,7 @@
     {
         "id": "0000000402C8",
         "name": "Support",
-        "type": "Role",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6494,7 +6494,7 @@
     {
         "id": "0000000402C9",
         "name": "Outburst",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Illari",
         "aliases": [],
@@ -6506,7 +6506,7 @@
     {
         "id": "0000000402CD",
         "name": "Captive Sun",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Illari",
         "aliases": [],
@@ -6518,7 +6518,7 @@
     {
         "id": "0000000402CE",
         "name": "Lifeweaver",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -6530,7 +6530,7 @@
     {
         "id": "000000040CE0",
         "name": "Doomfist Bone Breaker",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Doomfist",
         "aliases": [],
@@ -6542,7 +6542,7 @@
     {
         "id": "000000040CE1",
         "name": "Sigma Galactic Emperor",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Sigma",
         "aliases": [],
@@ -6554,7 +6554,7 @@
     {
         "id": "000000041205",
         "name": "SW Rebel Alliance (or whatever)",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6566,7 +6566,7 @@
     {
         "id": "0000000413CE",
         "name": "Steam Profile",
-        "type": "Internal",
+        "category": "Internal",
         "style": "UI Component",
         "hero": "",
         "aliases": [],
@@ -6578,7 +6578,7 @@
     {
         "id": "000000041526",
         "name": "Berserker",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Mauga",
         "aliases": [],
@@ -6590,7 +6590,7 @@
     {
         "id": "000000041830",
         "name": "Diablo IV",
-        "type": "Game Icon",
+        "category": "Game Icon",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6602,7 +6602,7 @@
     {
         "id": "000000041B2E",
         "name": "Gardener Symmetra",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Symmetra",
         "aliases": [],
@@ -6614,7 +6614,7 @@
     {
         "id": "000000041B48",
         "name": "Arcade",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6626,7 +6626,7 @@
     {
         "id": "000000041B49",
         "name": "Competitive",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Drawing",
         "hero": "Doomfist",
         "aliases": [],
@@ -6638,7 +6638,7 @@
     {
         "id": "000000041B4B",
         "name": "Unranked",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Drawing",
         "hero": "Tracer",
         "aliases": [],
@@ -6650,7 +6650,7 @@
     {
         "id": "000000041ED1",
         "name": "Parenthesis",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6662,7 +6662,7 @@
     {
         "id": "0000000420A4",
         "name": "Missions",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6674,7 +6674,7 @@
     {
         "id": "000000042B12",
         "name": "Cyber-Agility",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Genji",
         "aliases": [],
@@ -6686,7 +6686,7 @@
     {
         "id": "000000042F9C",
         "name": "Prop Hunt",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -6698,7 +6698,7 @@
     {
         "id": "000000043009",
         "name": "Progression Rank 1 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6710,7 +6710,7 @@
     {
         "id": "00000004300A",
         "name": "Progression Rank 1 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6722,7 +6722,7 @@
     {
         "id": "00000004300B",
         "name": "Progression Rank 1 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6734,7 +6734,7 @@
     {
         "id": "00000004300C",
         "name": "Progression Rank 1 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6746,7 +6746,7 @@
     {
         "id": "00000004300D",
         "name": "Progression Rank 1 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6758,7 +6758,7 @@
     {
         "id": "00000004300E",
         "name": "Progression Rank 2 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6770,7 +6770,7 @@
     {
         "id": "00000004300F",
         "name": "Progression Rank 2 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6782,7 +6782,7 @@
     {
         "id": "000000043010",
         "name": "Progression Rank 2 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6794,7 +6794,7 @@
     {
         "id": "000000043011",
         "name": "Progression Rank 2 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6806,7 +6806,7 @@
     {
         "id": "000000043012",
         "name": "Progression Rank 2 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6818,7 +6818,7 @@
     {
         "id": "000000043013",
         "name": "Progression Rank 3 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6830,7 +6830,7 @@
     {
         "id": "000000043014",
         "name": "Progression Rank 3 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6842,7 +6842,7 @@
     {
         "id": "000000043015",
         "name": "Progression Rank 3 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6854,7 +6854,7 @@
     {
         "id": "000000043016",
         "name": "Progression Rank 3 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6866,7 +6866,7 @@
     {
         "id": "000000043017",
         "name": "Progression Rank 3 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6878,7 +6878,7 @@
     {
         "id": "000000043019",
         "name": "Progression Rank 4 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6890,7 +6890,7 @@
     {
         "id": "00000004301B",
         "name": "Progression Rank 4 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6902,7 +6902,7 @@
     {
         "id": "00000004301D",
         "name": "Progression Rank 4 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6914,7 +6914,7 @@
     {
         "id": "00000004301F",
         "name": "Progression Rank 4 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6926,7 +6926,7 @@
     {
         "id": "000000043021",
         "name": "Progression Rank 4 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6938,7 +6938,7 @@
     {
         "id": "000000043023",
         "name": "Progression Rank 5 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6950,7 +6950,7 @@
     {
         "id": "000000043025",
         "name": "Progression Rank 5 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6962,7 +6962,7 @@
     {
         "id": "000000043027",
         "name": "Progression Rank 5 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6974,7 +6974,7 @@
     {
         "id": "000000043029",
         "name": "Progression Rank 5 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6986,7 +6986,7 @@
     {
         "id": "00000004302B",
         "name": "Progression Rank 5 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -6998,7 +6998,7 @@
     {
         "id": "00000004302D",
         "name": "Progression Rank 6 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7010,7 +7010,7 @@
     {
         "id": "00000004302F",
         "name": "Progression Rank 6 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7022,7 +7022,7 @@
     {
         "id": "000000043031",
         "name": "Progression Rank 6 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7034,7 +7034,7 @@
     {
         "id": "000000043033",
         "name": "Progression Rank 6 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7046,7 +7046,7 @@
     {
         "id": "000000043035",
         "name": "Progression Rank 6 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7058,7 +7058,7 @@
     {
         "id": "000000043037",
         "name": "Progression Rank 7 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7070,7 +7070,7 @@
     {
         "id": "000000043039",
         "name": "Progression Rank 7 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7082,7 +7082,7 @@
     {
         "id": "00000004303B",
         "name": "Progression Rank 7 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7094,7 +7094,7 @@
     {
         "id": "00000004303D",
         "name": "Progression Rank 7 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7106,7 +7106,7 @@
     {
         "id": "00000004303F",
         "name": "Progression Rank 7 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7118,7 +7118,7 @@
     {
         "id": "000000043041",
         "name": "Progression Rank 8 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7130,7 +7130,7 @@
     {
         "id": "000000043043",
         "name": "Progression Rank 8 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7142,7 +7142,7 @@
     {
         "id": "000000043045",
         "name": "Progression Rank 8 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7154,7 +7154,7 @@
     {
         "id": "000000043047",
         "name": "Progression Rank 8 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7166,7 +7166,7 @@
     {
         "id": "000000043049",
         "name": "Progression Rank 8 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7178,7 +7178,7 @@
     {
         "id": "00000004304B",
         "name": "Progression Rank 9 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7190,7 +7190,7 @@
     {
         "id": "00000004304D",
         "name": "Progression Rank 9 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7202,7 +7202,7 @@
     {
         "id": "00000004304F",
         "name": "Progression Rank 9 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7214,7 +7214,7 @@
     {
         "id": "000000043051",
         "name": "Progression Rank 9 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7226,7 +7226,7 @@
     {
         "id": "000000043053",
         "name": "Progression Rank 9 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7238,7 +7238,7 @@
     {
         "id": "000000043055",
         "name": "Progression Rank 10 #1",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7250,7 +7250,7 @@
     {
         "id": "000000043057",
         "name": "Progression Rank 10 #2",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7262,7 +7262,7 @@
     {
         "id": "000000043059",
         "name": "Progression Rank 10 #3",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7274,7 +7274,7 @@
     {
         "id": "00000004305B",
         "name": "Progression Rank 10 #4",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7286,7 +7286,7 @@
     {
         "id": "00000004305D",
         "name": "Progression Rank 10 #5",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7298,7 +7298,7 @@
     {
         "id": "000000043BF0",
         "name": "Solar Rifle",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Illari",
         "aliases": [],
@@ -7310,7 +7310,7 @@
     {
         "id": "000000043E3D",
         "name": "Illari",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Illari",
         "aliases": [],
@@ -7322,7 +7322,7 @@
     {
         "id": "000000043EC5",
         "name": "Reinhardt",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Reinhardt",
         "aliases": [],
@@ -7334,7 +7334,7 @@
     {
         "id": "000000043ECB",
         "name": "Genji",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Genji",
         "aliases": [],
@@ -7346,7 +7346,7 @@
     {
         "id": "000000043ED0",
         "name": "Sojourn",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Sojourn",
         "aliases": [],
@@ -7358,7 +7358,7 @@
     {
         "id": "000000043EFE",
         "name": "Ping Marker",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7370,7 +7370,7 @@
     {
         "id": "00000004447D",
         "name": "Illari",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Illari",
         "aliases": [],
@@ -7382,7 +7382,7 @@
     {
         "id": "00000004478C",
         "name": "Cube in a Cube",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7394,7 +7394,7 @@
     {
         "id": "0000000447E2",
         "name": "Hero Mastery",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7406,7 +7406,7 @@
     {
         "id": "000000044B59",
         "name": "Cube in a Cube",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7418,7 +7418,7 @@
     {
         "id": "000000044B5B",
         "name": "Graph",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7430,7 +7430,7 @@
     {
         "id": "00000004516D",
         "name": "Finish",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7442,7 +7442,7 @@
     {
         "id": "0000000455B7",
         "name": "Inarius Pharah",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Pharah",
         "aliases": [],
@@ -7454,7 +7454,7 @@
     {
         "id": "000000045878",
         "name": "Tree of Life",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lifeweaver",
         "aliases": [],
@@ -7466,7 +7466,7 @@
     {
         "id": "0000000459FC",
         "name": "Virus",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Sombra",
         "aliases": [],
@@ -7478,7 +7478,7 @@
     {
         "id": "000000045B47",
         "name": "Mauga",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Mauga",
         "aliases": [],
@@ -7490,7 +7490,7 @@
     {
         "id": "000000045C28",
         "name": "Juno",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Juno",
         "aliases": [],
@@ -7502,7 +7502,7 @@
     {
         "id": "000000045C2E",
         "name": "Juno",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Juno",
         "aliases": [],
@@ -7514,7 +7514,7 @@
     {
         "id": "0000000462A7",
         "name": "Pig Pen",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Roadhog",
         "aliases": [],
@@ -7526,7 +7526,7 @@
     {
         "id": "0000000466AB",
         "name": "Fawskey James",
-        "type": "Ability",
+        "category": "Ability",
         "style": "3D Render",
         "hero": "Junkrat",
         "aliases": [],
@@ -7538,7 +7538,7 @@
     {
         "id": "0000000468CB",
         "name": "Ticket",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7550,7 +7550,7 @@
     {
         "id": "0000000468CD",
         "name": "Pregnancy Test",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7562,7 +7562,7 @@
     {
         "id": "0000000468CE",
         "name": "Ticket Ready",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7574,7 +7574,7 @@
     {
         "id": "0000000468CF",
         "name": "Ticket",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7586,7 +7586,7 @@
     {
         "id": "0000000468D1",
         "name": "Ready",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7598,7 +7598,7 @@
     {
         "id": "000000046D12",
         "name": "Star",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7610,7 +7610,7 @@
     {
         "id": "00000004732E",
         "name": "Rank I",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7622,7 +7622,7 @@
     {
         "id": "000000047330",
         "name": "Rank II",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7634,7 +7634,7 @@
     {
         "id": "000000047332",
         "name": "Rank III",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7646,7 +7646,7 @@
     {
         "id": "000000047334",
         "name": "Rank IV",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7658,7 +7658,7 @@
     {
         "id": "000000047336",
         "name": "Rank V",
-        "type": "Badge",
+        "category": "Badge",
         "style": "Drawing",
         "hero": "",
         "aliases": [],
@@ -7670,7 +7670,7 @@
     {
         "id": "000000047820",
         "name": "Hero Tile Background",
-        "type": "Background",
+        "category": "Internal",
         "style": "Texture",
         "hero": "",
         "aliases": [],
@@ -7682,7 +7682,7 @@
     {
         "id": "000000047DD2",
         "name": "Explosion",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7694,7 +7694,7 @@
     {
         "id": "00000004813D",
         "name": "Snap Kick",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Zenyatta",
         "aliases": [],
@@ -7706,7 +7706,7 @@
     {
         "id": "00000004884C",
         "name": "Jet Dash",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -7718,7 +7718,7 @@
     {
         "id": "000000048961",
         "name": "Mastery Veteran",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7730,7 +7730,7 @@
     {
         "id": "00000004896B",
         "name": "Mastery",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7742,7 +7742,7 @@
     {
         "id": "0000000489CE",
         "name": "Venture",
-        "type": "Hero",
+        "category": "Hero",
         "style": "3D Render",
         "hero": "Venture",
         "aliases": [],
@@ -7754,7 +7754,7 @@
     {
         "id": "0000000489CF",
         "name": "Venture",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Venture",
         "aliases": [],
@@ -7766,7 +7766,7 @@
     {
         "id": "000000049433",
         "name": "Glide Boost",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -7778,7 +7778,7 @@
     {
         "id": "000000049434",
         "name": "Hyper Ring",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -7790,7 +7790,7 @@
     {
         "id": "000000049435",
         "name": "Pulsar Torpedoes",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -7802,7 +7802,7 @@
     {
         "id": "000000049441",
         "name": "Orbital ray",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -7814,7 +7814,7 @@
     {
         "id": "000000049475",
         "name": "Heal",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7826,7 +7826,7 @@
     {
         "id": "000000049476",
         "name": "Stun",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7838,7 +7838,7 @@
     {
         "id": "000000049477",
         "name": "Time Slow",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7850,7 +7850,7 @@
     {
         "id": "000000049478",
         "name": "Hero Gauntlet",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7862,7 +7862,7 @@
     {
         "id": "000000049479",
         "name": "Turret Ammo",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -7874,7 +7874,7 @@
     {
         "id": "00000004947A",
         "name": "Turret Fire",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -7886,7 +7886,7 @@
     {
         "id": "00000004947B",
         "name": "Turret Snow",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -7898,7 +7898,7 @@
     {
         "id": "00000004947C",
         "name": "Turret Arrow",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
@@ -7910,7 +7910,7 @@
     {
         "id": "00000004947D",
         "name": "Artillery Strike",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7922,7 +7922,7 @@
     {
         "id": "00000004947E",
         "name": "Explosive Barrel",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7934,7 +7934,7 @@
     {
         "id": "00000004947F",
         "name": "Freezing Barrel",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7946,7 +7946,7 @@
     {
         "id": "000000049480",
         "name": "Stunning Barrel",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7958,7 +7958,7 @@
     {
         "id": "000000049481",
         "name": "Jump Pad ",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7970,7 +7970,7 @@
     {
         "id": "000000049482",
         "name": "Hero Gauntlet Heal",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7982,7 +7982,7 @@
     {
         "id": "00000004980F",
         "name": "Charge Cube",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -7994,7 +7994,7 @@
     {
         "id": "000000049F5F",
         "name": "Hero Gauntlet",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8006,7 +8006,7 @@
     {
         "id": "00000004A038",
         "name": "Burrow",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8018,7 +8018,7 @@
     {
         "id": "00000004A039",
         "name": "Clobber",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8030,7 +8030,7 @@
     {
         "id": "00000004A03A",
         "name": "Drill Dash",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8042,7 +8042,7 @@
     {
         "id": "00000004A03B",
         "name": "Explorer's Resolve",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8054,7 +8054,7 @@
     {
         "id": "00000004A03C",
         "name": "Tectonic Shock",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8066,7 +8066,7 @@
     {
         "id": "00000004A0F6",
         "name": "Smart Excavator",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Venture",
         "aliases": [],
@@ -8078,7 +8078,7 @@
     {
         "id": "00000004AB6D",
         "name": "Exploding Skull",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8090,7 +8090,7 @@
     {
         "id": "00000004AFA4",
         "name": "OWCS",
-        "type": "Skin Type",
+        "category": "Skin Type",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8102,7 +8102,7 @@
     {
         "id": "00000004B96C",
         "name": "Clash",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8114,7 +8114,7 @@
     {
         "id": "00000004C582",
         "name": "Runasapi",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8126,7 +8126,7 @@
     {
         "id": "00000004C5D2",
         "name": "Mythic Prisms",
-        "type": "Currency",
+        "category": "Currency",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8138,7 +8138,7 @@
     {
         "id": "00000004E081",
         "name": "A-36 Tactical grenade",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -8150,7 +8150,7 @@
     {
         "id": "00000004E118",
         "name": "Hover Jets",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Pharah",
         "aliases": [],
@@ -8162,7 +8162,7 @@
     {
         "id": "00000004E119",
         "name": "Healing Orb",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8174,7 +8174,7 @@
     {
         "id": "00000004E11A",
         "name": "Ironclad",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Bastion",
         "aliases": [],
@@ -8186,7 +8186,7 @@
     {
         "id": "00000004E11B",
         "name": "Wall Ride",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Lúcio",
         "aliases": [],
@@ -8198,7 +8198,7 @@
     {
         "id": "00000004E37B",
         "name": "Martian Oerboots",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -8210,7 +8210,7 @@
     {
         "id": "00000004E3F1",
         "name": "Mediblaster",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Juno",
         "aliases": [],
@@ -8222,7 +8222,7 @@
     {
         "id": "00000004E676",
         "name": "Juno",
-        "type": "Hero",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Juno",
         "aliases": [],
@@ -8234,7 +8234,7 @@
     {
         "id": "00000004EB55",
         "name": "Healing LOS",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8246,7 +8246,7 @@
     {
         "id": "00000004ED4C",
         "name": "Long Vertical Bar",
-        "type": "Internal",
+        "category": "Internal",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8258,7 +8258,7 @@
     {
         "id": "00000004F73A",
         "name": "Damage Boost",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8270,7 +8270,7 @@
     {
         "id": "00000004F73B",
         "name": "Healing Boost",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8282,7 +8282,7 @@
     {
         "id": "00000004F73C",
         "name": "Cooldown Reduction",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8294,7 +8294,7 @@
     {
         "id": "00000004F73D",
         "name": "Heal",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8306,7 +8306,7 @@
     {
         "id": "00000004F73E",
         "name": "Shield",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8318,7 +8318,7 @@
     {
         "id": "00000004F73F",
         "name": "Heal Regen",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8330,7 +8330,7 @@
     {
         "id": "00000004F740",
         "name": "Downtime",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8342,7 +8342,7 @@
     {
         "id": "00000004F741",
         "name": "Quick Respawn",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8354,7 +8354,7 @@
     {
         "id": "000000020AF6",
         "name": "Flag",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8366,7 +8366,7 @@
     {
         "id": "000000020AF7",
         "name": "Capture",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8378,7 +8378,7 @@
     {
         "id": "000000020AF8",
         "name": "Assault",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8390,7 +8390,7 @@
     {
         "id": "000000020AF9",
         "name": "Team Deathmatch",
-        "type": "Mode",
+        "category": "Mode",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8402,7 +8402,7 @@
     {
         "id": "00000002BE5D",
         "name": "Rampage",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -8414,7 +8414,7 @@
     {
         "id": "00000002BE5F",
         "name": "Scattergun",
-        "type": "Weapon",
+        "category": "Weapon",
         "style": "Solid Icon",
         "hero": "Junker Queen",
         "aliases": [],
@@ -8426,7 +8426,7 @@
     {
         "id": "00000002D598",
         "name": "Snowflake",
-        "type": "Miscellaneous",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8438,7 +8438,7 @@
     {
         "id": "00000002D5AD",
         "name": "Unknown Hero",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8450,7 +8450,7 @@
     {
         "id": "0000000013A1",
         "name": "Overload",
-        "type": "Ability",
+        "category": "Ability",
         "style": "Solid Icon",
         "hero": "Torbjörn",
         "aliases": [],
