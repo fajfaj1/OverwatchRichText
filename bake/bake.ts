@@ -7,7 +7,7 @@ const glyphs = glyphsJSON as Glyph[];
 
 const types: string[] = [];
 const styles: string[] = [];
-const heroes: string[] = [];
+const heroNames: string[] = [];
 
 for (let i = 0; i < glyphs.length; i++) {
     const glyph = glyphs[i];
@@ -27,14 +27,29 @@ for (let i = 0; i < glyphs.length; i++) {
 
     if (!types.includes(glyph.type)) types.push(glyph.type);
     if (!styles.includes(glyph.style)) styles.push(glyph.style);
-    if (!heroes.includes(glyph.hero)) heroes.push(glyph.hero);
+    if (!heroNames.includes(glyph.hero) && glyph.hero !== '') {
+        heroNames.push(glyph.hero);
+    }
 }
 
-fs.writeFileSync('./data/glyphs.json', JSON.stringify(glyphs, null, 4));
+const heroes: { [name: string]: string } = {};
 
 types.sort();
 styles.sort();
-heroes.sort();
+heroNames.sort();
+heroNames.forEach((heroName) => {
+    const heroIconId =
+        glyphs.find(
+            (g) =>
+                g.name === heroName &&
+                g.type === 'Hero' &&
+                g.style === '3D Render'
+        )?.id || '';
+    heroes[heroName] = heroIconId;
+});
+
+fs.writeFileSync('./data/glyphs.json', JSON.stringify(glyphs, null, 4));
+
 fs.writeFileSync(
     './data/glyph_ids.json',
     JSON.stringify(glyphs.map((glyph) => glyph.id))
