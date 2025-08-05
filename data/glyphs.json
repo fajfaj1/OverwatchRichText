@@ -1394,7 +1394,7 @@
     {
         "id": "00000000508B",
         "name": "Dash",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Solid Icon",
         "hero": "Tracer",
         "aliases": [],
@@ -1430,7 +1430,7 @@
     {
         "id": "000000005B6D",
         "name": "Spin",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Lúcio",
         "aliases": [],
@@ -1442,7 +1442,7 @@
     {
         "id": "000000005C5B",
         "name": "Breather",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Roadhog",
         "aliases": [],
@@ -1454,7 +1454,7 @@
     {
         "id": "000000005CE2",
         "name": "Walk",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Soldier: 76",
         "aliases": [],
@@ -1466,7 +1466,7 @@
     {
         "id": "000000005D0A",
         "name": "Web",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Card",
         "hero": "Symmetra",
         "aliases": [],
@@ -1526,7 +1526,7 @@
     {
         "id": "000000006275",
         "name": "Astronaut",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Winston",
         "aliases": [],
@@ -1550,7 +1550,7 @@
     {
         "id": "000000007664",
         "name": "Revolver",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Cassidy",
         "aliases": [],
@@ -1562,7 +1562,7 @@
     {
         "id": "00000000785B",
         "name": "Beam",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Mercy",
         "aliases": [],
@@ -1574,7 +1574,7 @@
     {
         "id": "000000007B5C",
         "name": "Grenades",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Junkrat",
         "aliases": [],
@@ -1586,7 +1586,7 @@
     {
         "id": "000000007B6B",
         "name": "Barrage",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Pharah",
         "aliases": [],
@@ -1598,7 +1598,7 @@
     {
         "id": "000000007B9C",
         "name": "Focused",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Zarya",
         "aliases": [],
@@ -1610,7 +1610,7 @@
     {
         "id": "00000000849B",
         "name": "Enlightened",
-        "category": "Spray",
+        "category": "Hero",
         "style": "Drawing",
         "hero": "Zenyatta",
         "aliases": [],
@@ -1622,7 +1622,7 @@
     {
         "id": "000000008E02",
         "name": "Coins",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1634,7 +1634,7 @@
     {
         "id": "00000000906E",
         "name": "Purple Token",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1826,7 +1826,7 @@
     {
         "id": "00000000ABAB",
         "name": "Halloween",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1838,7 +1838,7 @@
     {
         "id": "00000000ABAC",
         "name": "Blizzard",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1850,7 +1850,7 @@
     {
         "id": "00000000ABAD",
         "name": "Summer Games",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1874,7 +1874,7 @@
     {
         "id": "00000000B93A",
         "name": "Winter Wonderland",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1886,7 +1886,7 @@
     {
         "id": "00000000B93B",
         "name": "Chinese New Year",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1898,7 +1898,7 @@
     {
         "id": "00000000D073",
         "name": "Heroes",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1910,7 +1910,7 @@
     {
         "id": "00000000D074",
         "name": "Lobby",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1922,7 +1922,7 @@
     {
         "id": "00000000D075",
         "name": "Maps",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1934,7 +1934,7 @@
     {
         "id": "00000000D076",
         "name": "Modes",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -1946,7 +1946,7 @@
     {
         "id": "00000000D077",
         "name": "Presets",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2030,7 +2030,7 @@
     {
         "id": "00000000E04A",
         "name": "Missions",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2066,7 +2066,7 @@
     {
         "id": "00000000EE0C",
         "name": "Shiny",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2354,7 +2354,7 @@
     {
         "id": "000000013DCC",
         "name": "Overwatch League",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2366,7 +2366,7 @@
     {
         "id": "000000014328",
         "name": "Overwatch League",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2738,7 +2738,7 @@
     {
         "id": "00000001935F",
         "name": "Limited Time",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -2906,7 +2906,7 @@
     {
         "id": "00000001F70D",
         "name": "Workshop",
-        "category": "Workshop Setting",
+        "category": "Miscellaneous",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -3482,7 +3482,7 @@
     {
         "id": "0000000207B8",
         "name": "Credits",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5246,7 +5246,7 @@
     {
         "id": "0000000386E3",
         "name": "Battle Pass",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5786,7 +5786,7 @@
     {
         "id": "000000038C81",
         "name": "League Tokens",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -5894,7 +5894,7 @@
     {
         "id": "00000003A3B2",
         "name": "Shop",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8090,7 +8090,7 @@
     {
         "id": "00000004AFA4",
         "name": "OWCS",
-        "category": "Skin Type",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],
@@ -8126,7 +8126,7 @@
     {
         "id": "00000004C5D2",
         "name": "Mythic Prisms",
-        "category": "Currency",
+        "category": "Shop",
         "style": "Solid Icon",
         "hero": "",
         "aliases": [],

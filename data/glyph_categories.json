@@ -1,16 +1,13 @@
 {
+    "Miscellaneous": "00000001F926",
     "Communication": "00000002A9F4",
-    "Ability": "000000003C5F",
-    "Weapon": "00000000A180",
-    "Badge": "000000043012",
-    "Controls": "00000000447F",
-    "Currency": "000000008E02",
-    "Game Icon": "0000000190DE",
-    "Hero": "0000000385C6",
-    "Internal": "00000000D364",
+    "Ability": "000000013521",
+    "Weapon": "000000004E75",
     "Mode": "0000000215B4",
-    "Skin Type": "00000000ABAC",
-    "Spray": "000000005B6D",
-    "Workshop Setting": "00000001F70D",
-    "Miscellaneous": "00000001F926"
+    "Controls": "000000005DA0",
+    "Shop": "000000008E02",
+    "Hero": "000000018FD6",
+    "Badge": "00000004300D",
+    "Game Icon": "00000003A4EA",
+    "Internal": "00000003EC4B"
 }

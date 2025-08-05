@@ -11,10 +11,12 @@ function DropdownOption({
     name,
     option,
     onChoice,
+    defaultOption,
 }: {
     name: string;
     option: Option;
     onChoice: (option: Option) => void;
+    defaultOption?: Option;
 }) {
     const id = `dropdown-option-${option.name}`;
     return (
@@ -51,6 +53,7 @@ export function Dropdown({
     onChoice: (option: Option) => void;
     variant: InputVariant;
     size: InputSize;
+    defaultOption?: Option;
 }) {
     const [currentOption, setCurrentOption] = useState<Option>(options[0]);
     const [isOpen, setIsOpen] = useState(false);

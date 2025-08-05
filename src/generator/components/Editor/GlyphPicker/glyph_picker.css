@@ -4,23 +4,106 @@
     color: var(--color-background);
     padding: 10px 15px;
     border-radius: 3px;
+
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: -48px;
 }
 
 .glyph-filters {
     text-transform: uppercase;
     font-weight: 600;
 
-    width: 490px;
-
     display: flex;
     align-items: center;
     gap: 10px;
 }
+.glyph-select {
+    display: flex;
+    flex-direction: column;
+}
 
-@media (max-width: 630px) {
+.glyph-tabs {
+    display: flex;
+    gap: 1px;
+    margin-top: 5px;
+    min-width: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.glyph-tab-checkbox {
+    display: none;
+}
+.glyph-tab {
+    background-color: var(--color-navy-light);
+    border: 4px solid var(--color-navy-dark);
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    flex-shrink: 0;
+
+    padding: 2px;
+    font-size: 1em;
+
+    transform: translateY(8px);
+    z-index: 0;
+
+    transition: 0.05s background-color ease-out, 0.05s transform ease-out;
+}
+
+.glyph-tab:hover,
+.glyph-tab-checkbox:checked + .glyph-tab {
+    background-color: var(--color-navy-dark);
+    transform: translateY(5px);
+    scrollbar-base-color: transparent;
+}
+
+.glyph-category-display {
+    background-color: var(--color-navy-dark);
+    color: var(--color-foreground);
+    padding: 5px 5px 5px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+}
+
+.glyph-tray {
+    background-color: var(--color-navy-light);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2px;
+    border: 4px solid var(--color-navy-dark);
+}
+.glyph-tile {
+    height: 2em;
+    min-width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glyph-tile img {
+    filter: drop-shadow(1px 1px 1px black);
+}
+.glyph-tile:hover {
+    transform: scale(110%);
+}
+
+@media (max-width: 600px) {
     .glyph-filters {
         flex-direction: column;
-        align-items: start;
-        width: fit-content;
     }
 }

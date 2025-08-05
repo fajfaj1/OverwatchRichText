@@ -1,7 +1,7 @@
 export type Glyph = {
     id: string;
     name: string;
-    type: string;
+    category: string;
     style: string;
     hero: string;
     aliases: string[];
