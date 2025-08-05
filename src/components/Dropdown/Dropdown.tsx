@@ -61,7 +61,7 @@ export function Dropdown({
                 setIsOpen={setIsOpen}
                 content={
                     <>
-                        <div className='dropdown-popover'>
+                        <fieldset className='dropdown-popover'>
                             {options.map((option) =>
                                 DropdownOption({
                                     name,
@@ -70,7 +70,7 @@ export function Dropdown({
                                         setCurrentOption(choice),
                                 })
                             )}
-                        </div>
+                        </fieldset>
                     </>
                 }
             >
