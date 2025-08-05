@@ -1,4 +1,4 @@
 import '../icon.css'
 export default function FontawesomeIcon() {
-    return (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill='currentColor' className='icon'><path d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z"/></svg>)
+    return (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill='currentColor' className='icon'><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>)
 }
