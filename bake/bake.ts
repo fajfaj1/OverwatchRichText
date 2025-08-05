@@ -43,7 +43,7 @@ heroNames.forEach((heroName) => {
             (g) =>
                 g.name === heroName &&
                 g.type === 'Hero' &&
-                g.style === '3D Render'
+                g.style === 'Drawing'
         )?.id || '';
     heroes[heroName] = heroIconId;
 });
