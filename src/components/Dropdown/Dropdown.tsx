@@ -24,6 +24,7 @@ function DropdownOption({
                 name={`dropdown-option-${name}`}
                 className='dropdown-option-checkbox'
                 id={id}
+                onChange={() => onChoice(option)}
             />
             <label className='dropdown-option' key={option.id} htmlFor={id}>
                 {' '}
@@ -51,7 +52,7 @@ export function Dropdown({
     variant: InputVariant;
     size: InputSize;
 }) {
-    const [currentOption, setCurrentOption] = useState(0);
+    const [currentOption, setCurrentOption] = useState<Option>(options[0]);
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -79,7 +80,14 @@ export function Dropdown({
                         onClick={() => setIsOpen(true)}
                         className={`input input-${variant} dropdown-button input-${size}`}
                     >
-                        {options[currentOption]?.name}
+                        <div className='dropdown-button-label'>
+                            {/* <div className='dropdown-option-icon'> */}
+                            {currentOption.icon}
+                            {/* </div> */}
+                            <span className='dropdown-button-label-text'>
+                                {currentOption.name}
+                            </span>
+                        </div>
                         <Caret />
                     </button>
                 </div>

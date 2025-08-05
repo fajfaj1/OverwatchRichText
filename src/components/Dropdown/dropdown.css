@@ -3,15 +3,28 @@
 }
 .dropdown-button-wrapper {
     width: var(--dropdown-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
 }
 .dropdown-button {
+    height: 35px;
     border-radius: 2px;
     display: flex;
     justify-content: space-between;
-    padding: 2px 15px;
+    /* padding: 2px 15px; */
+    padding: 0;
 
     text-transform: uppercase;
     background-color: #f0f2f6;
+}
+.dropdown-button .glyph {
+    height: 30px;
+    background-color: #c7ddf7;
+}
+.dropdown-button-label-text {
+    margin-left: 10px;
 }
 .dropdown-popover {
     width: var(--dropdown-width);
