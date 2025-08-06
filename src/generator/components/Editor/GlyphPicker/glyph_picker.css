@@ -79,6 +79,7 @@
     background-color: var(--color-navy-light);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    border: 10px solid var(--color-navy-light);
 
     max-height: 300px;
     overflow-y: auto;
