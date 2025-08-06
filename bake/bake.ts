@@ -19,7 +19,7 @@ for (let i = 0; i < glyphs.length; i++) {
     const glyph = glyphs[i];
 
     const image = sharp(`data/glyphs/${glyph.id}.png`);
-    image.resize(64, 64, {
+    image.resize(32, 32, {
         fit: `outside`,
         withoutEnlargement: true,
     });
@@ -66,7 +66,7 @@ fs.writeFileSync('./data/glyph_heroes.json', JSON.stringify(heroes));
 Object.keys(categories).forEach((name) => {
     const iconId = categories[name];
     const image = sharp(`data/glyphs/${iconId}.png`);
-    image.resize(64, 64, {
+    image.resize(32, 32, {
         fit: `contain`,
         withoutEnlargement: true,
         background: 'transparent',

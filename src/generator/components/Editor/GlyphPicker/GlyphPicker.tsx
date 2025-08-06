@@ -10,7 +10,7 @@ import {
 import OverwatchTexture from '@/components/icons/OverwatchTexture';
 import CategoryIcon from '@/components/icons/CategoryIcon';
 
-import { useState } from 'react';
+import { useEffect, useReducer, useRef, useState } from 'react';
 
 function GlyphPickerTab({
     name,
@@ -49,7 +49,11 @@ function GlyphTile({
     onGlyphChoice: (glyph: Glyph) => void;
 }) {
     return (
-        <button className='glyph-tile' onClick={() => onGlyphChoice(glyph)}>
+        <button
+            key={glyph.id}
+            className='glyph-tile'
+            onClick={() => onGlyphChoice(glyph)}
+        >
             <OverwatchTexture id={glyph.id} />
         </button>
     );
@@ -62,6 +66,21 @@ export function GlyphPicker({
 }) {
     const categoryNames = Object.keys(categoryIcons);
     const [category, setCategory] = useState<string>(categoryNames[0]);
+    const [heroFilter, setHeroFilter] = useState<string>('*');
+    const [styleFilter, setStyleFilter] = useState<string>('*');
+
+    let [glyphsToShow, setGlyphsToShow] = useState<Glyph[]>(glyphs);
+    useEffect(() => {
+        console.log('reload');
+        setGlyphsToShow(
+            glyphs.filter(
+                (glyph) =>
+                    (glyph.hero === heroFilter || heroFilter === '*') &&
+                    (glyph.style === styleFilter || styleFilter === '*') &&
+                    glyph.category === category
+            )
+        );
+    }, [glyphs, heroFilter, styleFilter, category]);
 
     const heroOptions: Option[] = Object.keys(heroIcons).map((heroName) => {
         return {
@@ -70,14 +89,11 @@ export function GlyphPicker({
             icon: OverwatchTexture({ id: heroIcons[heroName] }),
         };
     });
-    heroOptions.unshift({ id: '', name: 'All heroes' });
+    heroOptions.unshift({ id: '*', name: 'All heroes' });
     const styleOptions = styles.map((style) => {
         return { id: style, name: style };
     });
-    styleOptions.unshift({ id: '', name: 'All styles' });
-
-    function filterByHero(hero: Option) {}
-    function filterByStyle(style: Option) {}
+    styleOptions.unshift({ id: '*', name: 'All styles' });
 
     return (
         <>
@@ -87,7 +103,7 @@ export function GlyphPicker({
                     <Dropdown
                         name='hero-filter'
                         options={heroOptions}
-                        onChoice={filterByHero}
+                        onChoice={(option) => setHeroFilter(option.id)}
                         variant='normal'
                         size='full'
                         defaultOption={heroOptions[0]}
@@ -95,7 +111,7 @@ export function GlyphPicker({
                     <Dropdown
                         name='style-filter'
                         options={styleOptions}
-                        onChoice={filterByStyle}
+                        onChoice={(option) => setStyleFilter(option.id)}
                         variant='normal'
                         size='full'
                         defaultOption={styleOptions[0]}
@@ -116,8 +132,17 @@ export function GlyphPicker({
                     <div className='glyph-selector-body'>
                         <div className='glyph-category-display'>{category}</div>
                         <div className='glyph-tray'>
-                            {glyphs.map((glyph) =>
-                                GlyphTile({ glyph, onGlyphChoice: onChoice })
+                            {glyphsToShow.length > 0 ? (
+                                glyphsToShow.map((glyph) =>
+                                    GlyphTile({
+                                        glyph,
+                                        onGlyphChoice: onChoice,
+                                    })
+                                )
+                            ) : (
+                                <span className='empty-glyph-list-label'>
+                                    ...
+                                </span>
                             )}
                         </div>
                     </div>

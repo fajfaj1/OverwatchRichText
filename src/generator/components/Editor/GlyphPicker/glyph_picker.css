@@ -64,7 +64,7 @@
 .glyph-category-display {
     background-color: var(--color-navy-light);
     color: var(--color-foreground);
-    padding: 5px 5px 5px 10px;
+    padding: 5px 0px 0px 10px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
@@ -80,25 +80,24 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 10px solid var(--color-navy-light);
+    border-top: 0;
 
     max-height: 300px;
+    /* min-height: 300px; */
     overflow-y: auto;
     width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2px;
 
     font-size: 1.3em;
     /* border: 4px solid var(--color-navy); */
 }
 .glyph-tile {
+    display: inline;
+
     height: 2em;
     min-width: 2em;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .glyph-tile img {
     filter: drop-shadow(1px 1px 1px black);
@@ -111,4 +110,12 @@
     .glyph-filters {
         flex-direction: column;
     }
+}
+
+.empty-glyph-list-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* color: var(--color-light-gray); */
+    color: var(--color-foreground);
 }
