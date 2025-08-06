@@ -69,7 +69,7 @@ export function GlyphPicker({
     const [heroFilter, setHeroFilter] = useState<string>('*');
     const [styleFilter, setStyleFilter] = useState<string>('*');
 
-    let [glyphsToShow, setGlyphsToShow] = useState<Glyph[]>(glyphs);
+    const [glyphsToShow, setGlyphsToShow] = useState<Glyph[]>(glyphs);
     useEffect(() => {
         console.log('reload');
         setGlyphsToShow(
@@ -80,7 +80,7 @@ export function GlyphPicker({
                     glyph.category === category
             )
         );
-    }, [glyphs, heroFilter, styleFilter, category]);
+    }, [heroFilter, styleFilter, category]);
 
     const heroOptions: Option[] = Object.keys(heroIcons).map((heroName) => {
         return {
