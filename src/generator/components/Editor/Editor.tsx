@@ -245,11 +245,12 @@ export function Editor() {
                                 </Tooltip>
                             </Popover>
 
-                            <Tooltip text='Insert a gradient'>
+                            <Tooltip text='Insert a gradient (Coming soon)'>
                                 <Button
-                                    variant='normal'
+                                    variant='outline'
                                     size='min'
                                     icon={<Brush />}
+                                    disabled={true}
                                 >
                                     <></>
                                 </Button>

@@ -10,16 +10,18 @@ import {
 import OverwatchTexture from '@/components/icons/OverwatchTexture';
 import CategoryIcon from '@/components/icons/CategoryIcon';
 
+import { useState } from 'react';
+
 function GlyphPickerTab({
     name,
     icon,
     index,
-    onChoice,
+    onCategoryChange,
 }: {
     name: string;
     icon: string;
     index: number;
-    onChoice: (index: number) => void;
+    onCategoryChange: React.Dispatch<React.SetStateAction<string>>;
 }) {
     const id = `glyph-tab-${name}`;
     return (
@@ -30,6 +32,7 @@ function GlyphPickerTab({
                 name={`glyph-tabs`}
                 className='glyph-tab-checkbox'
                 defaultChecked={index === 0}
+                onChange={() => onCategoryChange(name)}
             />
             <label className='glyph-tab' htmlFor={id}>
                 <CategoryIcon category={name} />
@@ -38,11 +41,17 @@ function GlyphPickerTab({
     );
 }
 
-function GlyphTile({ glyph }: { glyph: Glyph }) {
+function GlyphTile({
+    glyph,
+    onGlyphChoice,
+}: {
+    glyph: Glyph;
+    onGlyphChoice: (glyph: Glyph) => void;
+}) {
     return (
-        <div className='glyph-tile'>
+        <button className='glyph-tile' onClick={() => onGlyphChoice(glyph)}>
             <OverwatchTexture id={glyph.id} />
-        </div>
+        </button>
     );
 }
 
@@ -51,6 +60,9 @@ export function GlyphPicker({
 }: {
     onChoice: (glyph: Glyph) => void;
 }) {
+    const categoryNames = Object.keys(categoryIcons);
+    const [category, setCategory] = useState<string>(categoryNames[0]);
+
     const heroOptions: Option[] = Object.keys(heroIcons).map((heroName) => {
         return {
             id: heroName,
@@ -66,7 +78,7 @@ export function GlyphPicker({
 
     function filterByHero(hero: Option) {}
     function filterByStyle(style: Option) {}
-    function setCategory(index: number) {}
+
     return (
         <>
             <div className='glyph-picker'>
@@ -76,12 +88,16 @@ export function GlyphPicker({
                         name='hero-filter'
                         options={heroOptions}
                         onChoice={filterByHero}
+                        variant='normal'
+                        size='full'
                         defaultOption={heroOptions[0]}
                     />
                     <Dropdown
                         name='style-filter'
                         options={styleOptions}
                         onChoice={filterByStyle}
+                        variant='normal'
+                        size='full'
                         defaultOption={styleOptions[0]}
                     />
                 </div>
@@ -93,14 +109,16 @@ export function GlyphPicker({
                                 name: category,
                                 icon,
                                 index,
-                                onChoice: setCategory,
+                                onCategoryChange: setCategory,
                             });
                         })}
                     </fieldset>
                     <div className='glyph-selector-body'>
-                        <div className='glyph-category-display'>Category</div>
+                        <div className='glyph-category-display'>{category}</div>
                         <div className='glyph-tray'>
-                            {glyphs.map((glyph) => GlyphTile({ glyph }))}
+                            {glyphs.map((glyph) =>
+                                GlyphTile({ glyph, onGlyphChoice: onChoice })
+                            )}
                         </div>
                     </div>
                 </div>

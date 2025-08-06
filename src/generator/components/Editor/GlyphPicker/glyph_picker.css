@@ -48,7 +48,7 @@
     padding: 5px;
     font-size: 1.4em;
 
-    transform: translateY(8px);
+    transform: translateY(5px);
     z-index: 0;
 
     transition: 0.05s background-color ease-out, 0.05s transform ease-out;
@@ -57,7 +57,7 @@
 .glyph-tab:hover,
 .glyph-tab-checkbox:checked + .glyph-tab {
     background-color: var(--color-navy);
-    transform: translateY(5px);
+    transform: translateY(2px);
     scrollbar-base-color: transparent;
 }
 
