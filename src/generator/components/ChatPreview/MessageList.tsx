@@ -15,20 +15,20 @@ export function MessageList() {
     const chatBottomRef = createRef<HTMLDivElement>();
     const [messages, setMessages] = useState<ChatMessage[]>([
         {
-            content: 'Hello There!',
-            author: 'General Kenobi',
-            channel: 'match',
+            content: '<FG5BB95FFF>Boop! <TX0C00000000003E7A>',
+            author: 'Lúcio',
+            channel: 'team',
             id: generateID(),
         },
         {
-            content: '<FG000000FF> test',
-            author: 'Test',
-            channel: 'match',
+            content: '<FGFFFFFFFF>Someone call the <FGEC7573FF>Whambulance!!!',
+            author: 'Mercy',
+            channel: 'group',
             id: generateID(),
         },
         {
-            content: '<TXC0000000003849A>',
-            author: 'Test',
+            content: 'And dey say, And dey say, And dey say',
+            author: 'Doomfist',
             channel: 'match',
             id: generateID(),
         },
