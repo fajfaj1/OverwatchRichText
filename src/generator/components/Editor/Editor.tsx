@@ -15,8 +15,11 @@ import { useRef, useState } from 'react';
 import type { ChannelType } from '../ChatPreview/Message/Channel/Channel';
 import { generateID } from '../ChatPreview/Message/generateID';
 import type { ChatMessage } from '../ChatPreview/Message/Message';
+
 import { ColorPicker } from './ColorPicker/ColorPicker';
+
 import { GlyphPicker } from './GlyphPicker/GlyphPicker';
+import type { Glyph } from '@/types/Glyph';
 
 // import type { RGBColor } from 'react-color';
 
@@ -141,7 +144,6 @@ export function Editor() {
     }
 
     function insertColor(color: string) {
-        console.log(color);
         const textarea = textareaRef.current;
         if (!textarea)
             throw new Error(`Failed to insert color tag, textareRef is null.`);
