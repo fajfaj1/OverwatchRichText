@@ -17,7 +17,6 @@ export default defineConfig({
             input: {
                 home: resolve(__dirname, 'src/index.html'),
                 generator: resolve(__dirname, 'src/generator/index.html'),
-                glyphViewer: resolve(__dirname, 'src/glyph_viewer/index.html'),
             },
         },
     },

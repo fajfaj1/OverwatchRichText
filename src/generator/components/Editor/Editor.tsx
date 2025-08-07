@@ -39,6 +39,15 @@ export function Editor() {
     const previousContentRef = useRef('');
     const undoneContentRef = useRef('');
 
+    function getTextarea() {
+        const textarea = textareaRef.current;
+        if (!textarea)
+            throw new Error(
+                `Failed to serve textarea node, textareRef.current is null.`
+            );
+        return textarea;
+    }
+
     function getMessageObject(): ChatMessage {
         return {
             content: contentRef.current,
@@ -143,10 +152,18 @@ export function Editor() {
         updateUsedColors(textarea);
     }
 
+    function getTextSelection(textarea: HTMLTextAreaElement) {
+        const start = textarea?.selectionStart;
+        const end = textarea?.selectionEnd;
+        if (start === undefined || end === undefined)
+            throw new Error(
+                `Failed to insert color tag, selectionStart or selectionEnd is undefined.`
+            );
+        return { start, end };
+    }
+
     function insertColor(color: string) {
-        const textarea = textareaRef.current;
-        if (!textarea)
-            throw new Error(`Failed to insert color tag, textareRef is null.`);
+        const textarea = getTextarea();
 
         if (!/^#[0-9A-F]{8}$/.test(color))
             throw new Error(
@@ -154,16 +171,7 @@ export function Editor() {
             );
         color = color.slice(1).toUpperCase();
 
-        function getTextSelection() {
-            const start = textarea?.selectionStart;
-            const end = textarea?.selectionEnd;
-            if (start === undefined || end === undefined)
-                throw new Error(
-                    `Failed to insert color tag, selectionStart or selectionEnd is undefined.`
-                );
-            return { start, end };
-        }
-        const selection = getTextSelection();
+        const selection = getTextSelection(textarea);
 
         textarea.focus();
         previousContentRef.current = textarea.value;
@@ -189,7 +197,21 @@ export function Editor() {
 
         // onChange();
     }
-    function insertGlyph(glyph: Glyph) {}
+    function insertGlyph(glyph: Glyph) {
+        setIsGlyphPickerOpen(false);
+        const textarea = getTextarea();
+        const selection = getTextSelection(textarea);
+
+        // const glyphCount = textarea.value.matchAll(/<TX0C00[0-9A-F]{12}>/);
+
+        textarea.focus();
+        textarea.setRangeText(
+            `<TX0C00${glyph.id}>`,
+            selection.start,
+            selection.end,
+            'end'
+        );
+    }
 
     return (
         <>

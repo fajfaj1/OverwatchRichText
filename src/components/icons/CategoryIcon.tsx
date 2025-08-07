@@ -1,5 +1,4 @@
 import './icon.css';
-import { categoryIcons } from '@/data_loaders/glyphs';
 
 import { categoryToFilename } from '@/utils/categoryToFilename';
 
