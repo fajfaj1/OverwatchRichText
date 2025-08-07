@@ -10,22 +10,22 @@ import {
 import OverwatchTexture from '@/components/icons/OverwatchTexture';
 import CategoryIcon from '@/components/icons/CategoryIcon';
 
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function GlyphPickerTab({
     name,
-    icon,
     index,
+    key,
     onCategoryChange,
 }: {
     name: string;
-    icon: string;
     index: number;
+    key: string;
     onCategoryChange: React.Dispatch<React.SetStateAction<string>>;
 }) {
     const id = `glyph-tab-${name}`;
     return (
-        <>
+        <label className='glyph-tab' htmlFor={id} key={key}>
             <input
                 type='radio'
                 id={id}
@@ -34,10 +34,9 @@ function GlyphPickerTab({
                 defaultChecked={index === 0}
                 onChange={() => onCategoryChange(name)}
             />
-            <label className='glyph-tab' htmlFor={id}>
-                <CategoryIcon category={name} />
-            </label>
-        </>
+
+            <CategoryIcon category={name} />
+        </label>
     );
 }
 
@@ -71,7 +70,6 @@ export function GlyphPicker({
 
     const [glyphsToShow, setGlyphsToShow] = useState<Glyph[]>(glyphs);
     useEffect(() => {
-        console.log('reload');
         setGlyphsToShow(
             glyphs.filter(
                 (glyph) =>
@@ -120,12 +118,11 @@ export function GlyphPicker({
                 <div className='glyph-selector'>
                     <fieldset className='glyph-tabs'>
                         {Object.keys(categoryIcons).map((category, index) => {
-                            const icon = categoryIcons[category];
                             return GlyphPickerTab({
                                 name: category,
-                                icon,
                                 index,
                                 onCategoryChange: setCategory,
+                                key: category,
                             });
                         })}
                     </fieldset>

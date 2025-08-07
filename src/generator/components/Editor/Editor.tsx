@@ -141,6 +141,7 @@ export function Editor() {
     }
 
     function insertColor(color: string) {
+        console.log(color);
         const textarea = textareaRef.current;
         if (!textarea)
             throw new Error(`Failed to insert color tag, textareRef is null.`);

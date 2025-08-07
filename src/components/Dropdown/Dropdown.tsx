@@ -20,23 +20,20 @@ function DropdownOption({
 }) {
     const id = `dropdown-option-${option.name}`;
     return (
-        <>
-            <label className='dropdown-option' key={option.id} htmlFor={id}>
-                <input
-                    type='radio'
-                    name={`dropdown-option-${name}`}
-                    className='dropdown-option-checkbox'
-                    id={id}
-                    onChange={() => onChoice(option)}
-                />{' '}
-                <>
-                    <div className='dropdown-option-icon'>
-                        {option.icon || ''}
-                    </div>
-                    <span className='dropdown-option-label'>{option.name}</span>
-                </>
-            </label>
-        </>
+        <label className='dropdown-option' key={id} htmlFor={id}>
+            <input
+                type='radio'
+                name={`dropdown-option-${name}`}
+                className='dropdown-option-checkbox'
+                id={id}
+                defaultChecked={(defaultOption?.id || '') === option.id}
+                onChange={() => onChoice(option)}
+            />{' '}
+            <>
+                <div className='dropdown-option-icon'>{option.icon || ''}</div>
+                <span className='dropdown-option-label'>{option.name}</span>
+            </>
+        </label>
     );
 }
 
