@@ -20,7 +20,7 @@ export function ColorPicker({
         r: 255,
         g: 255,
         b: 255,
-        a: 100,
+        a: 1,
     });
 
     function rgbToHex(rgb: RGBColor) {
